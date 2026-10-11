@@ -21,6 +21,7 @@ import { DomainError, notFound } from '@/domain/errors';
 import { createHousehold, listHouseholdMembers, prepareHome } from '@/domain/household';
 import { nextCandidate, pick, pickedList, unpick } from '@/domain/suggestion';
 import { newCsrfToken, csrfOk, SAFE_METHODS } from './csrf';
+import { adminRoutes } from './routes/admin';
 import {
   CSRF_COOKIE,
   SESSION_COOKIE,
@@ -293,6 +294,8 @@ const routes: Route[] = [
       return json({ ok: true });
     },
   },
+  // U7（グループとアカウントの管理）
+  ...adminRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {

@@ -3,6 +3,10 @@ import type { Logger } from '@/lib/logger';
 /** アプリ内の出来事（ADR-007）。受け手は冪等に作る。失敗は送り手に影響しない */
 export interface DomainEvents {
   'household.created': { householdId: string };
+  // U7（BR50.23）：ID だけを持つ。eventId が同じものは、何度受けても結果が同じになるように作る
+  'household.member-left': { eventId: string; householdId: string; memberId: string };
+  'household.deleted': { eventId: string; householdId: string };
+  'account.deleted': { eventId: string; accountId: string };
 }
 
 type Handler<K extends keyof DomainEvents> = (payload: DomainEvents[K]) => Promise<void>;

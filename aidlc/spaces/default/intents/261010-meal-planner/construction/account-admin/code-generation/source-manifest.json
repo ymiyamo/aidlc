@@ -1,0 +1,58 @@
+{
+  "stage": "code-generation",
+  "unit": "account-admin",
+  "version": 1,
+  "writes": [
+    {
+      "path": "src/domain/admin/"
+    },
+    {
+      "path": "src/repo/admin/"
+    },
+    {
+      "path": "src/api/routes/"
+    },
+    {
+      "path": "src/ui/admin/"
+    },
+    {
+      "path": "src/app/join/"
+    },
+    {
+      "path": "src/app/password/"
+    },
+    {
+      "path": "src/app/settings/"
+    },
+    {
+      "path": "src/app/page.tsx"
+    },
+    {
+      "path": "src/ui/AuthForm.tsx"
+    },
+    {
+      "path": "src/domain/auth.ts"
+    },
+    {
+      "path": "src/domain/events.ts"
+    },
+    {
+      "path": "src/repo/accounts.ts"
+    },
+    {
+      "path": "src/api/router.ts"
+    },
+    {
+      "path": "db/migrations/007_account_admin.sql"
+    },
+    {
+      "path": "src/db/__tests__/admin-schema.test.ts"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}

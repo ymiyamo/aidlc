@@ -15,7 +15,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "test:unit": "vitest run src/db/__tests__ src/repo/__tests__ src/domain/__tests__ src/api/__tests__ src/ui/__tests__",
+    "test:unit": "vitest run src",
     "test:coverage": "vitest run --coverage",
     "db:migrate": "tsx scripts/migrate.mts",
     "db:reset": "node -e \"require('fs').rmSync('.data',{recursive:true,force:true});console.log('.data を削除しました')\""

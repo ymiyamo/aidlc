@@ -1,6 +1,14 @@
 import { createHash, randomBytes } from 'node:crypto';
 import bcrypt from 'bcryptjs';
-import { findAccountByEmail, findAccountById, insertAccount } from '@/repo/accounts';
+import {
+  clearExpiredLoginLock,
+  clearLoginFailures,
+  findAccountByEmail,
+  findAccountById,
+  getLoginLockedUntil,
+  insertAccount,
+  recordLoginFailure,
+} from '@/repo/accounts';
 import { findActiveMemberByAccount } from '@/repo/households';
 import { deleteSession, findValidSessionAccount, insertSession } from '@/repo/sessions';
 import type { AppDeps } from './deps';
@@ -16,7 +24,7 @@ const prehash = (password: string) =>
 
 export const hashPassword = (password: string, cost: number) =>
   bcrypt.hash(prehash(password), cost);
-const verifyPassword = (password: string, digest: string) =>
+export const verifyPassword = (password: string, digest: string) =>
   bcrypt.compare(prehash(password), digest);
 
 /** Cookie に入れる、推測できないランダムな値 */
@@ -66,11 +74,26 @@ let dummyDigest: Promise<string> | null = null;
 export async function login(deps: AppDeps, raw: unknown): Promise<IssuedSession> {
   const input = parseOrThrow(loginSchema, raw);
   const account = await findAccountByEmail(deps.db, input.email);
+  if (account) {
+    // BR50.6、BR50.7：期限が過ぎたロックは解く。ロック中は、パスワードを確かめる前に断る
+    await clearExpiredLoginLock(deps.db, account.accountId, deps.now());
+    if (await getLoginLockedUntil(deps.db, account.accountId, deps.now())) {
+      throw new DomainError(
+        'auth_failed',
+        'ログインの失敗が続いたため、しばらくログインできません（約 15 分）',
+        undefined,
+        { locked: true },
+      );
+    }
+  }
   dummyDigest ??= hashPassword('dummy-password', deps.bcryptCost);
   const ok = await verifyPassword(input.password, account?.passwordDigest ?? (await dummyDigest));
   if (!account || !ok) {
+    // BR50.5、BR50.8：登録済みのメールアドレスの失敗だけ数える
+    if (account) await recordLoginFailure(deps.db, account.accountId, deps.now());
     throw new DomainError('auth_failed', 'メールアドレスまたはパスワードが違います');
   }
+  await clearLoginFailures(deps.db, account.accountId);
   return issueSession(deps, account.accountId);
 }
 

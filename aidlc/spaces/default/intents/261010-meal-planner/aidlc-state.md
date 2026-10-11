@@ -24,7 +24,7 @@
 - **Sensors**: on (from scope classic)
 - **Learnings**: on (from scope classic)
 - **Summary Confirmation**: off (from scope classic)
-- **Plan Approval**: on (from scope classic)
+- **Plan Approval**: off (set by you)
 - **Collaborators**: off (from scope classic)
 
 ## Workspace State
@@ -42,7 +42,7 @@
 - **Revision Count**: 2
 - **Construction Checkpoints**: enabled
 - **Construction Iteration**: stage-major
-- **Construction Execution**: swarm
+- **Construction Execution**: serial
 
 - **Skeleton Stance**: on
 
@@ -62,6 +62,9 @@
 
 
 - **Construction Verification Command**: npm run typecheck && npm run lint && npm run test:unit
+
+
+
 
 
 
@@ -148,7 +151,7 @@ Per unit: [TBD]
 - **Current Stage**: code-generation
 - **Next Stage**: build-and-test
 - **Status**: Running
-- **Last Updated**: 2026-10-11T06:45:52Z
+- **Last Updated**: 2026-10-11T07:43:33Z
 
 - **Construction Autonomy Mode**: autonomous
 

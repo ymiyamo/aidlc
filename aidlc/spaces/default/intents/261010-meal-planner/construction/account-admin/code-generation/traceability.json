@@ -1,0 +1,206 @@
+{
+  "stage": "code-generation",
+  "unit": "account-admin",
+  "upstream_ids": [
+    "AC7.1.2",
+    "AC7.1.3",
+    "AC7.2.1",
+    "AC7.2.2",
+    "AC7.2.3",
+    "BR50.1",
+    "BR50.2",
+    "BR50.3",
+    "BR50.4",
+    "BR50.5",
+    "BR50.6",
+    "BR50.7",
+    "BR50.8",
+    "BR50.9",
+    "BR50.10",
+    "BR50.11",
+    "BR50.12",
+    "BR50.13",
+    "BR50.14",
+    "BR50.15",
+    "BR50.16",
+    "BR50.17",
+    "BR50.18",
+    "BR50.19",
+    "BR50.20",
+    "BR50.21",
+    "BR50.22",
+    "BR50.23",
+    "BR50.24",
+    "BR50.25",
+    "BR50.26",
+    "BR50.27",
+    "BR50.28"
+  ],
+  "coverage": [
+    {
+      "id": "AC7.1.2",
+      "status": "OK",
+      "target": "src/api/routes/admin.ts"
+    },
+    {
+      "id": "AC7.1.3",
+      "status": "OK",
+      "target": "src/api/routes/admin.ts"
+    },
+    {
+      "id": "AC7.2.1",
+      "status": "OK",
+      "target": "src/api/routes/admin.ts"
+    },
+    {
+      "id": "AC7.2.2",
+      "status": "OK",
+      "target": "src/api/routes/admin.ts"
+    },
+    {
+      "id": "AC7.2.3",
+      "status": "OK",
+      "target": "src/api/routes/admin.ts"
+    },
+    {
+      "id": "BR50.1",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.2",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.3",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.4",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.5",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.6",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.7",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.8",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.9",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.10",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.11",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.12",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.13",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.14",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.15",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.16",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.17",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.18",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.19",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.20",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.21",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.22",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.23",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.24",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.25",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.26",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.27",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    },
+    {
+      "id": "BR50.28",
+      "status": "OK",
+      "target": "src/domain/admin/index.ts"
+    }
+  ]
+}

@@ -54,6 +54,9 @@ export default function HomePage() {
       <Link className="btn block" href="/picked" data-testid="go-picked">
         選んだもの{pickedCount !== null ? ` ${pickedCount} 件` : ''}
       </Link>
+      <Link className="btn block" href="/settings" data-testid="go-settings">
+        ⚙ 家族の招待・設定
+      </Link>
     </Shell>
   );
 }

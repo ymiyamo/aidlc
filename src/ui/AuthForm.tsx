@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState, type FormEvent } from 'react';
+import { pendingInviteToken } from './admin/invite-storage';
 import { api, ApiError } from './api-client';
 
 /** 登録とログインの画面（mode で切り替える） */
@@ -27,7 +28,8 @@ export function AuthForm({ mode }: { mode: 'login' | 'register' }) {
         password,
         ...(isRegister ? { displayName } : {}),
       });
-      router.replace(isRegister ? '/household/new' : '/');
+      // 招待リンクから来た人は、参加の確認に戻す（U7。BR50.11）
+      router.replace(pendingInviteToken() ? '/join' : isRegister ? '/household/new' : '/');
     } catch (err) {
       if (err instanceof ApiError && err.code === 'validation') setErrors(err.fields);
       else if (err instanceof ApiError) setFormError(err.message);
@@ -111,6 +113,10 @@ export function AuthForm({ mode }: { mode: 'login' | 'register' }) {
           ) : (
             <>
               はじめての方は <Link href="/register">新しく登録</Link>
+              <br />
+              <Link href="/password/forgot" data-testid="go-forgot-password">
+                パスワードを忘れた方
+              </Link>
             </>
           )}
         </p>
