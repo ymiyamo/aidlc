@@ -9,19 +9,24 @@
   <body>
     <nav class="nav" aria-label="スライドの移動">
       <a href="#s1" aria-label="1 表紙"></a>
-      <a href="#s2" aria-label="2 全体の流れ"></a>
-      <a href="#s3" aria-label="3 作ったもの（流れ）"></a>
-      <a href="#s4" aria-label="4 作ったもの（数字）"></a>
+      <a href="#s2" aria-label="2 今日の話"></a>
+      <a href="#s3" aria-label="3 作ったもの 流れ"></a>
+      <a href="#s4" aria-label="4 作ったもの 数字"></a>
       <a href="#s5" aria-label="5 作ったアプリ"></a>
-      <a href="#s6" aria-label="6 振り返り（効いたこと）"></a>
-      <a href="#s7" aria-label="7 振り返り（大変だったこと）"></a>
-      <a href="#s8" aria-label="8 振り返り（場面）"></a>
-      <a href="#s9" aria-label="9 インパクト（測れたこと）"></a>
-      <a href="#s10" aria-label="10 インパクト（測れていないこと）"></a>
-      <a href="#s11" aria-label="11 今後（他チームへ）"></a>
-      <a href="#s12" aria-label="12 今後（ルールとプロセス）"></a>
-      <a href="#s13" aria-label="13 課題"></a>
-      <a href="#s14" aria-label="14 まとめ"></a>
+      <a href="#s6" aria-label="6 効いたこと"></a>
+      <a href="#s7" aria-label="7 人と AI の役割"></a>
+      <a href="#s8" aria-label="8 追跡と図"></a>
+      <a href="#s9" aria-label="9 言葉の壁"></a>
+      <a href="#s10" aria-label="10 大変だったこと"></a>
+      <a href="#s11" aria-label="11 うまくいかなかったこと"></a>
+      <a href="#s12" aria-label="12 印象に残った場面"></a>
+      <a href="#s13" aria-label="13 Kiro の感想"></a>
+      <a href="#s14" aria-label="14 インパクト 測れたこと"></a>
+      <a href="#s15" aria-label="15 インパクト 未計測"></a>
+      <a href="#s16" aria-label="16 今後 他チーム"></a>
+      <a href="#s17" aria-label="17 今後 ルールとプロセス"></a>
+      <a href="#s18" aria-label="18 課題"></a>
+      <a href="#s19" aria-label="19 まとめ"></a>
     </nav>
 
     <!-- 1 表紙 -->
@@ -32,372 +37,431 @@
         <span>「献立を考えるストレス」</span>を<br />
         1 行の依頼から動くアプリへ
       </h1>
-      <p class="lead">2 日間の成果・振り返り・開発へのインパクト・これから</p>
+      <p class="lead">2 日間の成果・振り返り・インパクト・これから</p>
       <p class="small">AI-DLC（AI-Driven Development Life Cycle）／ Kiro</p>
-      <span class="no">1 / 14</span>
+      <span class="no">1 / 19</span>
     </section>
 
-    <!-- 2 全体の流れ -->
+    <!-- 2 今日の話 -->
     <section class="slide" id="s2">
       <div class="section-label">今日の話</div>
-      <h2>4 つの話をします</h2>
+      <h2>4 つ</h2>
       <div class="grid c4">
-        <div class="card accent">
-          <h3>1. 2 日間で作ったもの</h3>
-          <p>依頼の 1 行から、設計の文書と、動くアプリの 1st バージョンまで</p>
-        </div>
-        <div class="card blue">
-          <h3>2. 2 日間の振り返り</h3>
-          <p>効いたこと、大変だったこと、笑った場面</p>
-        </div>
-        <div class="card green">
-          <h3>3. 開発へのインパクト</h3>
-          <p>測れたことと、まだ測れていないこと</p>
-        </div>
-        <div class="card">
-          <h3>4. 今後</h3>
-          <p>他チームへの展開、社内ルール、受発注のプロセス、課題</p>
-        </div>
+        <div class="card accent"><h3>1. 作ったもの</h3><p>1 行 → 設計 → 動くアプリ</p></div>
+        <div class="card blue"><h3>2. 振り返り</h3><p>効いた／大変／うまくいかなかった</p></div>
+        <div class="card green"><h3>3. インパクト</h3><p>測れたこと／未計測</p></div>
+        <div class="card"><h3>4. 今後</h3><p>他チーム／ルール／課題</p></div>
       </div>
-      <p class="small" style="margin-top: 1.2em">
-        この資料の数字は、リポジトリの記録（成果物、レビュー、コミット）から数えたものです。測っていないものは、「未計測」と書きました。
-      </p>
-      <span class="no">2 / 14</span>
+      <p class="small" style="margin-top: 1.2em">数字は、リポジトリの記録から数えたもの。測っていないものは「未計測」。</p>
+      <span class="no">2 / 19</span>
     </section>
 
     <!-- 3 作ったもの：流れ -->
     <section class="slide" id="s3">
       <div class="section-label">1. 2 日間で作ったもの</div>
-      <h2>依頼は 1 行。そこから、設計と動くアプリまで</h2>
-      <div class="quote">
-        「献立を考えるストレス」を緩和する web アプリを作成したい。
-      </div>
-      <div class="phase">準備の段階（Inception）：何を、誰のために、どう分けて、どの順で作るか　<strong>8 つ完了</strong></div>
+      <h2>依頼は 1 行 → 設計 → 動くアプリ</h2>
+      <div class="quote">「献立を考えるストレス」を緩和する web アプリを作りたい</div>
+      <div class="phase">準備（Inception）8 つ完了</div>
       <div class="flow">
-        <span class="step done">実践の確認</span><span class="arrow"></span>
+        <span class="step done">実践</span><span class="arrow"></span>
         <span class="step done">要件</span><span class="arrow"></span>
-        <span class="step done">ユーザーストーリー</span><span class="arrow"></span>
-        <span class="step done">画面設計（モック）</span><span class="arrow"></span>
-        <span class="step done">コンポーネント設計</span><span class="arrow"></span>
-        <span class="step done">ユニット分割</span><span class="arrow"></span>
+        <span class="step done">ストーリー</span><span class="arrow"></span>
+        <span class="step done">画面</span><span class="arrow"></span>
+        <span class="step done">コンポーネント</span><span class="arrow"></span>
+        <span class="step done">ユニット</span><span class="arrow"></span>
         <span class="step done">契約</span><span class="arrow"></span>
         <span class="step done">作る順番</span>
       </div>
-      <div class="phase">作る段階（Construction）：最初のユニット「通し版」を、端から端まで　<strong>5 つ完了</strong></div>
+      <div class="phase">作る（Construction）通し版 5 つ完了</div>
       <div class="flow">
         <span class="step build">機能設計</span><span class="arrow"></span>
-        <span class="step build">品質の目標（NFR 要件）</span><span class="arrow"></span>
-        <span class="step build">品質の作り方（NFR 設計）</span><span class="arrow"></span>
+        <span class="step build">NFR 要件</span><span class="arrow"></span>
+        <span class="step build">NFR 設計</span><span class="arrow"></span>
         <span class="step build">基盤設計</span><span class="arrow"></span>
         <span class="step build">コード生成</span><span class="arrow"></span>
-        <span class="step todo">ビルドとテスト（これから）</span>
+        <span class="step todo">ビルドとテスト</span>
       </div>
-      <p class="small">
-        各段階で、質問に答える → AI が成果物を作る → 別の AI がレビューする → 人が承認する、を繰り返しました。
-      </p>
-      <span class="no">3 / 14</span>
+      <p class="small">各段階：質問に答える → AI が作る → 別の AI がレビュー → 人が承認</p>
+      <span class="no">3 / 19</span>
     </section>
 
-    <!-- 4 作ったもの：数字 -->
+    <!-- 4 数字 -->
     <section class="slide" id="s4">
       <div class="section-label">1. 2 日間で作ったもの</div>
       <h2>成果物の数（リポジトリから数えた事実）</h2>
       <div class="grid c4">
         <div class="card stat"><span class="n">1<span class="u">行</span></span><span class="t">最初の依頼</span></div>
         <div class="card stat"><span class="n">38<span class="u">件</span></span><span class="t">ユーザーストーリー</span></div>
-        <div class="card stat"><span class="n">38<span class="u">件</span></span><span class="t">業務ルール（通し版）</span></div>
-        <div class="card stat"><span class="n">11<span class="u">種</span></span><span class="t">画面（試せるモック 54 ページ）</span></div>
-        <div class="card stat"><span class="n">10<span class="u">件</span></span><span class="t">設計の判断の記録（ADR）</span></div>
-        <div class="card stat"><span class="n">5<span class="u">つ</span></span><span class="t">契約（部品どうしの約束）</span></div>
-        <div class="card stat"><span class="n">7<span class="u">つ</span></span><span class="t">ユニット（作る単位）</span></div>
-        <div class="card stat"><span class="n">121<span class="u">件</span></span><span class="t">自動テスト（すべて成功）</span></div>
+        <div class="card stat"><span class="n">38<span class="u">件</span></span><span class="t">業務ルール</span></div>
+        <div class="card stat"><span class="n">11<span class="u">種</span></span><span class="t">画面（モック 54 ページ）</span></div>
+        <div class="card stat"><span class="n">10<span class="u">件</span></span><span class="t">ADR（判断の記録）</span></div>
+        <div class="card stat"><span class="n">5<span class="u">つ</span></span><span class="t">契約</span></div>
+        <div class="card stat"><span class="n">7<span class="u">つ</span></span><span class="t">ユニット</span></div>
+        <div class="card stat"><span class="n">121<span class="u">件</span></span><span class="t">自動テスト（全部成功）</span></div>
       </div>
       <div class="grid c3" style="margin-top: 1.1vw">
-        <div class="card stat"><span class="n">約3,500<span class="u">行</span></span><span class="t">アプリのコード（TypeScript）</span></div>
+        <div class="card stat"><span class="n">約3,500<span class="u">行</span></span><span class="t">アプリのコード</span></div>
         <div class="card stat"><span class="n">約1,800<span class="u">行</span></span><span class="t">テストのコード</span></div>
-        <div class="card stat"><span class="n">11<span class="u">回</span></span><span class="t">コミット（GitHub に記録）</span></div>
+        <div class="card stat"><span class="n">12<span class="u">回</span></span><span class="t">AI レビュー（重大指摘 計 38 件）</span></div>
       </div>
-      <p class="small">
-        要件の ID から、ストーリー、業務ルール、コードのファイルまで、対応表（トレーサビリティ）でたどれます。
-      </p>
-      <span class="no">4 / 14</span>
+      <span class="no">4 / 19</span>
     </section>
 
-    <!-- 5 作ったアプリ -->
+    <!-- 5 アプリ -->
     <section class="slide" id="s5">
       <div class="section-label">1. 2 日間で作ったもの</div>
-      <h2>アプリ：おいしそうな出会いを保存して、買い物前に見る</h2>
+      <h2>アプリ：おいしそうな出会いを保存 → 買い物前に見る</h2>
       <div class="grid c2">
         <div class="card accent">
-          <h3>きっかけの発見</h3>
-          <p>
-            最初は「献立の提案」を中心に作るつもりでした。チームの 1 人が「本当は、食事を準備すること全体がストレスでは」と気づき、<strong>要件の承認の前に</strong>作り直しました。
-          </p>
-          <p>
-            中心は、「おいしそうな動画・投稿（Instagram、YouTube）の URL を保存する」と「買い物前に、気分で選ぶ」に変わりました。
-          </p>
-        </div>
-        <div class="card green">
-          <h3>1st バージョンで動くもの（ローカル）</h3>
+          <h3>本当の課題は、途中で変わった</h3>
           <ul>
-            <li>登録・ログイン、家族グループの作成</li>
-            <li>初期データ 30 件の料理</li>
-            <li>URL と料理名で保存（1 画面、右下の「＋」）</li>
-            <li>買い物前に、候補を 1 件ずつスワイプ／ボタンで選ぶ</li>
-            <li>お気に入り、編集、削除、「選んだもの」</li>
+            <li>最初：献立の提案が中心</li>
+            <li>気づき：「準備すること全体がストレス」</li>
+            <li>変更：動画・投稿の URL 保存＋気分で選ぶ</li>
+            <li><strong>要件の承認の前</strong>に直せた</li>
           </ul>
         </div>
-      </div>
-      <div class="grid c2" style="margin-top: 1.1vw">
-        <div class="card">
-          <h3>これから（設計済み・未実装）</h3>
-          <p>好き嫌いの除外と絞り込み／買い物リスト／1 週間の献立／作った記録（カレンダー）／招待・退会／画像</p>
+        <div class="card green">
+          <h3>1st バージョン（ローカルで動く）</h3>
+          <ul>
+            <li>登録・ログイン／家族グループ</li>
+            <li>初期データ 30 件</li>
+            <li>URL＋料理名で保存（右下の「＋」）</li>
+            <li>候補をスワイプ／ボタンで選ぶ</li>
+            <li>お気に入り・編集・削除</li>
+          </ul>
         </div>
-        <div class="card red">
-          <h3>正直な現在地</h3>
-          <p>
-            ブラウザでの見た目とスワイプ操作の目視確認、性能の測定、AWS への実際の配置は<strong>まだ</strong>です。
-          </p>
-        </div>
+        <div class="card"><h3>これから（設計済み）</h3><p>好き嫌い／買い物リスト／献立／作った記録／招待／画像</p></div>
+        <div class="card red"><h3>まだ</h3><p>実機の目視確認／性能測定／AWS への配置</p></div>
       </div>
-      <span class="no">5 / 14</span>
+      <span class="no">5 / 19</span>
     </section>
 
-    <!-- 6 振り返り：効いたこと -->
+    <!-- 6 効いたこと -->
     <section class="slide" id="s6">
       <div class="section-label">2. 2 日間の振り返り</div>
       <h2>効いたこと</h2>
       <div class="grid c2">
-        <div class="card green">
-          <h3>承認の関門があるから、手戻りが小さい</h3>
-          <p>「本当の課題は別かも」に、承認の前に気づけた。コードを書く前に直せた。</p>
-        </div>
-        <div class="card green">
-          <h3>動くモックを触ると、議論が具体的になる</h3>
-          <p>文書だけのときは反応が薄く、モックを触ると 12 件の感想が出た。それがスワイプ、カレンダー、記録の 1 対多に変わった。</p>
-        </div>
-        <div class="card green">
-          <h3>「ここはどこでフォローされてる？」という検収の質問</h3>
-          <p>作った記録の登録の入口が、設計から抜けていると分かった。</p>
-        </div>
-        <div class="card green">
-          <h3>別の AI のレビュー役が、思い込みを拾う</h3>
-          <p>12 回のレビューで、重大（Major）の指摘は計 38 件。AI がその場で直し、人が「直す／今はやらない」を決めた。</p>
-        </div>
+        <div class="card green"><h3>承認の関門</h3><p>手戻りが小さい</p></div>
+        <div class="card green"><h3>動くモック</h3><p>触ると感想 12 件<br />→ スワイプ・カレンダー・記録 1 対多</p></div>
+        <div class="card green"><h3>検収の質問</h3><p>「ここはどこでフォローされてる？」<br />→ 記録の入口の抜けを発見</p></div>
+        <div class="card green"><h3>別の AI のレビュー役</h3><p>思い込みを拾う（重大 38 件）</p></div>
       </div>
-      <div class="takeaway">AI は広げる方向に提案しがち。範囲を絞るのは人の仕事（アレルギーの実装は、最初の版では落とした）。</div>
-      <span class="no">6 / 14</span>
+      <span class="no">6 / 19</span>
     </section>
 
-    <!-- 7 振り返り：大変だったこと -->
+    <!-- 7 人とAIの役割 -->
     <section class="slide" id="s7">
+      <div class="section-label">2. 2 日間の振り返り</div>
+      <h2>人と AI の役割分担</h2>
+      <div class="grid c2">
+        <div class="card blue">
+          <h3>「全部オススメで！」</h3>
+          <ul>
+            <li>任せる質問／自分で決める質問を分ける</li>
+            <li>疲れにくい</li>
+          </ul>
+        </div>
+        <div class="card blue">
+          <h3>おすすめと違う設定も選べる</h3>
+          <ul>
+            <li>作り方：AI は「1 つずつ」→ 人は「同時に」</li>
+            <li>両立しない設定を AI が指摘</li>
+          </ul>
+        </div>
+        <div class="card blue">
+          <h3>範囲を絞るのは人</h3>
+          <ul>
+            <li>AI は広げがち</li>
+            <li>アレルギー・表記ゆれは「最初の版では作らない」</li>
+            <li>グループ削除は「触ってから」</li>
+          </ul>
+        </div>
+        <div class="card blue">
+          <h3>ドライバーは誰か</h3>
+          <ul>
+            <li>UX 担当か PO かで、入力も出力も変わる</li>
+            <li>次：フェーズごとに交代</li>
+          </ul>
+        </div>
+      </div>
+      <span class="no">7 / 19</span>
+    </section>
+
+    <!-- 8 追跡と図 -->
+    <section class="slide" id="s8">
+      <div class="section-label">2. 2 日間の振り返り</div>
+      <h2>追跡できること、図で見えること</h2>
+      <div class="grid c2">
+        <div class="card green">
+          <h3>トレーサビリティ</h3>
+          <ul>
+            <li>要件 ID → ストーリー → 業務ルール → コード</li>
+            <li>「なぜ？」を ADR まで戻れる</li>
+            <li>誰のどの指示で何が変わったか、文書に残る</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <h3>図は「コード」で出る</h3>
+          <ul>
+            <li>画面遷移・優先度を Mermaid で</li>
+            <li>記法は人が選ぶ：<strong>Mermaid → PlantUML</strong></li>
+            <li>コンポーネント図（UML）：矢印＝頼る向き</li>
+            <li>描画の確認は人の側（AI は見て改善案まで）</li>
+          </ul>
+        </div>
+      </div>
+      <div class="takeaway">図には名前がある。名前が分かれば、調べられる・言い合える</div>
+      <span class="no">8 / 19</span>
+    </section>
+
+    <!-- 9 言葉の壁 -->
+    <section class="slide" id="s9">
+      <div class="section-label">2. 2 日間の振り返り</div>
+      <h2>言葉の壁</h2>
+      <div class="grid c2">
+        <div class="card red">
+          <h3>通じなかった言葉</h3>
+          <ul>
+            <li>「部品」（component の訳）→ ネジや歯車と誤解されやすい</li>
+            <li>Given / When / Then</li>
+            <li>P1、walking skeleton、ADR</li>
+          </ul>
+        </div>
+        <div class="card blue">
+          <h3>出どころを聞いた</h3>
+          <ul>
+            <li>「DDD の用語？」</li>
+            <li>答え：<strong>手順書／一般用語／AI の訳</strong>の 3 種類</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <h3>その場で直した</h3>
+          <ul>
+            <li>「コンポーネント」に変更</li>
+            <li>日本語・英語を別の列にした用語表</li>
+            <li>「説明＋たとえ＋おすすめ」をルール化</li>
+          </ul>
+        </div>
+        <div class="card red">
+          <h3>声</h3>
+          <div class="quote">「AI-DLC をやっているのか、Kiro 入門か、区別がつかない」</div>
+        </div>
+      </div>
+      <span class="no">9 / 19</span>
+    </section>
+
+    <!-- 10 大変だったこと -->
+    <section class="slide" id="s10">
       <div class="section-label">2. 2 日間の振り返り</div>
       <h2>大変だったこと</h2>
       <div class="grid c2">
         <div class="card red">
           <h3>疲れる</h3>
-          <div class="quote">「頭の中を形にするのが疲れる」「AI ってこんなに疲れるの？」</div>
-          <p>普段は頭の中で省略している決めごとを、全部言葉にするため。質問は、要件で 17 問、画面設計で 19 問など。</p>
+          <div class="quote">「AI ってこんなに疲れるの？」</div>
+          <p>質問が多い（要件 17 問、画面 19 問…）</p>
+          <p>理由：頭の中の省略を、全部言葉にする</p>
         </div>
         <div class="card red">
-          <h3>専門用語の壁</h3>
-          <p>Given/When/Then、P1、walking skeleton、ADR、コンポーネント。「部品」という訳は通じなかった。</p>
-          <div class="quote">「AI-DLC をやっているのか、Kiro 入門をやっているのか、区別がつかない」</div>
+          <h3>分からないまま決まる</h3>
+          <ul>
+            <li>DDD の知識が少ない → 「見なし OK」が多い</li>
+            <li>対策：説明＋おすすめ、ADR に残す</li>
+          </ul>
         </div>
         <div class="card red">
-          <h3>「分からないまま決まる」リスク</h3>
-          <p>DDD の知識が少なく、「見なし OK」が多かった。説明とおすすめを添える、判断を ADR に残す、で橋渡しした。</p>
+          <h3>回答に訓練が要る</h3>
+          <p>「これにそれぞれ答えるには訓練が要る」</p>
         </div>
         <div class="card red">
-          <h3>承認とレビューの待ち</h3>
-          <p>安全のための手順は、速さとトレードオフ。急ぐときは「何を省けて、何を失うか」を AI に聞ける（設定を変えるのは人）。</p>
+          <h3>待ち</h3>
+          <p>レビューと承認は、安全と引き換えに時間がかかる</p>
+          <p>省くかは人が決める（<code>--review none</code>）</p>
         </div>
       </div>
-      <span class="no">7 / 14</span>
+      <span class="no">10 / 19</span>
     </section>
 
-    <!-- 8 振り返り：場面 -->
-    <section class="slide" id="s8">
+    <!-- 11 うまくいかなかったこと -->
+    <section class="slide" id="s11">
+      <div class="section-label">2. 2 日間の振り返り</div>
+      <h2>うまくいかなかったこと（正直に）</h2>
+      <div class="grid c2">
+        <div class="card red">
+          <h3>再レビューは 1 回まで</h3>
+          <p>直したあとの再レビューが自動では受けられない（手順を踏んで解除）</p>
+        </div>
+        <div class="card red">
+          <h3>承認済みの文書を後から直した</h3>
+          <p>チームの感想を反映。変更は記録したが、再レビューは一部未実施</p>
+        </div>
+        <div class="card red">
+          <h3>git push の権限エラー</h3>
+          <p>鍵のアカウントが違った → GitHub 側で対応 → <code>--force-with-lease</code> で README を取り込み</p>
+        </div>
+        <div class="card red">
+          <h3>保護機能に止められた</h3>
+          <p>監査ログに触れるコマンドはブロック（正しい動き）→ 別の手段へ</p>
+        </div>
+      </div>
+      <div class="takeaway">「次回に残したい気づき」の確認は、何度か答えを待つ形になり、そのまま先へ進んだ</div>
+      <span class="no">11 / 19</span>
+    </section>
+
+    <!-- 12 印象に残った場面 -->
+    <section class="slide" id="s12">
       <div class="section-label">2. 2 日間の振り返り</div>
       <h2>印象に残った場面</h2>
       <div class="grid c2">
         <div class="card blue">
-          <h3>AI のレビュー役が、AI 自身の「勝手な約束」を見つけた</h3>
-          <p>利用者は「バックアップは本番でも取らない」と選んだのに、AI が「本番前に必ず決め直す」という条件を書いていた。レビュー役が指摘して取り下げた。</p>
+          <h3>AI の「勝手な約束」を、別の AI が発見</h3>
+          <p>本番もバックアップなしと選んだのに、AI が「本番前に決め直す」条件を追記 → 取り下げ</p>
         </div>
         <div class="card blue">
-          <h3>設計の「副作用」を見つけたレビュー</h3>
-          <p>「5 分ごとの死活確認」が、サーバーレスの立ち上がりの測定と、使わない間の費用の前提を崩す、と指摘された。</p>
+          <h3>設計の「副作用」を発見</h3>
+          <p>5 分ごとの死活確認が、立ち上がり測定と費用の前提を崩す</p>
         </div>
         <div class="card blue">
-          <h3>「数字のない回答」を、確認の質問に変える</h3>
-          <p>「可用性は、まずは動かすを優先」に対し、AI が判定できないと指摘して追加の確認を作った。</p>
+          <h3>数字のない回答 → 確認の質問に</h3>
+          <p>「まずは動かす」→ 判定できない → 追加の確認</p>
         </div>
         <div class="card blue">
-          <h3>反射で <code>rm *</code> を「常に許可」してしまった（笑）</h3>
-          <p>確認ダイアログが連続して出ると、慣れで押してしまう。作業を Git で管理して戻せるようにしておく大切さ。</p>
+          <h3>反射で <code>rm *</code> を always allow（笑）</h3>
+          <p>確認ダイアログに慣れる → Git で戻せる状態が大事</p>
+        </div>
+        <div class="card green">
+          <h3>翌日、前日の続きに戻れた</h3>
+          <p>状態がリポジトリに残る → 現在地を説明できる</p>
+        </div>
+        <div class="card green">
+          <h3>コードの前に、全部つながった</h3>
+          <p>何を・誰のため・どう分け・どの順で → ADR まで戻れる</p>
         </div>
       </div>
-      <div class="takeaway">AI は親切のつもりで、人の決定に条件を足すことがある。別の AI が「回答と成果物の食い違い」を検査すると、人の決定が守られる。</div>
-      <span class="no">8 / 14</span>
+      <span class="no">12 / 19</span>
     </section>
 
-    <!-- 9 インパクト：測れたこと -->
-    <section class="slide" id="s9">
+    <!-- 13 Kiroの感想 -->
+    <section class="slide" id="s13">
+      <div class="section-label">2. 2 日間の振り返り</div>
+      <h2>Kiro（AI）の感想</h2>
+      <div class="grid c3">
+        <div class="card accent"><h3>いちばん効いた</h3><p>動くモック<br />検収の質問</p></div>
+        <div class="card red"><h3>反省</h3><p>最初の要件は、依頼の字面に引っ張られた<br />チームが早く口を出してくれたので直せた</p></div>
+        <div class="card blue"><h3>まだ足りない</h3><p>質問を減らす工夫<br />（おすすめ、言い換え）</p></div>
+      </div>
+      <span class="no">13 / 19</span>
+    </section>
+
+    <!-- 14 インパクト：測れたこと -->
+    <section class="slide" id="s14">
       <div class="section-label">3. 2 日間で確認した開発へのインパクト</div>
       <h2>測れたこと（事実）</h2>
       <table>
-        <thead>
-          <tr><th style="width: 26%">観点</th><th>確認できたこと</th></tr>
-        </thead>
+        <thead><tr><th style="width: 24%">観点</th><th>確認できたこと</th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="tag fact">事実</span>範囲の広さ</td>
-            <td>1 行の依頼から、要件・ストーリー・画面・設計・契約・基盤設計・動くコード（約3,500行）・テスト 121 件まで、1 つの流れでそろった。</td>
-          </tr>
-          <tr>
-            <td><span class="tag fact">事実</span>手戻り</td>
-            <td>課題の取り違えに、<strong>要件の承認の前</strong>に気づけた。コードを書く前に直せたので、手戻りが小さかった。</td>
-          </tr>
-          <tr>
-            <td><span class="tag fact">事実</span>品質の確認</td>
-            <td>12 回のレビューで重大の指摘 38 件を、次の段階に進む前に直した。テストは 121 件すべて成功、型・lint・ビルドも成功。</td>
-          </tr>
-          <tr>
-            <td><span class="tag fact">事実</span>追跡できること</td>
-            <td>要件 → ストーリー → 業務ルール → コードのファイルが、ID でつながる。「なぜそうしたか」を ADR まで戻れる。</td>
-          </tr>
-          <tr>
-            <td><span class="tag fact">事実</span>再開できること</td>
-            <td>状態がリポジトリに残るので、翌日、前日の続きに戻れた。</td>
-          </tr>
+          <tr><td><span class="tag fact">事実</span>範囲</td><td>1 行 → 要件・画面・設計・契約・基盤・コード・テストまで一気通貫</td></tr>
+          <tr><td><span class="tag fact">事実</span>手戻り</td><td>課題の取り違えに<strong>承認の前</strong>に気づいた</td></tr>
+          <tr><td><span class="tag fact">事実</span>品質</td><td>レビュー 12 回、重大 38 件を次へ進む前に修正／テスト 121 件成功</td></tr>
+          <tr><td><span class="tag fact">事実</span>追跡</td><td>要件 → ストーリー → ルール → コードが ID でつながる</td></tr>
+          <tr><td><span class="tag fact">事実</span>再開</td><td>翌日、続きから戻れた</td></tr>
         </tbody>
       </table>
-      <span class="no">9 / 14</span>
+      <span class="no">14 / 19</span>
     </section>
 
-    <!-- 10 インパクト：測れていないこと -->
-    <section class="slide" id="s10">
+    <!-- 15 インパクト：未計測 -->
+    <section class="slide" id="s15">
       <div class="section-label">3. 2 日間で確認した開発へのインパクト</div>
-      <h2>まだ測れていないこと：開発スピードの N%</h2>
+      <h2>未計測：開発スピードの N%</h2>
       <div class="card red">
-        <p>
-          <strong>「開発スピードが N% 向上した」とは、言えません。</strong>比べる相手（従来のやり方での見積りや実績）の数字が、手元にないためです。数字を作らず、測り方を決めました。
-        </p>
+        <p><strong>「N% 向上」とは言えない。</strong>比べる相手（従来の見積り・実績）の数字がないため。</p>
       </div>
       <table style="margin-top: 1em">
-        <thead>
-          <tr><th>測りたいもの</th><th>今回の値</th><th>比べる相手</th></tr>
-        </thead>
+        <thead><tr><th>測りたいもの</th><th>今回</th><th>比べる相手</th></tr></thead>
         <tbody>
-          <tr><td><span class="tag todo">未計測</span>同じ範囲を従来のやり方で作る見積り</td><td><span class="fill">___ 人日</span></td><td>今回の作業時間：<span class="fill">___ 人時</span></td></tr>
-          <tr><td><span class="tag todo">未計測</span>要件が固まるまでの時間</td><td><span class="fill">___</span></td><td>従来の実績：<span class="fill">___</span></td></tr>
-          <tr><td><span class="tag todo">未計測</span>画面の実機確認での手戻り件数</td><td><span class="fill">___ 件</span></td><td>—</td></tr>
-          <tr><td><span class="tag todo">未計測</span>性能（候補の表示 2 秒以内など）</td><td><span class="fill">___</span></td><td>目標値は決めてある</td></tr>
-          <tr><td><span class="tag todo">未計測</span>「作る気持ちになれたか」（アプリの本来の目的）</td><td><span class="fill">___</span></td><td>1st バージョンを使ってから確かめる</td></tr>
+          <tr><td><span class="tag todo">未計測</span>同じ範囲の従来見積り</td><td><span class="fill">___ 人日</span></td><td>今回の作業時間 <span class="fill">___ 人時</span></td></tr>
+          <tr><td><span class="tag todo">未計測</span>要件が固まるまで</td><td><span class="fill">___</span></td><td>従来 <span class="fill">___</span></td></tr>
+          <tr><td><span class="tag todo">未計測</span>性能（2 秒以内 など）</td><td><span class="fill">___</span></td><td>目標は設定済み</td></tr>
+          <tr><td><span class="tag todo">未計測</span>「作る気持ちになれたか」</td><td><span class="fill">___</span></td><td>1st バージョンを使ってから</td></tr>
         </tbody>
       </table>
-      <p class="small">赤い破線の欄は、発表前にチームで埋める（埋められなければ「未計測」のまま話す）。</p>
-      <span class="no">10 / 14</span>
+      <p class="small">赤い破線の欄は、発表前に埋める。埋められなければ「未計測」のまま話す。</p>
+      <span class="no">15 / 19</span>
     </section>
 
-    <!-- 11 今後：他チームへ -->
-    <section class="slide" id="s11">
+    <!-- 16 今後：他チームへ -->
+    <section class="slide" id="s16">
       <div class="section-label">4. 今後の取り組み、展望、課題</div>
-      <h2>他のチームへ広げるには</h2>
+      <h2>他のチームへ</h2>
       <div class="grid c2">
-        <div class="card blue">
-          <h3><span class="tag idea">提案</span>パイロットを 1 つ決める</h3>
-          <p>既存のチームの小さな機能追加（brownfield）で試し、新規開発との違いを確かめる。</p>
-        </div>
-        <div class="card blue">
-          <h3><span class="tag idea">提案</span>導入の道具をそろえる</h3>
-          <p>専門用語の日本語の言い換え表、日本語の質問テンプレート、「おすすめ」を添える運用ルールを最初から渡す。</p>
-        </div>
-        <div class="card blue">
-          <h3><span class="tag idea">提案</span>手順の説明と道具の説明を分ける</h3>
-          <p>AI-DLC（進め方）と Kiro（道具の使い方）を、別々に教える。</p>
-        </div>
-        <div class="card blue">
-          <h3><span class="tag idea">提案</span>人の入れ替えを試す</h3>
-          <p>別の人の PC に clone して続きから再開できるか、ドライバーをフェーズごとに交代できるかを確かめる（今回は試せなかった）。</p>
-        </div>
+        <div class="card blue"><h3><span class="tag idea">提案</span>パイロット</h3><p>既存チームの小さな機能追加（brownfield）で試す</p></div>
+        <div class="card blue"><h3><span class="tag idea">提案</span>導入キット</h3><p>用語の言い換え表／日本語の質問テンプレ／「おすすめ」の運用</p></div>
+        <div class="card blue"><h3><span class="tag idea">提案</span>教え方を分ける</h3><p>AI-DLC（進め方）と Kiro（道具）</p></div>
+        <div class="card blue"><h3><span class="tag idea">提案</span>人の入れ替えを試す</h3><p>別 PC で clone → 続きから再開／ドライバー交代（今回は未実施）</p></div>
       </div>
-      <span class="no">11 / 14</span>
+      <span class="no">16 / 19</span>
     </section>
 
-    <!-- 12 今後：ルールとプロセス -->
-    <section class="slide" id="s12">
+    <!-- 17 今後：ルール／受発注 -->
+    <section class="slide" id="s17">
       <div class="section-label">4. 今後の取り組み、展望、課題</div>
-      <h2>社内ルール、受発注のプロセスで考えたいこと</h2>
-      <p class="small">以下は、2 日間の経験から出した<strong>論点の提案</strong>です。決まったことではありません。</p>
+      <h2>社内ルール・受発注で考えたいこと</h2>
+      <p class="small">2 日間の経験から出した<strong>論点の提案</strong>（決定事項ではない）</p>
       <div class="grid c2">
         <div class="card">
           <h3>受発注</h3>
           <ul>
-            <li>要件、ADR、トレーサビリティ表、レビュー記録を、<strong>検収の成果物</strong>にできるか</li>
-            <li>見積りに「質問に答える時間」を入れるか（今回は疲れる作業だった）</li>
-            <li>発注側の承認の関門（要件、計画、骨組み）を、契約のどこに置くか</li>
+            <li>要件・ADR・追跡表・レビュー記録を<strong>検収物</strong>に</li>
+            <li>見積りに「質問に答える時間」</li>
+            <li>承認の関門を契約のどこに置くか</li>
           </ul>
         </div>
         <div class="card">
           <h3>社内ルール</h3>
           <ul>
-            <li>AI のコマンド実行の許可の扱い（削除系は「常に許可」にしない）</li>
-            <li>AI のレビューは助言であり、止める権限は人にある、という位置づけ</li>
-            <li>個人情報・秘密情報をログや文書に残さない基準</li>
-            <li>AI が作った成果物の責任者（承認した人）の明確化</li>
+            <li>AI のコマンド許可（削除系は「常に許可」にしない）</li>
+            <li>AI レビューは助言／止める権限は人</li>
+            <li>個人情報・秘密をログに残さない</li>
+            <li>成果物の責任者＝承認した人</li>
           </ul>
         </div>
       </div>
-      <span class="no">12 / 14</span>
+      <span class="no">17 / 19</span>
     </section>
 
-    <!-- 13 課題 -->
-    <section class="slide" id="s13">
+    <!-- 18 課題 -->
+    <section class="slide" id="s18">
       <div class="section-label">4. 今後の取り組み、展望、課題</div>
-      <h2>課題（正直に）</h2>
+      <h2>課題</h2>
       <div class="grid c3">
         <div class="card red">
-          <h3>1st バージョンの確認</h3>
-          <ul>
-            <li>ブラウザでの目視確認が未実施</li>
-            <li>性能・対応ブラウザが未測定</li>
-            <li>アプリの本来の目的（作る気持ちになれたか）は、使ってから</li>
-          </ul>
+          <h3>1st バージョン</h3>
+          <ul><li>目視確認 未実施</li><li>性能・ブラウザ 未測定</li><li>「作る気持ち」は使ってから</li></ul>
         </div>
         <div class="card red">
           <h3>基盤・運用</h3>
-          <ul>
-            <li>AWS の構成コードは骨組み（TODO あり）。実際には作っていない</li>
-            <li>バックアップなし（本番でも、承知のうえで選択）</li>
-            <li>デプロイの流れは未実装</li>
-          </ul>
+          <ul><li>AWS は骨組み（TODO あり）</li><li>バックアップなし（承知のうえ）</li><li>デプロイの流れ 未実装</li></ul>
         </div>
         <div class="card red">
           <h3>進め方</h3>
-          <ul>
-            <li>疲れる。質問への回答に訓練が要る</li>
-            <li>「見なし OK」で、分からないまま決まるリスク</li>
-            <li>直したあとの再レビューは、省いた箇所がある</li>
-            <li>残りの 6 ユニットは未着手</li>
-          </ul>
+          <ul><li>疲れる／訓練が要る</li><li>「見なし OK」のリスク</li><li>再レビュー一部省略</li><li>残り 6 ユニット 未着手</li></ul>
         </div>
       </div>
-      <span class="no">13 / 14</span>
+      <span class="no">18 / 19</span>
     </section>
 
-    <!-- 14 まとめ -->
-    <section class="slide cover" id="s14">
+    <!-- 19 まとめ -->
+    <section class="slide cover" id="s19">
       <div class="section-label">まとめ</div>
-      <h2>1 行の依頼から、設計と動くアプリまで。<br />速さより先に、「手戻りの小ささ」と「追跡できること」が見えた</h2>
+      <h2>速さより先に見えたもの：<br />手戻りの小ささ・追跡できること</h2>
       <div class="grid c3" style="margin-top: 0.8em">
-        <div class="card green"><h3>効いた</h3><p>承認の関門、動くモック、検収の質問、別の AI のレビュー</p></div>
-        <div class="card red"><h3>大変だった</h3><p>疲れる、専門用語、分からないまま決まるリスク</p></div>
-        <div class="card blue"><h3>次にやる</h3><p>1st バージョンを触って評価、速度の測り方を決める、他チームでパイロット</p></div>
+        <div class="card green"><h3>効いた</h3><p>承認の関門／動くモック／検収の質問／別 AI のレビュー</p></div>
+        <div class="card red"><h3>大変</h3><p>疲れる／言葉の壁／分からないまま決まる</p></div>
+        <div class="card blue"><h3>次</h3><p>触って評価／速度の測り方／他チームで試す</p></div>
       </div>
       <p class="lead">ありがとうございました</p>
-      <span class="no">14 / 14</span>
+      <span class="no">19 / 19</span>
     </section>
   </body>
 </html>
