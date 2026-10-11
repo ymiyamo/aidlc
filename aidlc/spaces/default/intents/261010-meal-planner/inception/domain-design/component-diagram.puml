@@ -1,0 +1,123 @@
+@startuml component-diagram
+' UML コンポーネント図（Component Diagram）：回答 Q1〜Q6 を反映した 9 コンポーネント版
+'   Q1 A（8 つ）＋Q4 B（好き嫌いを独立）＝ 9 つ
+'   Q2 A 選んだものは Suggestion／Q3 A ImageGen は独立／Q5 A 判定は Suggestion／Q6 A 最新の感想は問い合わせ
+' 読み方：
+'   ○ ── コンポーネント   コンポーネントが「提供する」インターフェース（ロリポップ）
+'   A ..> ○              A がそのインターフェースを「使う」
+'   <<event>>            出来事を受ける（出す側は、受ける側を知らない）
+' 前の版の読みにくさへの対応：データベースへの矢印を外し、linetype ortho をやめ、矢印の文字を短くした
+' 日本語が文字化けする場合は、次の行のフォント名を、手元の日本語フォントに変える
+'skinparam defaultFontName "Noto Sans CJK JP"
+
+title 献立ストレス緩和アプリ：コンポーネント図
+
+skinparam componentStyle uml2
+skinparam shadowing false
+skinparam nodesep 50
+skinparam ranksep 70
+skinparam component {
+  BackgroundColor #FDE7C8
+  BorderColor #B45309
+}
+skinparam interface {
+  BackgroundColor White
+  BorderColor #6B5B4E
+}
+skinparam note {
+  BackgroundColor #FFF9E6
+  BorderColor #B45309
+}
+
+' ---------- 利用者の入口 ----------
+component "画面 S1〜S11" as SCREENS #E6F4EA
+
+' ---------- 中心：候補・献立・買い物 ----------
+package "つくる流れ" {
+  component "候補の提案\nSuggestion" as SUG
+  component "献立\nMealPlan" as PLAN
+  component "買い物リスト\nShoppingList" as SHOP
+}
+
+' ---------- 土台：料理・記録・好き嫌い ----------
+package "データの土台" {
+  component "料理\nDish" as DISH
+  component "作った記録\nCookLog" as LOG
+  component "好き嫌い\nTaste" as TASTE
+  component "画像づくり\nImageGen" as IMG
+}
+
+' ---------- 人まわり ----------
+package "人とグループ" {
+  component "家族グループ\nHousehold" as HOUSE
+  component "アカウント\nAccount" as ACC
+}
+
+' ---------- 外部の依存 ----------
+cloud "生成 AI\nサービス" as AI
+cloud "メール送信\nサービス" as MAIL
+database "データベース" as DB
+
+' ---------- 提供インターフェース ----------
+interface "料理の参照" as I_DISH
+interface "最新の感想の参照" as I_LOG
+interface "除外食材の参照" as I_TASTE
+interface "候補の判定・\n選んだもの" as I_SUG
+interface "献立の参照" as I_PLAN
+interface "画像づくりの依頼" as I_IMG
+
+DISH -- I_DISH
+LOG -- I_LOG
+TASTE -- I_TASTE
+SUG -- I_SUG
+PLAN -- I_PLAN
+IMG -- I_IMG
+
+' ---------- 使う関係（A が B を頼る） ----------
+SCREENS ..> SUG
+SCREENS ..> PLAN
+SCREENS ..> SHOP
+SCREENS ..> DISH
+SCREENS ..> LOG
+SCREENS ..> TASTE
+SCREENS ..> HOUSE
+SCREENS ..> ACC
+
+SUG ..> I_DISH : 候補の元
+SUG ..> I_TASTE : 外す食材
+SUG ..> I_LOG : 最新の感想
+PLAN ..> I_SUG : 判定を使う
+PLAN ..> I_DISH : 料理
+SHOP ..> I_SUG : 選んだもの
+SHOP ..> I_PLAN : 献立の材料
+SHOP ..> I_DISH : 材料
+LOG ..> I_DISH : 料理の確認
+DISH ..> I_IMG : 画像を頼む・取りに行く・消す\n<<async>>
+
+' ---------- 出来事（イベント）：受ける側が出す側に依存 ----------
+HOUSE ..> ACC : <<event>>\nアカウント削除
+TASTE ..> HOUSE : <<event>>\nメンバーが抜けた\nグループが削除された
+DISH ..> HOUSE : <<event>>\nグループが作られた\nグループが削除された
+LOG ..> HOUSE : <<event>>\nグループが削除された
+SUG ..> HOUSE : <<event>>\nグループが削除された
+PLAN ..> HOUSE : <<event>>\nグループが削除された
+SHOP ..> HOUSE : <<event>>\nグループが削除された
+
+' ---------- 外部サービス ----------
+IMG ..> AI : 画像を作る
+ACC ..> MAIL : 再設定メール
+
+note bottom of DB
+  全コンポーネントがデータベースを使う（図では線を省略）。
+  テーブルの持ち主は 1 つのコンポーネントだけで、
+  他のコンポーネントのテーブルは直接読まない。
+end note
+
+legend right
+  点線矢印：「A が B を頼る」。矢印は循環しない（一方向）。
+  ○：コンポーネントが提供するインターフェース。
+  グループの所属確認は、リクエストの入口でまとめて行う（ADR-005）。
+  デプロイの分け方は、次の Units Generation で決める。
+end legend
+
+@enduml

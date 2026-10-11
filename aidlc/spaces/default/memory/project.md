@@ -72,3 +72,4 @@
 
 <!-- Project-specific corrections from human feedback. -->
 <!-- Format: NEVER/ALWAYS [behavior] (learned [date]) -->
+- ALWAYS 設計の質問には、専門用語に日本語の説明と身近なたとえを添え、おすすめの案を示す。利用者は DDD などの専門知識が少なく、多くの項目を「おすすめでよい（見なし OK）」と答えるため。 (learned 2026-10-11) <!-- cid:261010-meal-planner:domain-design:4fe4deb6bd3724814f383451883990161acaaf57ea8cf07970e9ca1e4a68ba04 -->
