@@ -61,6 +61,8 @@
 
 
 
+- **Construction Verification Command**: npm run typecheck && npm run lint && npm run test:unit
+
 ## Phase Progress
 <!-- Status values: Pending, Active, Verified, Skipped -->
 
