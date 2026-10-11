@@ -1,0 +1,76 @@
+{
+  "stage": "code-generation",
+  "unit": "skeleton",
+  "version": 1,
+  "writes": [
+    {
+      "path": "src/"
+    },
+    {
+      "path": "db/migrations/"
+    },
+    {
+      "path": "data/"
+    },
+    {
+      "path": "scripts/"
+    },
+    {
+      "path": "infra/bin/"
+    },
+    {
+      "path": "infra/lib/"
+    },
+    {
+      "path": ".github/workflows/"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "package-lock.json"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "vitest.config.ts"
+    },
+    {
+      "path": ".prettierrc.json"
+    },
+    {
+      "path": ".prettierignore"
+    },
+    {
+      "path": ".env.example"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": "docker-compose.yml"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "infra/package.json"
+    },
+    {
+      "path": "infra/package-lock.json"
+    },
+    {
+      "path": "infra/cdk.json"
+    },
+    {
+      "path": "infra/tsconfig.json"
+    }
+  ]
+}

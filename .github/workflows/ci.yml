@@ -1,0 +1,50 @@
+# プルリクエストの確認用の流れ（整形、lint、型、テスト、ビルド、構成コードの合成）。
+# デプロイは書かない（デプロイは別途、利用者の承認後に追加する）。
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: 整形の確認
+        run: npm run format:check
+      - name: lint
+        run: npm run lint
+      - name: 型の確認
+        run: npm run typecheck
+      - name: テスト（カバレッジの測定つき）
+        run: npm run test:coverage
+      - name: ビルド
+        run: npm run build
+
+  infra:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: infra/package-lock.json
+      - run: npm ci
+      - name: 型の確認
+        run: npm run typecheck
+      - name: 構成コードの合成（AWS には接続しない）
+        run: npx cdk synth --quiet --no-version-reporting --no-notices

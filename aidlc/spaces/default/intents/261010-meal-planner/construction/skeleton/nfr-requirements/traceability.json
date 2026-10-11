@@ -1,0 +1,15 @@
+{
+  "stage": "nfr-requirements",
+  "unit": "skeleton",
+  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4", "NFR5", "NFR6", "NFR7"],
+  "coverage": [
+    { "id": "NFR1", "status": "OK", "target": "U1-NFR1.1, U1-NFR1.2, U1-NFR1.3, U1-NFR1.4, U1-NFR1.5, U1-NFR1.6" },
+    { "id": "NFR2", "status": "OK", "target": "U1-NFR2.1, U1-NFR2.2, U1-NFR2.3, U1-NFR2.4, U1-NFR2.5 (上流 NFR2.2 の週の献立は U4、NFR2.3 の買い物リストは U3 が担当。U1 の対象は上流 NFR2.1 の候補表示)" },
+    { "id": "NFR3", "status": "OK", "target": "U1-NFR3.1, U1-NFR3.2, U1-NFR3.3, U1-NFR3.4, U1-NFR3.5, U1-NFR3.6, U1-NFR3.7, U1-NFR3.8, U1-NFR3.9, U1-NFR3.10, U1-NFR3.11, U1-NFR3.12, U1-NFR3.13, U1-NFR3.14, U1-NFR3.15 (上流 NFR3.1 の「5 回失敗で 15 分停止」は U7 が担当、上流 NFR3.6 の画像は U6 が担当。U1 の約束は U1-NFR3.4)" },
+    { "id": "NFR4", "status": "OK", "target": "U1-NFR4.1, U1-NFR4.2, U1-NFR4.3, U1-NFR4.4, U1-NFR4.5, U1-NFR4.6, U1-NFR4.7, U1-NFR4.8, U1-NFR4.11, U1-NFR4.12, U1-NFR4.13, U1-NFR4.14, U1-NFR4.15, U1-NFR4.16, U1-NFR4.17, U1-NFR4.18, U1-NFR4.19 (上流 NFR4.2 のバックアップ方針は「取らない」と決めた。F1 B により、RISK-1、RISK-2 として受け入れた)" },
+    { "id": "NFR5", "status": "OK", "target": "U1-NFR5.1, U1-NFR5.2, U1-NFR5.3" },
+    { "id": "NFR6", "status": "OK", "target": "U1-NFR6.1, U1-NFR6.2, U1-NFR6.3, U1-NFR6.4" },
+    { "id": "NFR7", "status": "OK", "target": "U1-NFR7.1, U1-NFR7.2, U1-NFR7.3, U1-NFR7.4, U1-NFR7.5, U1-NFR7.6, U1-NFR7.7, U1-NFR7.8, U1-NFR7.9, U1-NFR7.10" }
+  ],
+  "id_mapping_note": "派生 ID は上流の NFR ID と番号が重なるため、U1- を付けた。上流 ID との対応：U1-NFR1.x→NFR1（NFR1.1〜NFR1.5 を細かくしたもの）、U1-NFR2.1〜2.5→NFR2.1、U1-NFR3.x→NFR3、U1-NFR4.x→NFR4（NFR4.1 とNFR4.2）、U1-NFR5.x→NFR5、U1-NFR6.x→NFR6、U1-NFR7.x→NFR7（NFR7.1 の自動デプロイは U1-NFR7.10、NFR7.2 の規模は U1-NFR7.1〜7.3）"
+}

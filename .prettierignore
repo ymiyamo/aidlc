@@ -1,0 +1,12 @@
+.next
+node_modules
+.data
+coverage
+aidlc
+.kiro
+infra/cdk.out
+infra/node_modules
+package-lock.json
+infra/package-lock.json
+AGENTS.md
+neta.md

@@ -1,0 +1,119 @@
+# 献立の候補アプリ（U1 最小の通し版）
+
+気になった料理の URL を保存して、買い物前に家族でスワイプして選ぶ、スマートフォン向けの Web アプリです。
+これは「最小の通し版（walking skeleton）」で、次の流れが端から端まで動きます。
+
+登録 → 家族グループの作成（定番の料理 30 件が最初から入る）→ 買い物前の候補をスワイプ／ボタンで見る → 「＋」で料理を保存 → お気に入り・編集・削除 → 「選んだもの」
+
+技術：TypeScript、Node.js、Next.js（App Router）、PostgreSQL 互換、テストは Vitest、整形と lint は Prettier と ESLint。
+
+## ローカルで動かす（Docker も外部 DB も要りません）
+
+必要なもの：Node.js 20 以上（長期サポート版の 22 を推奨）と npm。
+
+```bash
+npm install
+npm run dev
+```
+
+ブラウザで http://localhost:3000 を開きます（スマートフォンの縦向きの幅、360px くらいで見ると想定どおりの見た目です）。
+
+1. 「新しく登録」でメールアドレスとパスワード（8 文字以上）を入れて登録します。メールは送りません。
+2. 家族のグループ名（空なら「わが家」）を入れて作成します。定番の料理 30 件が入ります。
+3. ホームの「買い物前」を押します。カードを右にスワイプ（またはボタン「これにする」）で選び、左にスワイプ（またはボタン「パス」）で次へ進みます。
+4. 右下の「＋」から、URL と料理名だけで保存できます。詳しい情報（調理時間・手間・タグ・材料・メモ）は任意です。
+5. 「保存」タブで一覧、お気に入り、編集、削除ができます。「選んだもの」タブで、選んだ料理を確認して外せます。
+
+データは `.data/` に保存され、`npm run dev` を止めても残ります。
+
+### データのリセット
+
+```bash
+npm run db:reset   # .data/ を削除します（登録したアカウントも料理も消えます）
+```
+
+手で `.data/` を削除しても同じです。
+
+## コンテナの PostgreSQL を使う場合（任意）
+
+`DATABASE_URL` を設定すると、組み込みの DB の代わりに PostgreSQL に接続します。
+
+```bash
+docker compose up -d                     # PostgreSQL 16 を起動（ローカル確認用の固定の値です）
+cp .env.example .env.local               # DATABASE_URL の行のコメントを外す
+npm run dev
+```
+
+`.env.local` の例：`DATABASE_URL=postgres://mealplanner:mealplanner@localhost:5432/mealplanner`
+
+移行（`db/migrations/*.sql`）は起動時に自動で適用されます。手で適用するときは `npm run db:migrate` を使います。
+
+## テストと品質の確認
+
+```bash
+npm test                      # すべてのテスト
+npm run test:unit             # このユニットのテスト（db / repo / domain / api / ui）
+npm run test:coverage         # カバレッジつき
+npm run lint                  # ESLint
+npm run typecheck             # 型の確認
+npm run format:check          # Prettier の確認（整形は npm run format）
+npm run build                 # 本番ビルド
+```
+
+層ごとに実行するとき：
+
+```bash
+npx vitest run src/db/__tests__/schema.test.ts   # データベースの制約
+npx vitest run src/repo/__tests__                # データアクセス（グループの範囲）
+npx vitest run src/domain/__tests__              # 業務ルール
+npx vitest run src/api/__tests__                 # API（CSRF、認可、ログの伏せ字、通しの流れ）
+npx vitest run src/ui/__tests__                  # 画面の動作
+```
+
+テストは外部の準備なしで動きます（テストファイルごとに空のメモリ上の PostgreSQL を作って移行を適用します）。
+
+## 設定（環境変数）
+
+`.env.example` を参照してください。実際の値は `.env.local` に書き、リポジトリには入れません。
+
+| 名前            | 意味                                                                        |
+| --------------- | --------------------------------------------------------------------------- |
+| `DATABASE_URL`  | 空なら組み込みの DB（`.data/`）。設定すると PostgreSQL に接続               |
+| `COOKIE_SECURE` | Cookie に Secure を付けるか。未指定は、本番（`NODE_ENV=production`）で true |
+| `APP_ORIGIN`    | Origin の照合に使うこのアプリの URL（プロキシの後ろで動かすとき）           |
+| `BCRYPT_COST`   | パスワード変換のコスト（既定 10）                                           |
+
+注意：`npm run build` のあと `npm start` で動かすと `NODE_ENV=production` になり、Cookie に Secure が付きます。
+http://localhost で確認するときは `COOKIE_SECURE=false` を付けてください（`npm run dev` は不要）。
+本番モードで試すときは `APP_ORIGIN=http://localhost:3000` を設定する（未設定だと、本番では状態を変える操作がすべて拒否されます）。
+
+## ディレクトリ
+
+```
+src/app/        画面（Next.js App Router）と /api の入口、/healthz
+src/api/        API の入口（認証、グループの決定、CSRF、構造化ログ）
+src/domain/     業務ルール（BR1〜BR4）
+src/repo/       データアクセス（すべての問い合わせが householdId 必須）
+src/db/         DB の接続（pg / PGlite の切り替え）と移行
+src/ui/         画面の部品
+db/migrations/  SQL の移行
+data/           初期データ（seed-dishes.json、30 件。差し替えれば内容を入れ替えられる）
+infra/          AWS CDK の構成コード（合成のみ。下記）
+```
+
+## AWS の構成コード（infra/）
+
+`infra/` は AWS CDK（TypeScript）の骨組みです。**実際の作成（`cdk deploy`）は行いません。** 費用と取り消しにくさがあるため、利用者の別の承認を得てから行います。
+
+```bash
+cd infra
+npm install
+npx cdk synth --quiet     # 構成を組み立てて検証するだけ。AWS には接続しません
+```
+
+未完成の部分（アプリ本体の配置、検証環境の入口の制限、死活確認など）は、コード内の TODO に理由を書いています。
+
+## 初期データ
+
+`data/seed-dishes.json`（30 件、ダミーの URL）が、グループ作成のたびにそのグループの料理として複製されます。
+差し替えるときは、30 件・`seedKey` の重複なし・各行が URL／文字数／タグ（5 個以内・20 文字以内）の決まりを満たす形にしてください。満たさないと「初期データを準備中です」と表示され、異常はログに記録されます。

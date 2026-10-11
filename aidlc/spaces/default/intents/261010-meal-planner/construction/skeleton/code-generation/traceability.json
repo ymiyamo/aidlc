@@ -1,0 +1,770 @@
+{
+  "stage": "code-generation",
+  "unit": "skeleton",
+  "upstream_ids": [
+    "AC1.1.1",
+    "AC1.1.2",
+    "AC1.1.3",
+    "AC1.2.1",
+    "AC1.2.2",
+    "AC1.3.1",
+    "AC1.3.2",
+    "AC1.3.3",
+    "AC1.3.4",
+    "AC1.3.5",
+    "AC1.4.1",
+    "AC1.4.2",
+    "AC2.1.1",
+    "AC2.1.2",
+    "AC2.1.3",
+    "AC2.1.4",
+    "AC2.1.5",
+    "AC2.1.6",
+    "AC2.4.1",
+    "AC2.4.2",
+    "AC6.1.1",
+    "AC7.1.1",
+    "AC7.1.2",
+    "AC7.1.3",
+    "AC7.2.1",
+    "AC7.2.2",
+    "AC7.2.3",
+    "AC9.1.1",
+    "AC9.1.2",
+    "AC9.1.3",
+    "AC9.1.4",
+    "AC9.1.5",
+    "AC9.1.6",
+    "AC9.1.7",
+    "AC9.1.8",
+    "NFR1.1",
+    "NFR1.2",
+    "NFR1.3",
+    "NFR1.4",
+    "NFR1.5",
+    "NFR1.6",
+    "NFR2.1",
+    "NFR2.2",
+    "NFR2.3",
+    "NFR2.4",
+    "NFR2.5",
+    "NFR3.1",
+    "NFR3.2",
+    "NFR3.3",
+    "NFR3.4",
+    "NFR3.5",
+    "NFR3.6",
+    "NFR3.7",
+    "NFR3.8",
+    "NFR3.9",
+    "NFR3.10",
+    "NFR3.11",
+    "NFR3.12",
+    "NFR3.13",
+    "NFR3.14",
+    "NFR3.15",
+    "NFR4.1",
+    "NFR4.2",
+    "NFR4.3",
+    "NFR4.4",
+    "NFR4.5",
+    "NFR4.6",
+    "NFR4.7",
+    "NFR4.8",
+    "NFR4.13",
+    "NFR4.14",
+    "NFR4.15",
+    "NFR5.1",
+    "NFR5.2",
+    "NFR5.3",
+    "NFR6.1",
+    "NFR6.2",
+    "NFR6.3",
+    "NFR6.4",
+    "NFR7.1",
+    "NFR7.2",
+    "NFR7.3",
+    "NFR7.4",
+    "NFR7.5",
+    "NFR7.6",
+    "NFR7.7",
+    "NFR7.8",
+    "NFR7.9",
+    "NFR7.10",
+    "BR1.1",
+    "BR1.2",
+    "BR1.3",
+    "BR1.4",
+    "BR1.5",
+    "BR1.6",
+    "BR2.1",
+    "BR2.2",
+    "BR2.3",
+    "BR2.4",
+    "BR2.5",
+    "BR2.6",
+    "BR3.1",
+    "BR3.2",
+    "BR3.3",
+    "BR3.4",
+    "BR3.5",
+    "BR3.6",
+    "BR3.7",
+    "BR3.8",
+    "BR3.9",
+    "BR3.10",
+    "BR3.11",
+    "BR3.12",
+    "BR3.13",
+    "BR3.14",
+    "BR3.15",
+    "BR4.1",
+    "BR4.2",
+    "BR4.3",
+    "BR4.4",
+    "BR4.5",
+    "BR4.6",
+    "BR4.7",
+    "BR4.8",
+    "BR4.9",
+    "BR4.10",
+    "BR4.11"
+  ],
+  "coverage": [
+    {
+      "id": "AC1.1.1",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "AC1.1.2",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "AC1.1.3",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "AC1.2.1",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "AC1.2.2",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "AC1.3.1",
+      "status": "OK",
+      "target": "src/ui/DishForm.tsx"
+    },
+    {
+      "id": "AC1.3.2",
+      "status": "OK",
+      "target": "src/ui/DishForm.tsx"
+    },
+    {
+      "id": "AC1.3.3",
+      "status": "OK",
+      "target": "src/app/dishes/new/page.tsx"
+    },
+    {
+      "id": "AC1.3.4",
+      "status": "OK",
+      "target": "src/app/dishes/new/page.tsx"
+    },
+    {
+      "id": "AC1.3.5",
+      "status": "OK",
+      "target": "src/app/dishes/new/page.tsx"
+    },
+    {
+      "id": "AC1.4.1",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "AC1.4.2",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "AC2.1.1",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC2.1.2",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC2.1.3",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC2.1.4",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC2.1.5",
+      "status": "OK",
+      "target": "src/app/page.tsx"
+    },
+    {
+      "id": "AC2.1.6",
+      "status": "OK",
+      "target": "src/ui/SuggestionDeck.tsx"
+    },
+    {
+      "id": "AC2.4.1",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC2.4.2",
+      "status": "Deferred",
+      "target": "functional-design (unit U2 taste-filter): 絞り込みの結果が 0 件のときの案内は U2 の担当"
+    },
+    {
+      "id": "AC6.1.1",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "AC7.1.1",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "AC7.1.2",
+      "status": "Deferred",
+      "target": "functional-design (unit U7 account-admin): パスワードの再設定は U7 の担当"
+    },
+    {
+      "id": "AC7.1.3",
+      "status": "Deferred",
+      "target": "functional-design (unit U7 account-admin): ログイン失敗の制限は U7 の担当"
+    },
+    {
+      "id": "AC7.2.1",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "AC7.2.2",
+      "status": "Deferred",
+      "target": "functional-design (unit U7 account-admin): 招待リンクでの参加は U7 の担当"
+    },
+    {
+      "id": "AC7.2.3",
+      "status": "Deferred",
+      "target": "functional-design (unit U7 account-admin): 招待リンクの期限切れは U7 の担当"
+    },
+    {
+      "id": "AC9.1.1",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "AC9.1.2",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "AC9.1.3",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "AC9.1.4",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "AC9.1.5",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "AC9.1.6",
+      "status": "Deferred",
+      "target": "functional-design (unit U4 meal-plan): 1 週間の献立の提案は U4 の担当"
+    },
+    {
+      "id": "AC9.1.7",
+      "status": "Deferred",
+      "target": "functional-design (unit U6 images): 初期データの画像と「AI が作ったイメージ」の印は U6 の担当"
+    },
+    {
+      "id": "AC9.1.8",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "NFR1.1",
+      "status": "OK",
+      "target": "src/app/globals.css"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "OK",
+      "target": "src/app/page.tsx"
+    },
+    {
+      "id": "NFR1.3",
+      "status": "OK",
+      "target": "src/ui/DishForm.tsx"
+    },
+    {
+      "id": "NFR1.4",
+      "status": "OK",
+      "target": "src/app/globals.css"
+    },
+    {
+      "id": "NFR1.5",
+      "status": "OK",
+      "target": "src/ui/SuggestionDeck.tsx"
+    },
+    {
+      "id": "NFR1.6",
+      "status": "Deferred",
+      "target": "対応ブラウザの実機確認は未実施。Build and Testで確認する"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "Deferred",
+      "target": "応答時間の測定は未実施。Build and Testで測る"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "Deferred",
+      "target": "最初の候補の表示時間の測定は未実施。Build and Testで測る"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "Deferred",
+      "target": "応答時間の測定は未実施。Build and Testで測る"
+    },
+    {
+      "id": "NFR2.4",
+      "status": "Deferred",
+      "target": "ログイン・登録の応答時間の測定は未実施。Build and Testで測る"
+    },
+    {
+      "id": "NFR2.5",
+      "status": "Deferred",
+      "target": "立ち上がりの遅れは AWS に作成したあとにしか測れない。作成後の検証（Build and Test）で測る"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "NFR3.2",
+      "status": "OK",
+      "target": "src/api/http.ts"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "NFR3.4",
+      "status": "Deferred",
+      "target": "検証環境の Basic 認証と、API の直接アクセスの封じは infra/lib/meal-planner-stack.ts の TODO。AWS に作る前の承認までに完成させる（Build and Testの前に報告）"
+    },
+    {
+      "id": "NFR3.5",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "NFR3.6",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "NFR3.7",
+      "status": "OK",
+      "target": "src/repo/dishes.ts"
+    },
+    {
+      "id": "NFR3.8",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "NFR3.9",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "NFR3.10",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "NFR3.11",
+      "status": "OK",
+      "target": "src/api/csrf.ts"
+    },
+    {
+      "id": "NFR3.12",
+      "status": "Deferred",
+      "target": "HSTS とセキュリティヘッダーは infra の TODO。AWS に作る前の承認までに完成させる（Build and Test）"
+    },
+    {
+      "id": "NFR3.13",
+      "status": "Deferred",
+      "target": "アプリは現在 DATABASE_URL を直接読む。Secrets Manager から組み立てる処理は TODO。AWS に作る前の承認までに完成させる（Build and Test）"
+    },
+    {
+      "id": "NFR3.14",
+      "status": "OK",
+      "target": "src/lib/logger.ts"
+    },
+    {
+      "id": "NFR3.15",
+      "status": "OK",
+      "target": "data/seed-dishes.json"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": "src/domain/household.ts"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "N/A",
+      "target": "バックアップは取らない方針（F1 B）。実装するものはない"
+    },
+    {
+      "id": "NFR4.4",
+      "status": "N/A",
+      "target": "可用性の数値の目標を置かない方針（F1 B）。実装するものはない"
+    },
+    {
+      "id": "NFR4.5",
+      "status": "OK",
+      "target": "src/repo/dishes.ts"
+    },
+    {
+      "id": "NFR4.6",
+      "status": "N/A",
+      "target": "死活の通知は NFR4.14 / NFR4.15 に含まれる（infra の TODO）"
+    },
+    {
+      "id": "NFR4.7",
+      "status": "N/A",
+      "target": "任意の推奨で、実装するものはない"
+    },
+    {
+      "id": "NFR4.8",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "NFR4.13",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "NFR4.14",
+      "status": "Deferred",
+      "target": "死活のアラームは infra の TODO。AWS に作る前の承認までに完成させる（Build and Test）"
+    },
+    {
+      "id": "NFR4.15",
+      "status": "Deferred",
+      "target": "エラー率の割合アラームは infra の TODO。AWS に作る前の承認までに完成させる（Build and Test）"
+    },
+    {
+      "id": "NFR5.1",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "NFR5.2",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "NFR5.3",
+      "status": "N/A",
+      "target": "U1 は外部サービスを呼ばない。実装するものはない"
+    },
+    {
+      "id": "NFR6.1",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR6.2",
+      "status": "OK",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "id": "NFR6.3",
+      "status": "OK",
+      "target": "src/api/__tests__/api.test.ts"
+    },
+    {
+      "id": "NFR6.4",
+      "status": "OK",
+      "target": "src/api/__tests__/api.test.ts"
+    },
+    {
+      "id": "NFR7.1",
+      "status": "N/A",
+      "target": "規模の見立て。実装するものはない"
+    },
+    {
+      "id": "NFR7.2",
+      "status": "N/A",
+      "target": "規模の見立て（200 件以下）。実装するものはない"
+    },
+    {
+      "id": "NFR7.3",
+      "status": "N/A",
+      "target": "この版では超えたときの設計をしない（要件どおり）"
+    },
+    {
+      "id": "NFR7.4",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "NFR7.5",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "NFR7.6",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "NFR7.7",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "NFR7.8",
+      "status": "OK",
+      "target": "src/repo/sessions.ts"
+    },
+    {
+      "id": "NFR7.9",
+      "status": "Deferred",
+      "target": "接続の束ねは AWS に作成するときに確かめる（infra の TODO、Build and Test）"
+    },
+    {
+      "id": "NFR7.10",
+      "status": "Deferred",
+      "target": "ci.yml は確認（整形・lint・型・テスト）のみで、検証環境への自動デプロイと本番の手動承認の流れは未実装。AWS に作る前の承認までに追加する（Build and Test の前に報告）"
+    },
+    {
+      "id": "BR1.1",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "BR1.2",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "BR1.3",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "BR1.4",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "BR1.5",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "BR1.6",
+      "status": "OK",
+      "target": "src/domain/auth.ts"
+    },
+    {
+      "id": "BR2.1",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "BR2.2",
+      "status": "OK",
+      "target": "src/domain/household.ts"
+    },
+    {
+      "id": "BR2.3",
+      "status": "OK",
+      "target": "src/api/router.ts"
+    },
+    {
+      "id": "BR2.4",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR2.5",
+      "status": "OK",
+      "target": "src/domain/household.ts"
+    },
+    {
+      "id": "BR2.6",
+      "status": "OK",
+      "target": "src/domain/household.ts"
+    },
+    {
+      "id": "BR3.1",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR3.2",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "BR3.3",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "BR3.4",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "BR3.5",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "BR3.6",
+      "status": "OK",
+      "target": "src/domain/validation.ts"
+    },
+    {
+      "id": "BR3.7",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR3.8",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR3.9",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR3.10",
+      "status": "OK",
+      "target": "src/domain/dish.ts"
+    },
+    {
+      "id": "BR3.11",
+      "status": "OK",
+      "target": "src/repo/dishes.ts"
+    },
+    {
+      "id": "BR3.12",
+      "status": "OK",
+      "target": "src/domain/seed.ts"
+    },
+    {
+      "id": "BR3.13",
+      "status": "OK",
+      "target": "src/ui/DishForm.tsx"
+    },
+    {
+      "id": "BR3.14",
+      "status": "OK",
+      "target": "src/app/dishes/new/page.tsx"
+    },
+    {
+      "id": "BR3.15",
+      "status": "OK",
+      "target": "src/repo/dishes.ts"
+    },
+    {
+      "id": "BR4.1",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "BR4.2",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "BR4.3",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "BR4.4",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "BR4.5",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "BR4.6",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    },
+    {
+      "id": "BR4.7",
+      "status": "OK",
+      "target": "db/migrations/001_init.sql"
+    },
+    {
+      "id": "BR4.8",
+      "status": "OK",
+      "target": "src/ui/DishCard.tsx"
+    },
+    {
+      "id": "BR4.9",
+      "status": "OK",
+      "target": "src/ui/SuggestionDeck.tsx"
+    },
+    {
+      "id": "BR4.10",
+      "status": "OK",
+      "target": "src/app/page.tsx"
+    },
+    {
+      "id": "BR4.11",
+      "status": "OK",
+      "target": "src/domain/suggestion.ts"
+    }
+  ]
+}

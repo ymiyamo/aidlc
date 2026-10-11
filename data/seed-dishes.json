@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "note": "新しいグループに複製する初期データ 30 件。URL はダミー（example.com）。差し替えれば内容を入れ替えられる。",
+  "dishes": [
+    {
+      "seedKey": "nikujaga",
+      "name": "肉じゃが",
+      "cookTime": "over30",
+      "effort": "normal",
+      "moodTags": ["ほっとする", "和食", "定番"],
+      "ingredients": [
+        { "name": "牛こま切れ肉", "amount": "200", "unit": "g" },
+        { "name": "じゃがいも", "amount": "3", "unit": "個" },
+        { "name": "玉ねぎ", "amount": "1", "unit": "個" },
+        { "name": "にんじん", "amount": "1", "unit": "本" }
+      ],
+      "url": "https://example.com/seed/nikujaga"
+    },
+    {
+      "seedKey": "buta-shogayaki",
+      "name": "豚の生姜焼き",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["がっつり", "和食", "ごはんが進む"],
+      "ingredients": [
+        { "name": "豚ロース薄切り", "amount": "300", "unit": "g" },
+        { "name": "玉ねぎ", "amount": "1", "unit": "個" },
+        { "name": "しょうが", "amount": "1", "unit": "かけ" }
+      ],
+      "url": "https://example.com/seed/buta-shogayaki"
+    },
+    {
+      "seedKey": "saba-misoni",
+      "name": "さばの味噌煮",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["魚", "和食", "ほっとする"],
+      "ingredients": [
+        { "name": "さば", "amount": "4", "unit": "切れ" },
+        { "name": "味噌", "amount": "大さじ3", "unit": null },
+        { "name": "しょうが", "amount": "1", "unit": "かけ" }
+      ],
+      "url": "https://example.com/seed/saba-misoni"
+    },
+    {
+      "seedKey": "chicken-teriyaki",
+      "name": "鶏の照り焼き",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["がっつり", "和食", "お弁当にも"],
+      "ingredients": [
+        { "name": "鶏もも肉", "amount": "2", "unit": "枚" },
+        { "name": "しょうゆ", "amount": "大さじ2", "unit": null },
+        { "name": "みりん", "amount": "大さじ2", "unit": null }
+      ],
+      "url": "https://example.com/seed/chicken-teriyaki"
+    },
+    {
+      "seedKey": "oyakodon",
+      "name": "親子丼",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["一品で満足", "和食", "さっと"],
+      "ingredients": [
+        { "name": "鶏もも肉", "amount": "1", "unit": "枚" },
+        { "name": "卵", "amount": "4", "unit": "個" },
+        { "name": "玉ねぎ", "amount": "1", "unit": "個" }
+      ],
+      "url": "https://example.com/seed/oyakodon"
+    },
+    {
+      "seedKey": "tonjiru",
+      "name": "豚汁",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["ほっとする", "汁物", "体が温まる"],
+      "ingredients": [
+        { "name": "豚バラ肉", "amount": "150", "unit": "g" },
+        { "name": "大根", "amount": "5", "unit": "cm" },
+        { "name": "にんじん", "amount": "1", "unit": "本" },
+        { "name": "味噌", "amount": "大さじ3", "unit": null }
+      ],
+      "url": "https://example.com/seed/tonjiru"
+    },
+    {
+      "seedKey": "tamagoyaki",
+      "name": "だし巻き卵",
+      "cookTime": "within15",
+      "effort": "normal",
+      "moodTags": ["一品足したい", "和食"],
+      "ingredients": [
+        { "name": "卵", "amount": "4", "unit": "個" },
+        { "name": "だし汁", "amount": "80", "unit": "ml" }
+      ],
+      "url": "https://example.com/seed/tamagoyaki"
+    },
+    {
+      "seedKey": "yakizakana",
+      "name": "鮭の塩焼き",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["魚", "和食", "さっと"],
+      "ingredients": [
+        { "name": "生鮭", "amount": "4", "unit": "切れ" },
+        { "name": "塩", "amount": "少々", "unit": null }
+      ],
+      "url": "https://example.com/seed/yakizakana"
+    },
+    {
+      "seedKey": "kinpira",
+      "name": "きんぴらごぼう",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["作り置き", "和食", "副菜"],
+      "ingredients": [
+        { "name": "ごぼう", "amount": "1", "unit": "本" },
+        { "name": "にんじん", "amount": "1", "unit": "本" },
+        { "name": "ごま油", "amount": "大さじ1", "unit": null }
+      ],
+      "url": "https://example.com/seed/kinpira"
+    },
+    {
+      "seedKey": "hiyayakko-udon",
+      "name": "ぶっかけうどん",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["さっぱり", "麺", "暑い日に"],
+      "ingredients": [
+        { "name": "冷凍うどん", "amount": "2", "unit": "玉" },
+        { "name": "めんつゆ", "amount": "100", "unit": "ml" },
+        { "name": "ねぎ", "amount": "1", "unit": "本" }
+      ],
+      "url": "https://example.com/seed/hiyayakko-udon"
+    },
+    {
+      "seedKey": "karaage",
+      "name": "鶏の唐揚げ",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["がっつり", "揚げ物", "子どもに人気"],
+      "ingredients": [
+        { "name": "鶏もも肉", "amount": "2", "unit": "枚" },
+        { "name": "片栗粉", "amount": "大さじ4", "unit": null },
+        { "name": "しょうゆ", "amount": "大さじ2", "unit": null }
+      ],
+      "url": "https://example.com/seed/karaage"
+    },
+    {
+      "seedKey": "sukiyaki-don",
+      "name": "牛丼",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["一品で満足", "がっつり"],
+      "ingredients": [
+        { "name": "牛薄切り肉", "amount": "300", "unit": "g" },
+        { "name": "玉ねぎ", "amount": "2", "unit": "個" },
+        { "name": "しょうゆ", "amount": "大さじ3", "unit": null }
+      ],
+      "url": "https://example.com/seed/sukiyaki-don"
+    },
+    {
+      "seedKey": "curry-rice",
+      "name": "ポークカレー",
+      "cookTime": "over30",
+      "effort": "normal",
+      "moodTags": ["洋食", "子どもに人気", "一品で満足"],
+      "ingredients": [
+        { "name": "豚こま切れ肉", "amount": "300", "unit": "g" },
+        { "name": "じゃがいも", "amount": "2", "unit": "個" },
+        { "name": "玉ねぎ", "amount": "2", "unit": "個" },
+        { "name": "カレールウ", "amount": "1", "unit": "箱" }
+      ],
+      "url": "https://example.com/seed/curry-rice"
+    },
+    {
+      "seedKey": "hamburg",
+      "name": "ハンバーグ",
+      "cookTime": "over30",
+      "effort": "hard",
+      "moodTags": ["洋食", "がっつり", "子どもに人気"],
+      "ingredients": [
+        { "name": "合いびき肉", "amount": "400", "unit": "g" },
+        { "name": "玉ねぎ", "amount": "1", "unit": "個" },
+        { "name": "パン粉", "amount": "1/2", "unit": "カップ" },
+        { "name": "卵", "amount": "1", "unit": "個" }
+      ],
+      "url": "https://example.com/seed/hamburg"
+    },
+    {
+      "seedKey": "cream-stew",
+      "name": "クリームシチュー",
+      "cookTime": "over30",
+      "effort": "normal",
+      "moodTags": ["洋食", "体が温まる", "ほっとする"],
+      "ingredients": [
+        { "name": "鶏もも肉", "amount": "300", "unit": "g" },
+        { "name": "じゃがいも", "amount": "2", "unit": "個" },
+        { "name": "シチュールウ", "amount": "1", "unit": "箱" },
+        { "name": "牛乳", "amount": "400", "unit": "ml" }
+      ],
+      "url": "https://example.com/seed/cream-stew"
+    },
+    {
+      "seedKey": "omurice",
+      "name": "オムライス",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["洋食", "子どもに人気", "一品で満足"],
+      "ingredients": [
+        { "name": "ごはん", "amount": "2", "unit": "杯" },
+        { "name": "卵", "amount": "4", "unit": "個" },
+        { "name": "ケチャップ", "amount": "大さじ4", "unit": null }
+      ],
+      "url": "https://example.com/seed/omurice"
+    },
+    {
+      "seedKey": "napolitan",
+      "name": "ナポリタン",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["洋食", "麺", "なつかしい"],
+      "ingredients": [
+        { "name": "スパゲッティ", "amount": "200", "unit": "g" },
+        { "name": "ウインナー", "amount": "4", "unit": "本" },
+        { "name": "ピーマン", "amount": "2", "unit": "個" },
+        { "name": "ケチャップ", "amount": "大さじ5", "unit": null }
+      ],
+      "url": "https://example.com/seed/napolitan"
+    },
+    {
+      "seedKey": "gratin",
+      "name": "マカロニグラタン",
+      "cookTime": "over30",
+      "effort": "hard",
+      "moodTags": ["洋食", "体が温まる", "オーブン"],
+      "ingredients": [
+        { "name": "マカロニ", "amount": "150", "unit": "g" },
+        { "name": "鶏むね肉", "amount": "1", "unit": "枚" },
+        { "name": "牛乳", "amount": "500", "unit": "ml" },
+        { "name": "ピザ用チーズ", "amount": "100", "unit": "g" }
+      ],
+      "url": "https://example.com/seed/gratin"
+    },
+    {
+      "seedKey": "caesar-salad",
+      "name": "シーザーサラダ",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["洋食", "さっぱり", "副菜"],
+      "ingredients": [
+        { "name": "レタス", "amount": "1/2", "unit": "玉" },
+        { "name": "ベーコン", "amount": "4", "unit": "枚" },
+        { "name": "粉チーズ", "amount": "大さじ2", "unit": null }
+      ],
+      "url": "https://example.com/seed/caesar-salad"
+    },
+    {
+      "seedKey": "mabo-tofu",
+      "name": "麻婆豆腐",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["中華", "ごはんが進む", "ピリ辛"],
+      "ingredients": [
+        { "name": "豆腐", "amount": "1", "unit": "丁" },
+        { "name": "豚ひき肉", "amount": "150", "unit": "g" },
+        { "name": "ねぎ", "amount": "1", "unit": "本" },
+        { "name": "豆板醤", "amount": "小さじ1", "unit": null }
+      ],
+      "url": "https://example.com/seed/mabo-tofu"
+    },
+    {
+      "seedKey": "chinjao-rosu",
+      "name": "青椒肉絲",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["中華", "ごはんが進む"],
+      "ingredients": [
+        { "name": "牛もも肉", "amount": "200", "unit": "g" },
+        { "name": "ピーマン", "amount": "5", "unit": "個" },
+        { "name": "たけのこ水煮", "amount": "100", "unit": "g" }
+      ],
+      "url": "https://example.com/seed/chinjao-rosu"
+    },
+    {
+      "seedKey": "gyoza",
+      "name": "焼き餃子",
+      "cookTime": "over30",
+      "effort": "hard",
+      "moodTags": ["中華", "みんなで作る", "がっつり"],
+      "ingredients": [
+        { "name": "豚ひき肉", "amount": "250", "unit": "g" },
+        { "name": "キャベツ", "amount": "1/4", "unit": "玉" },
+        { "name": "餃子の皮", "amount": "30", "unit": "枚" },
+        { "name": "にら", "amount": "1", "unit": "束" }
+      ],
+      "url": "https://example.com/seed/gyoza"
+    },
+    {
+      "seedKey": "chahan",
+      "name": "チャーハン",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["中華", "さっと", "一品で満足"],
+      "ingredients": [
+        { "name": "ごはん", "amount": "2", "unit": "杯" },
+        { "name": "卵", "amount": "2", "unit": "個" },
+        { "name": "ねぎ", "amount": "1/2", "unit": "本" },
+        { "name": "ハム", "amount": "4", "unit": "枚" }
+      ],
+      "url": "https://example.com/seed/chahan"
+    },
+    {
+      "seedKey": "ebichili",
+      "name": "エビチリ",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["中華", "ごちそう", "ピリ辛"],
+      "ingredients": [
+        { "name": "むきえび", "amount": "250", "unit": "g" },
+        { "name": "ねぎ", "amount": "1", "unit": "本" },
+        { "name": "ケチャップ", "amount": "大さじ3", "unit": null },
+        { "name": "豆板醤", "amount": "小さじ1", "unit": null }
+      ],
+      "url": "https://example.com/seed/ebichili"
+    },
+    {
+      "seedKey": "harusame-salad",
+      "name": "春雨サラダ",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["中華", "さっぱり", "副菜"],
+      "ingredients": [
+        { "name": "春雨", "amount": "80", "unit": "g" },
+        { "name": "きゅうり", "amount": "1", "unit": "本" },
+        { "name": "ハム", "amount": "4", "unit": "枚" },
+        { "name": "酢", "amount": "大さじ3", "unit": null }
+      ],
+      "url": "https://example.com/seed/harusame-salad"
+    },
+    {
+      "seedKey": "tori-mizutaki",
+      "name": "鶏の水炊き",
+      "cookTime": "within30",
+      "effort": "easy",
+      "moodTags": ["鍋", "体が温まる", "さっぱり"],
+      "ingredients": [
+        { "name": "鶏もも肉", "amount": "2", "unit": "枚" },
+        { "name": "白菜", "amount": "1/4", "unit": "玉" },
+        { "name": "豆腐", "amount": "1", "unit": "丁" },
+        { "name": "ポン酢", "amount": "適量", "unit": null }
+      ],
+      "url": "https://example.com/seed/tori-mizutaki"
+    },
+    {
+      "seedKey": "yasai-itame",
+      "name": "野菜炒め",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["さっと", "野菜たっぷり"],
+      "ingredients": [
+        { "name": "キャベツ", "amount": "1/4", "unit": "玉" },
+        { "name": "豚こま切れ肉", "amount": "150", "unit": "g" },
+        { "name": "もやし", "amount": "1", "unit": "袋" }
+      ],
+      "url": "https://example.com/seed/yasai-itame"
+    },
+    {
+      "seedKey": "nasu-dengaku",
+      "name": "なすの味噌炒め",
+      "cookTime": "within15",
+      "effort": "easy",
+      "moodTags": ["ごはんが進む", "和食", "野菜たっぷり"],
+      "ingredients": [
+        { "name": "なす", "amount": "3", "unit": "本" },
+        { "name": "豚ひき肉", "amount": "100", "unit": "g" },
+        { "name": "味噌", "amount": "大さじ2", "unit": null }
+      ],
+      "url": "https://example.com/seed/nasu-dengaku"
+    },
+    {
+      "seedKey": "potato-salad",
+      "name": "ポテトサラダ",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["洋食", "副菜", "作り置き"],
+      "ingredients": [
+        { "name": "じゃがいも", "amount": "3", "unit": "個" },
+        { "name": "きゅうり", "amount": "1", "unit": "本" },
+        { "name": "ハム", "amount": "4", "unit": "枚" },
+        { "name": "マヨネーズ", "amount": "大さじ4", "unit": null }
+      ],
+      "url": "https://example.com/seed/potato-salad"
+    },
+    {
+      "seedKey": "okonomiyaki",
+      "name": "お好み焼き",
+      "cookTime": "within30",
+      "effort": "normal",
+      "moodTags": ["みんなで作る", "粉もの", "がっつり"],
+      "ingredients": [
+        { "name": "キャベツ", "amount": "1/2", "unit": "玉" },
+        { "name": "小麦粉", "amount": "200", "unit": "g" },
+        { "name": "卵", "amount": "2", "unit": "個" },
+        { "name": "豚バラ肉", "amount": "150", "unit": "g" }
+      ],
+      "url": "https://example.com/seed/okonomiyaki"
+    }
+  ]
+}

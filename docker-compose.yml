@@ -1,0 +1,22 @@
+# コンテナの PostgreSQL（任意）。使わなくても、アプリは組み込みの PostgreSQL（PGlite）で動きます。
+# 使い方: docker compose up -d   →   .env.local に DATABASE_URL を書いて npm run dev
+# ローカル確認用の固定の値です（本番の秘密ではありません）。
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: mealplanner
+      POSTGRES_PASSWORD: mealplanner
+      POSTGRES_DB: mealplanner
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U mealplanner']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  dbdata:

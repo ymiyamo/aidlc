@@ -25,3 +25,17 @@ aidlc/spaces/*/intents/*/.aidlc-*
 aidlc/diagnostics/
 .kiro/steering/aidlc-active-memory.md
 # END AI-DLC:gitignore
+
+# アプリ（meal-planner）
+node_modules/
+.next/
+.data/
+coverage/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+infra/cdk.out/
+infra/node_modules/
+.DS_Store

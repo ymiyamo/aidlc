@@ -44,6 +44,23 @@
 - **Construction Iteration**: stage-major
 - **Construction Execution**: swarm
 
+- **Skeleton Stance**: on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Phase Progress
 <!-- Status values: Pending, Active, Verified, Skipped -->
 
@@ -105,7 +122,7 @@ Per unit: [TBD]
 - **Current Stage**: functional-design
 - **Next Stage**: nfr-requirements
 - **Status**: Running
-- **Last Updated**: 2026-10-11T03:37:04Z
+- **Last Updated**: 2026-10-11T05:05:33Z
 
 ## Session Resume Point
 - **Last Completed Stage**: delivery-planning

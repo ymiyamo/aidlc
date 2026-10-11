@@ -1,0 +1,369 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "skeleton",
+  "id_note": "NFRx.y は、NFR Requirements（U1）の U1-NFRx.y と同じもの（U1- を省いた表記）",
+  "upstream_ids": [
+    "NFR1.1",
+    "NFR1.2",
+    "NFR1.3",
+    "NFR1.4",
+    "NFR1.5",
+    "NFR1.6",
+    "NFR2.1",
+    "NFR2.2",
+    "NFR2.3",
+    "NFR2.4",
+    "NFR2.5",
+    "NFR3.1",
+    "NFR3.2",
+    "NFR3.3",
+    "NFR3.4",
+    "NFR3.5",
+    "NFR3.6",
+    "NFR3.7",
+    "NFR3.8",
+    "NFR3.9",
+    "NFR3.10",
+    "NFR3.11",
+    "NFR3.12",
+    "NFR3.13",
+    "NFR3.14",
+    "NFR3.15",
+    "NFR4.1",
+    "NFR4.2",
+    "NFR4.3",
+    "NFR4.4",
+    "NFR4.5",
+    "NFR4.6",
+    "NFR4.7",
+    "NFR4.8",
+    "NFR4.11",
+    "NFR4.12",
+    "NFR4.13",
+    "NFR4.14",
+    "NFR4.15",
+    "NFR4.16",
+    "NFR4.17",
+    "NFR4.18",
+    "NFR4.19",
+    "NFR5.1",
+    "NFR5.2",
+    "NFR5.3",
+    "NFR6.1",
+    "NFR6.2",
+    "NFR6.3",
+    "NFR6.4",
+    "NFR7.1",
+    "NFR7.2",
+    "NFR7.3",
+    "NFR7.4",
+    "NFR7.5",
+    "NFR7.6",
+    "NFR7.7",
+    "NFR7.8",
+    "NFR7.9",
+    "NFR7.10"
+  ],
+  "coverage": [
+    {
+      "id": "NFR1.1",
+      "status": "N/A",
+      "target": "画面の作りで満たす（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "N/A",
+      "target": "画面の作りで満たす（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR1.3",
+      "status": "N/A",
+      "target": "保存は 1 画面で完結する画面の作りで満たす（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR1.4",
+      "status": "N/A",
+      "target": "コントラストは画面の作りで満たす（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR1.5",
+      "status": "N/A",
+      "target": "ボタンの代替は画面の作りで満たす（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR1.6",
+      "status": "N/A",
+      "target": "対応ブラウザの確認は Build and Test で行う。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md「データベース」（サーバーレス型）と「接続の束ね」"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md「リージョン」（東京）と「配信網」"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md「データベース」「関数」"
+    },
+    {
+      "id": "NFR2.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md「関数」（メモリ 1024MB、タイムアウト 15 秒）"
+    },
+    {
+      "id": "NFR2.5",
+      "status": "Deferred",
+      "target": "設計済み・要測定。AWS に作成したあと、Build and Test（または作成後の検証）で、死活確認を止めて測定する。自分のパソコンでは測れない（infrastructure-specification.md「死活確認の経路」、cicd-pipeline.md「ローカルで確認できること、できないこと」）"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "N/A",
+      "target": "パスワードの変換はアプリのコードで行う（コード生成）。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR3.2",
+      "status": "N/A",
+      "target": "Cookie の属性はアプリのコードで設定する（コード生成）"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "N/A",
+      "target": "表示の内容はアプリのコードで決める（コード生成）"
+    },
+    {
+      "id": "NFR3.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md「検証環境の入口の制限」、cicd-pipeline.md「流れ」5"
+    },
+    {
+      "id": "NFR3.5",
+      "status": "N/A",
+      "target": "入口の確認はアプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.6",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.7",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.8",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.9",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.10",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.11",
+      "status": "N/A",
+      "target": "アプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR3.12",
+      "status": "OK",
+      "target": "infrastructure-specification.md「配信網」（HTTPS、HSTS、セキュリティヘッダー）"
+    },
+    {
+      "id": "NFR3.13",
+      "status": "OK",
+      "target": "infrastructure-specification.md「秘密情報の管理」、cicd-pipeline.md「秘密情報（CI/CD）」"
+    },
+    {
+      "id": "NFR3.14",
+      "status": "OK",
+      "target": "monitoring-design.md「ログと追跡」（出力前に伏せる）"
+    },
+    {
+      "id": "NFR3.15",
+      "status": "N/A",
+      "target": "初期データのファイルの内容はコード生成で作る。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md「データベース」"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "N/A",
+      "target": "取引の扱いはアプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md「データベース」（バックアップは取らない。F1 B）"
+    },
+    {
+      "id": "NFR4.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md「配置」（1 つのリージョン、冗長にしない）"
+    },
+    {
+      "id": "NFR4.5",
+      "status": "N/A",
+      "target": "論理削除はアプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR4.6",
+      "status": "OK",
+      "target": "infrastructure-specification.md「スケジュール」、monitoring-design.md「アラーム」"
+    },
+    {
+      "id": "NFR4.7",
+      "status": "N/A",
+      "target": "任意の推奨で、出荷の条件ではない。基盤の追加はない"
+    },
+    {
+      "id": "NFR4.8",
+      "status": "N/A",
+      "target": "初期データの補完はアプリのコードで行う（コード生成）"
+    },
+    {
+      "id": "NFR4.11",
+      "status": "OK",
+      "target": "monitoring-design.md「ログと追跡」（構造化ログを記録の保管場所へ送る）"
+    },
+    {
+      "id": "NFR4.12",
+      "status": "OK",
+      "target": "monitoring-design.md「ログと追跡」（リクエストの識別子で入口と関数のログをたどる）"
+    },
+    {
+      "id": "NFR4.13",
+      "status": "OK",
+      "target": "monitoring-design.md「ログと追跡」（出力前に伏せる）"
+    },
+    {
+      "id": "NFR4.14",
+      "status": "OK",
+      "target": "monitoring-design.md「アラーム」（止まった）、infrastructure-specification.md「死活確認の経路」"
+    },
+    {
+      "id": "NFR4.15",
+      "status": "OK",
+      "target": "monitoring-design.md「アラーム」（エラーが増えた：割合と件数）"
+    },
+    {
+      "id": "NFR4.16",
+      "status": "OK",
+      "target": "monitoring-design.md「指標」（処理時間の 95 パーセンタイル。通知しない）"
+    },
+    {
+      "id": "NFR4.17",
+      "status": "OK",
+      "target": "monitoring-design.md「アラーム」"
+    },
+    {
+      "id": "NFR4.18",
+      "status": "OK",
+      "target": "monitoring-design.md「指標」（初期データの異常）"
+    },
+    {
+      "id": "NFR4.19",
+      "status": "OK",
+      "target": "infrastructure-specification.md「記録と通知」（ログの保管 30 日）、monitoring-design.md「ログと追跡」"
+    },
+    {
+      "id": "NFR5.1",
+      "status": "N/A",
+      "target": "外部データを取得しない。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR5.2",
+      "status": "N/A",
+      "target": "外部サービスに依存する資源はない。元の動画・投稿はブラウザが直接開く"
+    },
+    {
+      "id": "NFR5.3",
+      "status": "N/A",
+      "target": "U1 は外部を呼ばない。基盤に要る資源はない"
+    },
+    {
+      "id": "NFR6.1",
+      "status": "OK",
+      "target": "cicd-pipeline.md「流れ」2"
+    },
+    {
+      "id": "NFR6.2",
+      "status": "OK",
+      "target": "cicd-pipeline.md「段階とゲート」（確認）"
+    },
+    {
+      "id": "NFR6.3",
+      "status": "OK",
+      "target": "cicd-pipeline.md「流れ」4、「段階とゲート」（検証環境の確認）"
+    },
+    {
+      "id": "NFR6.4",
+      "status": "OK",
+      "target": "cicd-pipeline.md「流れ」2"
+    },
+    {
+      "id": "NFR7.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md「規模（サイズ）」"
+    },
+    {
+      "id": "NFR7.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md「規模（サイズ）」"
+    },
+    {
+      "id": "NFR7.3",
+      "status": "N/A",
+      "target": "この版では超えたときの設計をしない（要件どおり）"
+    },
+    {
+      "id": "NFR7.4",
+      "status": "N/A",
+      "target": "一意性はデータベースの制約で守る。表の定義はコード生成で作る"
+    },
+    {
+      "id": "NFR7.5",
+      "status": "N/A",
+      "target": "一意性はデータベースの制約で守る。表の定義はコード生成で作る"
+    },
+    {
+      "id": "NFR7.6",
+      "status": "N/A",
+      "target": "一意性はデータベースの制約で守る。表の定義はコード生成で作る"
+    },
+    {
+      "id": "NFR7.7",
+      "status": "N/A",
+      "target": "一意性はデータベースの制約で守る。表の定義はコード生成で作る"
+    },
+    {
+      "id": "NFR7.8",
+      "status": "OK",
+      "target": "infrastructure-specification.md「関数」（状態を持たない）と「データベース」"
+    },
+    {
+      "id": "NFR7.9",
+      "status": "OK",
+      "target": "infrastructure-specification.md「接続の束ね（RDS Proxy 相当）」"
+    },
+    {
+      "id": "NFR7.10",
+      "status": "OK",
+      "target": "cicd-pipeline.md「流れ」4・5"
+    }
+  ]
+}
