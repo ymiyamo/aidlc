@@ -63,14 +63,14 @@ interface "料理の参照" as I_DISH
 interface "最新の感想の参照" as I_LOG
 interface "除外食材の参照" as I_TASTE
 interface "候補の判定・\n選んだもの" as I_SUG
-interface "献立の参照" as I_PLAN
+interface "買い物リストへの\n材料の受け渡し" as I_SHOP
 interface "画像づくりの依頼" as I_IMG
 
 DISH -- I_DISH
 LOG -- I_LOG
 TASTE -- I_TASTE
 SUG -- I_SUG
-PLAN -- I_PLAN
+SHOP -- I_SHOP
 IMG -- I_IMG
 
 ' ---------- 使う関係（A が B を頼る） ----------
@@ -89,7 +89,7 @@ SUG ..> I_LOG : 最新の感想
 PLAN ..> I_SUG : 判定を使う
 PLAN ..> I_DISH : 料理
 SHOP ..> I_SUG : 選んだもの
-SHOP ..> I_PLAN : 献立の材料
+PLAN ..> I_SHOP : 材料を渡す
 SHOP ..> I_DISH : 材料
 LOG ..> I_DISH : 料理の確認
 DISH ..> I_IMG : 画像を頼む・取りに行く・消す\n<<async>>

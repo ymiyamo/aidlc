@@ -343,12 +343,13 @@ components:
       - component: Dish
         interaction: 献立に使う料理を取る
         style: sync
+      - component: ShoppingList
+        interaction: この献立の材料を渡して、買い物リストにまとめてもらう（向きは、ユニットの依存 U4 → U3 に合わせた。ADR-010）
+        style: sync
       - component: Household
         interaction: グループが削除された出来事を受けて、そのグループの献立をすべて消す
         style: event
-    dependents:
-      - component: ShoppingList
-        interaction: 献立の材料を取る
+    dependents: []
     external_dependencies:
       - name: データベース
         kind: database
@@ -383,16 +384,15 @@ components:
       - component: Suggestion
         interaction: 選んだものを取る
         style: sync
-      - component: MealPlan
-        interaction: 献立の材料の元になる料理を取る
-        style: sync
       - component: Dish
         interaction: 材料と分量を取る
         style: sync
       - component: Household
         interaction: グループが削除された出来事を受けて、そのグループの買い物リストをすべて消す
         style: event
-    dependents: []
+    dependents:
+      - component: MealPlan
+        interaction: 献立の材料を渡されて、買い物リストにまとめる
     external_dependencies:
       - name: データベース
         kind: database
@@ -445,8 +445,8 @@ SUG ..> LOG
 PLAN ..> SUG
 PLAN ..> DISH
 SHOP ..> SUG
-SHOP ..> PLAN
 SHOP ..> DISH
+PLAN ..> SHOP
 @enduml
 ```
 
@@ -461,8 +461,8 @@ SHOP ..> DISH
 | 画像づくり（ImageGen） | AI の画像を作って持つ | なし | 料理 | GeneratedImage |
 | 作った記録（CookLog） | 項目と作った日の 1 対多の記録を持つ | 料理、家族グループ（出来事） | 候補の提案 | CookRecord |
 | 候補の提案（Suggestion） | 候補の判定と選んだものを持つ | 料理、好き嫌い、作った記録、家族グループ（出来事） | 献立、買い物リスト | PickedItem |
-| 献立（MealPlan） | 1 週間の献立を持つ | 候補の提案、料理、家族グループ（出来事） | 買い物リスト | MealPlan、PlanDay |
-| 買い物リスト（ShoppingList） | 買い物リストとチェックを持つ | 候補の提案、献立、料理、家族グループ（出来事） | なし | ShoppingList、ShoppingItem |
+| 献立（MealPlan） | 1 週間の献立を持つ | 候補の提案、料理、買い物リスト（材料を渡す）、家族グループ（出来事） | なし | MealPlan、PlanDay |
+| 買い物リスト（ShoppingList） | 買い物リストとチェックを持つ | 候補の提案、料理、家族グループ（出来事） | 献立 | ShoppingList、ShoppingItem |
 
 ## エンティティの持ち主
 
