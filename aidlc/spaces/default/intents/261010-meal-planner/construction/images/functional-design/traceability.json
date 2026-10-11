@@ -1,0 +1,22 @@
+{
+  "stage": "functional-design",
+  "unit": "images",
+  "upstream_ids": [
+    "AC1.5.1", "AC1.5.2", "AC1.5.3", "AC1.5.4",
+    "AC9.1.7", "AC9.1.8"
+  ],
+  "coverage": [
+    { "id": "AC1.5.1", "status": "OK", "target": "BR60.4, BR60.7, BR60.8, BR60.10" },
+    { "id": "AC1.5.2", "status": "OK", "target": "BR60.3, BR60.5" },
+    { "id": "AC1.5.3", "status": "OK", "target": "BR60.1, BR60.2" },
+    { "id": "AC1.5.4", "status": "OK", "target": "BR60.6" },
+    { "id": "AC9.1.7", "status": "OK", "target": "BR60.9, BR60.10, BR60.4" },
+    { "id": "AC9.1.8", "status": "OK", "target": "BR60.9" }
+  ],
+  "reverse": [
+    { "id": "BR60.11", "status": "N/A", "target": "生成の失敗の再試行と費用・回数の上限（C4 の方針、OQ7）。ストーリーの受け入れ条件には書かれていない、設計の判断" },
+    { "id": "BR60.12", "status": "N/A", "target": "料理・グループの削除に画像を連動させる（household.deleted、ADR-007、NFR3.2）。受け入れ条件にはない、データを残さないための設計の判断" },
+    { "id": "BR60.13", "status": "N/A", "target": "人の参照は memberId だけ（ADR-009）。設計の制約" },
+    { "id": "BR60.14", "status": "N/A", "target": "画像の代わりの文字（NFR1.4）。アクセシビリティの設計の判断" }
+  ]
+}

@@ -9417,3 +9417,3063 @@
 **Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
 
 ---
+
+## Human Turn
+**Timestamp**: 2026-10-11T05:21:37Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T05:23:34Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T05:27:08Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T05:30:23Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:01:07Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-11T06:01:20Z
+**Event**: GATE_APPROVED
+**Unit**: skeleton
+**Stage**: code-generation
+**Stages**: functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation
+**Gate Stages**: functional-design, nfr-requirements, nfr-design, infrastructure-design, code-generation
+**Gate Scope**: unit-end
+**Checkpoint**: walking-skeleton
+**Fingerprint**: sha256:f474e347ac98f76d71b1b25a6534bae0352d00830680c9f6bb25e5a1217e0340
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+**Run floors**: {"functional-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","nfr-requirements":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","nfr-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","infrastructure-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","code-generation":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1"}
+**Verification Command SHA-256**: 8ed93bd71904ad737d0d23cc62e9ae4cb8b3539c74a125c1db246ed0daf2823f
+**Verification Id**: 518df624-0450-4081-8fd0-f9a047315d00
+**Approved Evidence**: {"functional-design":["sha256:dc837198e890e7689ea385a07cdf8cb35d358d06d0b93925ce7545f31faeafc6",null],"nfr-requirements":["sha256:bcb4760d6cdcfbaa1992851d727ab8028e9767c0700684930d70b153d3da4f5e",null],"nfr-design":["sha256:bbcd26e11014d42d6ba1a1cef21e9596ef4a3387b48fdd1f1dd2b2676875e609",null],"infrastructure-design":["sha256:b92ed04c0ef859b24d9ea28fe89deb404f7749af58be435177a2fec13d1d6dec",null],"code-generation":["sha256:1085461eaf09ee6403609f349988d049a68ead878a8f4891da0add91db913bbe","sha256:e0cdc2fb1ef73f7a0c1cfdd8214ad62f58993ee5ee6c747b14e640ee81de2af3"]}
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+**User Input**: Approve
+**Person Reply**: あとで 1とする予定だが、まず以下を頼む\n\n \n\n```\nteam A の AI-DLC における成果を発表する資料をhtmlとcssだけで作成します。\n以下のトピックを含めてください。\n\n# 2日間で作成したもの\n- (ここを記載)\n\n# 2日間の振り返り\n- (ここを記載)\n\n# 2日間で確認した開発へのインパクト\n- (開発スピードのN%向上など)\n\n# 今後の取り組み、展望、課題\n- (社内の他チームへの展開など)\n- (社内ルールの変更、受発注プロセスの変更など)\n```\ncommitしてpushしてくれ。資料をみんなでシェアしてレビューする。\nneta.md が反映されている資料ができた？\n入れていないもの\n\nハイライト6「全部オススメで」、8「図とトレーサビリティ」（9枚目で対応表に1行触れただけ）、10「役割とドライバー」（11枚目で人の入れ替えとして1行触れただけ）。\n\n「うまくいかなかったこと」：再レビューが1回までだった件、承認済みの文書を後から直した件、git push の権限エラーと強制プッシュ。\n\n追記ログの小ネタ：\n\n「部品」という訳語が通じなかった件。\n\n用語の出どころを聞いた件。\n\n図の記法をMermaidからPlantUMLに人が選んだ件。\n\n翌日の再開で前日の続きに戻れた件。\n\nDelivery Planning で、AIのおすすめと違う設定を人が選んだ件。\n\n「Kiroの感想」の欄。\n\n \n\n↑この内容をもっと積極的に入れてほしい & もうちょっと日本語の量を減らしてキーワード的にまとめてくれると助かる。\n資料作成はいったんOK。アプリの作る続きをやってくれ。なるべく多くをデモでみせたい。\nA\n1
+
+---
+
+## Autonomy Mode Set
+**Timestamp**: 2026-10-11T06:02:15Z
+**Event**: AUTONOMY_MODE_SET
+**Mode**: autonomous
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:02:37Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_f36d594a-3b69-4b3b-95cc-01f8f97529c8
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:02:38Z
+**Event**: HUMAN_TURN
+**Session**: sess_f36d594a-3b69-4b3b-95cc-01f8f97529c8
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:02:47Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_31cba598-a769-4b2b-8809-5cb71961c664
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:02:47Z
+**Event**: HUMAN_TURN
+**Session**: sess_31cba598-a769-4b2b-8809-5cb71961c664
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:02:56Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_51267af9-1bce-41c0-86cb-3ba840069664
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:02:56Z
+**Event**: HUMAN_TURN
+**Session**: sess_51267af9-1bce-41c0-86cb-3ba840069664
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:03:06Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_95307a30-adec-4043-ae1e-ddf1bd7cfb5d
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:03:06Z
+**Event**: HUMAN_TURN
+**Session**: sess_95307a30-adec-4043-ae1e-ddf1bd7cfb5d
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:03:17Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_c7b437da-dc4a-4d4f-8f58-5ab4b1523b7b
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:03:17Z
+**Event**: HUMAN_TURN
+**Session**: sess_c7b437da-dc4a-4d4f-8f58-5ab4b1523b7b
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-11T06:03:39Z
+**Event**: DECISION_RECORDED
+**Stage**: functional-design
+**Decision**: U2〜U7 の NFR要件・NFR設計・基盤設計を省略する案と、コード生成の計画承認を切る案を利用者に提案した（回答待ち。5ユニットの機能設計は並行して作成中）
+**Unit**: account-admin
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:08Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-design-questions.md
+**Context**: construction > shopping-list > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:29Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-design-questions.md
+**Context**: construction > cook-log > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:04:32Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+**Context**: construction > shopping-list > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:40Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-design-questions.md
+**Context**: construction > taste-filter > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:42Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/entities.md
+**Context**: construction > cook-log > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:54Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-design-questions.md
+**Context**: construction > meal-plan > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:04:58Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Context**: construction > taste-filter > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:11Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+**Context**: construction > meal-plan > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:19Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-design-questions.md
+**Context**: construction > account-admin > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:21Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Context**: construction > shopping-list > functional-design > rules.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:34Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+**Context**: construction > shopping-list > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:05:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: 494222c6
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:05:35Z
+**Event**: SENSOR_FAILED
+**Fire id**: 494222c6
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-494222c6.md
+**Findings count**: 6
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:40Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/rules.md
+**Context**: construction > cook-log > functional-design > rules.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:47Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+**Context**: construction > account-admin > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:54Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+**Context**: construction > cook-log > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:05:54Z
+**Event**: SENSOR_FIRED
+**Fire id**: 65799364
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:05:54Z
+**Event**: SENSOR_FAILED
+**Fire id**: 65799364
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-65799364.md
+**Findings count**: 9
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:05:56Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:01Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+**Context**: construction > shopping-list > functional-design > functional-spec.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:16Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:06:23Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Session Resume
+**Timestamp**: 2026-10-11T06:06:24Z
+**Event**: SESSION_RESUMED
+**Source**: resume
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:06:24Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:28Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md
+**Context**: construction > cook-log > functional-design > functional-spec.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:29Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+**Context**: construction > meal-plan > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:06:29Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8296f472
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:06:29Z
+**Event**: SENSOR_FAILED
+**Fire id**: 8296f472
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-8296f472.md
+**Findings count**: 2
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:37Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Context**: construction > taste-filter > functional-design > functional-spec.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:06:44Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Context**: construction > taste-filter > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:06:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8ed4842e
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:06:44Z
+**Event**: SENSOR_FAILED
+**Fire id**: 8ed4842e
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-8ed4842e.md
+**Findings count**: 14
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:07:00Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Context**: construction > meal-plan > functional-design > functional-spec.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:07:04Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:07:19Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:07:28Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: taste-filter
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:29Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit start --stage functional-design --unit taste-filter
+**Error**: Refusing to start unit "taste-filter" for "functional-design": the engine currently routes "functional-design"/"account-admin". Run the exact directive.stage/directive.unit pair returned by aidlc-orchestrate.ts next.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:29Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit complete --stage functional-design --unit taste-filter
+**Error**: Refusing to complete unit "taste-filter" for "functional-design": it is not the active unit (no unit is active — start it first).
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:07:29Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: shopping-list
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:33Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit start --stage functional-design --unit shopping-list
+**Error**: Refusing to start unit "shopping-list" for "functional-design": the engine currently routes "functional-design"/"account-admin". Run the exact directive.stage/directive.unit pair returned by aidlc-orchestrate.ts next.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:33Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit complete --stage functional-design --unit shopping-list
+**Error**: Refusing to complete unit "shopping-list" for "functional-design": it is not the active unit (no unit is active — start it first).
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:07:33Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: meal-plan
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:36Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit start --stage functional-design --unit meal-plan
+**Error**: Refusing to start unit "meal-plan" for "functional-design": the engine currently routes "functional-design"/"account-admin". Run the exact directive.stage/directive.unit pair returned by aidlc-orchestrate.ts next.
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:07:36Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+**Context**: construction > account-admin > functional-design > entities.md
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:37Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit complete --stage functional-design --unit meal-plan
+**Error**: Refusing to complete unit "meal-plan" for "functional-design": it is not the active unit (no unit is active — start it first).
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:07:37Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: cook-log
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:40Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit start --stage functional-design --unit cook-log
+**Error**: Refusing to start unit "cook-log" for "functional-design": the engine currently routes "functional-design"/"account-admin". Run the exact directive.stage/directive.unit pair returned by aidlc-orchestrate.ts next.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:07:40Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state unit complete --stage functional-design --unit cook-log
+**Error**: Refusing to complete unit "cook-log" for "functional-design": it is not the active unit (no unit is active — start it first).
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:07:49Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+**Context**: construction > account-admin > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:07:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: 68f62195
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:07:50Z
+**Event**: SENSOR_FAILED
+**Fire id**: 68f62195
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-68f62195.md
+**Findings count**: 12
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:08:37Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Context**: construction > account-admin > functional-design > functional-spec.md
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:10:50Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: account-admin
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:11:12Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: account-admin
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:11:12Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: account-admin
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:11:20Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: cook-log
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:11:20Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: cook-log
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:12:01Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_8728e4a2-31d0-4534-b586-bc5c0334d674
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:12:01Z
+**Event**: HUMAN_TURN
+**Session**: sess_8728e4a2-31d0-4534-b586-bc5c0334d674
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:13:17Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-design-questions.md
+**Context**: construction > images > functional-design > functional-design-questions.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:13:34Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+**Context**: construction > images > functional-design > entities.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:14:08Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+**Context**: construction > images > functional-design > rules.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:14:11Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+**Context**: construction > images > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:14:11Z
+**Event**: SENSOR_FIRED
+**Fire id**: 411579d6
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:14:12Z
+**Event**: SENSOR_FAILED
+**Fire id**: 411579d6
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-411579d6.md
+**Findings count**: 2
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:14:44Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+**Context**: construction > images > functional-design > functional-spec.md
+
+---
+
+## Session Resume
+**Timestamp**: 2026-10-11T06:15:02Z
+**Event**: SESSION_RESUMED
+**Source**: resume
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:15:02Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:15:12Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: taste-filter
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:15:12Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: shopping-list
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:15:12Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: meal-plan
+
+---
+
+## Question Answered
+**Timestamp**: 2026-10-11T06:15:12Z
+**Event**: QUESTION_ANSWERED
+**Stage**: functional-design
+**Details**: all questions answered A (recommended) per user standing instruction
+**Unit**: images
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:15:20Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: images
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:15:20Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: images
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:15:28Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: taste-filter
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:15:28Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: taste-filter
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:15:34Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: shopping-list
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:15:34Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: shopping-list
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:15:42Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:15:43Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:16:06Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:16:07Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Started
+**Timestamp**: 2026-10-11T06:16:27Z
+**Event**: UNIT_STARTED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Unit Completed
+**Timestamp**: 2026-10-11T06:16:27Z
+**Event**: UNIT_COMPLETED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:17:12Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state gate-start functional-design --project-dir <project-dir>
+**Error**: Cannot present "functional-design" for approval because 6 of 7 applicable units do not have a current review from aidlc-architecture-reviewer-agent (account-admin, cook-log, images, taste-filter, shopping-list, meal-plan). Changed after review: none. Not yet reviewed: account-admin, cook-log, images, taste-filter, shopping-list, meal-plan. For never-reviewed units (account-admin, cook-log, images, taste-filter, shopping-list, meal-plan), run the normal `aidlc-log.ts review --stage functional-design --unit <unit> --reviewer aidlc-architecture-reviewer-agent --iteration <next ordinal>` request and record its verdict.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-11T06:17:39Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state gate-start functional-design --recovered --project-dir <project-dir>
+**Error**: Cannot present "functional-design" for approval because 6 of 7 applicable units do not have a current review from aidlc-architecture-reviewer-agent (account-admin, cook-log, images, taste-filter, shopping-list, meal-plan). Changed after review: none. Not yet reviewed: account-admin, cook-log, images, taste-filter, shopping-list, meal-plan. For never-reviewed units (account-admin, cook-log, images, taste-filter, shopping-list, meal-plan), run the normal `aidlc-log.ts review --stage functional-design --unit <unit> --reviewer aidlc-architecture-reviewer-agent --iteration <next ordinal>` request and record its verdict.
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:53Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: account-admin
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:b9d0efe73ef13b9c215fe440813c6c29125f30fcbdb0fe7be7b54dd13dd647cc
+**Request Id**: review:d100900c250aa64a79ffc5975961430e
+**Review File**: .aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.d100900c250aa64a79ffc5975961430e.review.md
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:53Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: cook-log
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:672edb65459bfc9b065a531b81044bc7c262631a08adf777deec56e6566543fa
+**Request Id**: review:98f6e8a1a68d697acb898194fbe0d7cb
+**Review File**: .aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.98f6e8a1a68d697acb898194fbe0d7cb.review.md
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:54Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: images
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:8d267da1a44ce5618cd3eb98f4c0dc9098a145ee76ca025b0667f7f73f7b1d5c
+**Request Id**: review:f656dd5f498ff28fab5fd5e0d0e933ac
+**Review File**: .aidlc-engine/reviews/functional-design/units/images/72833f762add2b8e/1.f656dd5f498ff28fab5fd5e0d0e933ac.review.md
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:55Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: taste-filter
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:83d95570d6451d8cd0d3e6160569df3abeb05fcdd172311b4cc6a86adc60a602
+**Request Id**: review:4990a7c5346203127cbaeb04039be828
+**Review File**: .aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.4990a7c5346203127cbaeb04039be828.review.md
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:55Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: shopping-list
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:69dbe8a43f20c910787d4b17768e664418df62de6652d9c372b86645e513d21e
+**Request Id**: review:7ec010f661ebf9164febc3c40f2425b3
+**Review File**: .aidlc-engine/reviews/functional-design/units/shopping-list/72833f762add2b8e/1.7ec010f661ebf9164febc3c40f2425b3.review.md
+
+---
+
+## Review Requested
+**Timestamp**: 2026-10-11T06:17:56Z
+**Event**: REVIEW_REQUESTED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: meal-plan
+**Iteration**: 1
+**Artifact Fingerprint**: sha256:976d9ffa371b69c8194a732e7033d8ebda6265ae0fe5a10cd55925c17684c832
+**Request Id**: review:b1b9de09a36b9c14060701e601aae037
+**Review File**: .aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.b1b9de09a36b9c14060701e601aae037.review.md
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:18:21Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_0f57fe6d-5b13-4f6f-94ed-51c6779c4c42
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:18:21Z
+**Event**: HUMAN_TURN
+**Session**: sess_0f57fe6d-5b13-4f6f-94ed-51c6779c4c42
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:18:32Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_a80fd183-36f1-4ecf-a117-6b1d2f07eb16
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:18:32Z
+**Event**: HUMAN_TURN
+**Session**: sess_a80fd183-36f1-4ecf-a117-6b1d2f07eb16
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:18:45Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_0c429bee-fa5b-434c-b431-770fe853ab60
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:18:45Z
+**Event**: HUMAN_TURN
+**Session**: sess_0c429bee-fa5b-434c-b431-770fe853ab60
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:18:59Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_2bdff5d1-0e31-466f-8fea-e43ee3f2d8ab
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:18:59Z
+**Event**: HUMAN_TURN
+**Session**: sess_2bdff5d1-0e31-466f-8fea-e43ee3f2d8ab
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:19:12Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_0eda7d9f-3b71-45a2-a703-8c6f474b485b
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:19:12Z
+**Event**: HUMAN_TURN
+**Session**: sess_0eda7d9f-3b71-45a2-a703-8c6f474b485b
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:19:26Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_31ad0202-64be-453c-a780-30dafda38f31
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:19:26Z
+**Event**: HUMAN_TURN
+**Session**: sess_31ad0202-64be-453c-a780-30dafda38f31
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:19:33Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.d100900c250aa64a79ffc5975961430e.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > account-admin > 72833f762add2b8e > 1.d100900c250aa64a79ffc5975961430e.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:19:49Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.98f6e8a1a68d697acb898194fbe0d7cb.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > cook-log > 72833f762add2b8e > 1.98f6e8a1a68d697acb898194fbe0d7cb.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:19:53Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/images/72833f762add2b8e/1.f656dd5f498ff28fab5fd5e0d0e933ac.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > images > 72833f762add2b8e > 1.f656dd5f498ff28fab5fd5e0d0e933ac.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:20:12Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/shopping-list/72833f762add2b8e/1.7ec010f661ebf9164febc3c40f2425b3.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > shopping-list > 72833f762add2b8e > 1.7ec010f661ebf9164febc3c40f2425b3.review.md
+
+---
+
+## Session Resume
+**Timestamp**: 2026-10-11T06:20:34Z
+**Event**: SESSION_RESUMED
+**Source**: resume
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:20:34Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:20:44Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.4990a7c5346203127cbaeb04039be828.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > taste-filter > 72833f762add2b8e > 1.4990a7c5346203127cbaeb04039be828.review.md
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-11T06:21:10Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.b1b9de09a36b9c14060701e601aae037.review.md
+**Context**: .aidlc-engine > reviews > functional-design > units > meal-plan > 72833f762add2b8e > 1.b1b9de09a36b9c14060701e601aae037.review.md
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:22:31Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_767cf074-8451-4efe-b8d5-f32c443d3745
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:22:31Z
+**Event**: HUMAN_TURN
+**Session**: sess_767cf074-8451-4efe-b8d5-f32c443d3745
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:22:35Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_f49cccc6-f09a-4f3c-9265-3f9b56ac9252
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:22:35Z
+**Event**: HUMAN_TURN
+**Session**: sess_f49cccc6-f09a-4f3c-9265-3f9b56ac9252
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:22:42Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_29774827-a452-4fbb-8150-b8ef774597c2
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:22:42Z
+**Event**: HUMAN_TURN
+**Session**: sess_29774827-a452-4fbb-8150-b8ef774597c2
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:47Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+**Context**: construction > account-admin > functional-design > entities.md
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:22:47Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_463e42b2-52ae-4b9d-bf9a-2ef3f99245cb
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:22:47Z
+**Event**: HUMAN_TURN
+**Session**: sess_463e42b2-52ae-4b9d-bf9a-2ef3f99245cb
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:48Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Context**: construction > account-admin > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:50Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Context**: construction > account-admin > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:51Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Context**: construction > account-admin > functional-design > functional-spec.md
+
+---
+
+## Session Start
+**Timestamp**: 2026-10-11T06:22:52Z
+**Event**: SESSION_STARTED
+**Source**: startup
+**Session**: sess_d34b9642-af10-4db8-8e13-d971a17eac4d
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:22:53Z
+**Event**: HUMAN_TURN
+**Session**: sess_d34b9642-af10-4db8-8e13-d971a17eac4d
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:53Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+**Context**: construction > images > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:54Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:55Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+**Context**: construction > images > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:55Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:57Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+**Context**: construction > images > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:57Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:58Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:22:58Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+**Context**: construction > images > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:00Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+**Context**: construction > images > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:01Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Context**: construction > account-admin > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:10Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:13Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:14Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+**Context**: construction > shopping-list > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:15Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+**Context**: construction > shopping-list > functional-design > entities.md
+
+---
+
+## Session Resume
+**Timestamp**: 2026-10-11T06:23:15Z
+**Event**: SESSION_RESUMED
+**Source**: resume
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:23:16Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:16Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:16Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Context**: construction > meal-plan > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:17Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:19Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Context**: construction > meal-plan > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:20Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Context**: construction > meal-plan > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:21Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Context**: construction > taste-filter > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:22Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:23Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:25Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Context**: construction > shopping-list > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:26Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:26Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Context**: construction > taste-filter > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:26Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Context**: construction > shopping-list > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:27Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Context**: construction > meal-plan > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:27Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Context**: construction > taste-filter > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:28Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Context**: construction > taste-filter > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:29Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Context**: construction > shopping-list > functional-design > rules.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:30Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Context**: construction > taste-filter > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:31Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Context**: construction > taste-filter > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:32Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+**Context**: construction > shopping-list > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:33Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+**Context**: construction > shopping-list > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:34Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Context**: construction > taste-filter > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:36Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Context**: construction > taste-filter > functional-design > functional-spec.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:36Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+**Context**: construction > meal-plan > functional-design > entities.md
+
+---
+
+## Artifact Updated
+**Timestamp**: 2026-10-11T06:23:37Z
+**Event**: ARTIFACT_UPDATED
+**Tool**: Edit
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Context**: construction > taste-filter > functional-design > traceability.json
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:23:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: a8928ba2
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:23:37Z
+**Event**: SENSOR_FAILED
+**Fire id**: a8928ba2
+**Sensor ID**: traceability
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/traceability-a8928ba2.md
+**Findings count**: 14
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:23:54Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:04Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: account-admin
+**Iteration**: 1
+**Verdict**: NOT-READY
+**Request Fingerprint**: sha256:b9d0efe73ef13b9c215fe440813c6c29125f30fcbdb0fe7be7b54dd13dd647cc
+**Artifact Fingerprint**: sha256:b9d0efe73ef13b9c215fe440813c6c29125f30fcbdb0fe7be7b54dd13dd647cc
+**Request Id**: review:d100900c250aa64a79ffc5975961430e
+**Review Record**: .aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:a6dd4726c6c36d3c82ae6e85e853aa90a3dfdec044637a492928dac8056c5e21
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:04Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: cook-log
+**Iteration**: 1
+**Verdict**: READY
+**Request Fingerprint**: sha256:672edb65459bfc9b065a531b81044bc7c262631a08adf777deec56e6566543fa
+**Artifact Fingerprint**: sha256:672edb65459bfc9b065a531b81044bc7c262631a08adf777deec56e6566543fa
+**Request Id**: review:98f6e8a1a68d697acb898194fbe0d7cb
+**Review Record**: .aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:04Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: images
+**Iteration**: 1
+**Verdict**: NOT-READY
+**Request Fingerprint**: sha256:8d267da1a44ce5618cd3eb98f4c0dc9098a145ee76ca025b0667f7f73f7b1d5c
+**Artifact Fingerprint**: sha256:8d267da1a44ce5618cd3eb98f4c0dc9098a145ee76ca025b0667f7f73f7b1d5c
+**Request Id**: review:f656dd5f498ff28fab5fd5e0d0e933ac
+**Review Record**: .aidlc-engine/reviews/functional-design/units/images/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:fed2980cb53cd0bcaaa59e2e0d17a57a98ad364e279fa14ca7e8af2f1d5d551b
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:05Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: taste-filter
+**Iteration**: 1
+**Verdict**: NOT-READY
+**Request Fingerprint**: sha256:83d95570d6451d8cd0d3e6160569df3abeb05fcdd172311b4cc6a86adc60a602
+**Artifact Fingerprint**: sha256:83d95570d6451d8cd0d3e6160569df3abeb05fcdd172311b4cc6a86adc60a602
+**Request Id**: review:4990a7c5346203127cbaeb04039be828
+**Review Record**: .aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:05Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: shopping-list
+**Iteration**: 1
+**Verdict**: NOT-READY
+**Request Fingerprint**: sha256:69dbe8a43f20c910787d4b17768e664418df62de6652d9c372b86645e513d21e
+**Artifact Fingerprint**: sha256:69dbe8a43f20c910787d4b17768e664418df62de6652d9c372b86645e513d21e
+**Request Id**: review:7ec010f661ebf9164febc3c40f2425b3
+**Review Record**: .aidlc-engine/reviews/functional-design/units/shopping-list/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:3a903ff8abfa75e3dcfc8a0fc5caee78293cee867e8e54f740ad5545668b4105
+
+---
+
+## Review Completed
+**Timestamp**: 2026-10-11T06:24:06Z
+**Event**: REVIEW_COMPLETED
+**Stage**: functional-design
+**Reviewer**: aidlc-architecture-reviewer-agent
+**Unit**: meal-plan
+**Iteration**: 1
+**Verdict**: NOT-READY
+**Request Fingerprint**: sha256:976d9ffa371b69c8194a732e7033d8ebda6265ae0fe5a10cd55925c17684c832
+**Artifact Fingerprint**: sha256:976d9ffa371b69c8194a732e7033d8ebda6265ae0fe5a10cd55925c17684c832
+**Request Id**: review:b1b9de09a36b9c14060701e601aae037
+**Review Record**: .aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json
+**Review Record Digest**: sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-11T06:24:24Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: functional-design
+**Unit**: account-admin
+**Checkpoint**: review-receipt
+**Changed**: (paths unavailable)
+**Recorded**: sha256:b9d0efe73ef13b9c215fe440813c6c29125f30fcbdb0fe7be7b54dd13dd647cc
+**Current**: sha256:bcefb8d33c0ac0354f46415d871a84e04e3f896b48dd55c6729274bc2d35b0cf
+**Details**: The account admin Unit's Functional Design documents changed after they were reviewed; carrying on.
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-11T06:24:24Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: functional-design
+**Unit**: images
+**Checkpoint**: review-receipt
+**Changed**: (paths unavailable)
+**Recorded**: sha256:8d267da1a44ce5618cd3eb98f4c0dc9098a145ee76ca025b0667f7f73f7b1d5c
+**Current**: sha256:6970698d3af5c5867b5e58c6cdd54719bba1398a72c01d1249af5ed47423548d
+**Details**: The images Unit's Functional Design documents changed after they were reviewed; carrying on.
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-11T06:24:24Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: functional-design
+**Unit**: taste-filter
+**Checkpoint**: review-receipt
+**Changed**: (paths unavailable)
+**Recorded**: sha256:83d95570d6451d8cd0d3e6160569df3abeb05fcdd172311b4cc6a86adc60a602
+**Current**: sha256:771307143c6da93f2fefaa2cca3c94078c921b544c3d704224b3fd7511526405
+**Details**: The taste filter Unit's Functional Design documents changed after they were reviewed; carrying on.
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-11T06:24:24Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: functional-design
+**Unit**: shopping-list
+**Checkpoint**: review-receipt
+**Changed**: (paths unavailable)
+**Recorded**: sha256:69dbe8a43f20c910787d4b17768e664418df62de6652d9c372b86645e513d21e
+**Current**: sha256:a684d0a101a4ce5d938986aa6d9c26ec35dcdbab622100a7c60b006fb40a9e5b
+**Details**: The shopping list Unit's Functional Design documents changed after they were reviewed; carrying on.
+
+---
+
+## Change Accepted
+**Timestamp**: 2026-10-11T06:24:24Z
+**Event**: CHANGE_ACCEPTED
+**Stage**: functional-design
+**Unit**: meal-plan
+**Checkpoint**: review-receipt
+**Changed**: (paths unavailable)
+**Recorded**: sha256:976d9ffa371b69c8194a732e7033d8ebda6265ae0fe5a10cd55925c17684c832
+**Current**: sha256:8f8f06bee084137552eb7ff98494efc48025e2e9424bd3cd394eb1a306c3575e
+**Details**: The meal plan Unit's Functional Design documents changed after they were reviewed; carrying on.
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: b484bbc3
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: b484bbc3
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+**Duration ms**: 71
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6349ae9d
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6349ae9d
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+**Duration ms**: 69
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_FIRED
+**Fire id**: e5dc0af3
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_PASSED
+**Fire id**: e5dc0af3
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_FIRED
+**Fire id**: e443ab8b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_PASSED
+**Fire id**: e443ab8b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+**Duration ms**: 66
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_FIRED
+**Fire id**: a702cb0d
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_PASSED
+**Fire id**: a702cb0d
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/entities.md
+**Duration ms**: 69
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1adb9e4b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1adb9e4b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/rules.md
+**Duration ms**: 67
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:32Z
+**Event**: SENSOR_FIRED
+**Fire id**: c8425339
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_PASSED
+**Fire id**: c8425339
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md
+**Duration ms**: 66
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_FIRED
+**Fire id**: 89e6d124
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_PASSED
+**Fire id**: 89e6d124
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/traceability.json
+**Duration ms**: 70
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8fca91df
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8fca91df
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Duration ms**: 69
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6d028f80
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6d028f80
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Duration ms**: 64
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_FIRED
+**Fire id**: ca30203f
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:33Z
+**Event**: SENSOR_PASSED
+**Fire id**: ca30203f
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Duration ms**: 66
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_FIRED
+**Fire id**: f22f0dac
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: f22f0dac
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_FIRED
+**Fire id**: 668fd376
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: 668fd376
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+**Duration ms**: 74
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_FIRED
+**Fire id**: 94277673
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: 94277673
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Duration ms**: 73
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_FIRED
+**Fire id**: df6923c9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:34Z
+**Event**: SENSOR_PASSED
+**Fire id**: df6923c9
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+**Duration ms**: 70
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4c276906
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4c276906
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+**Duration ms**: 66
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: f6ef8245
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: f6ef8245
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/entities.md
+**Duration ms**: 69
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: baea16f2
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: baea16f2
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/rules.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: bd70331b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: bd70331b
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5de868dc
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5de868dc
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+**Duration ms**: 65
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9be063ab
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9be063ab
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_FIRED
+**Fire id**: 72cc992f
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: 72cc992f
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Duration ms**: 63
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1a83d839
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1a83d839
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Duration ms**: 70
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_FIRED
+**Fire id**: 23f287e7
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:36Z
+**Event**: SENSOR_PASSED
+**Fire id**: 23f287e7
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+**Duration ms**: 65
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1968bd84
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1968bd84
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+**Duration ms**: 65
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9bee5174
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9bee5174
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Duration ms**: 73
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: da8967ee
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: da8967ee
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Duration ms**: 76
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: cf98bd56
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: cf98bd56
+**Sensor ID**: required-sections
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+**Duration ms**: 104
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 790bcec4
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 790bcec4
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/entities.md
+**Duration ms**: 72
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: e92058f5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: e92058f5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/rules.md
+**Duration ms**: 70
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 37e8fe6a
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 37e8fe6a
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 00cc0971
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 00cc0971
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/traceability.json
+**Duration ms**: 69
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1833745c
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1833745c
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/entities.md
+**Duration ms**: 67
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: e48005e3
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: e48005e3
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/rules.md
+**Duration ms**: 65
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: fb426133
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: fb426133
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md
+**Duration ms**: 67
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: c9261daa
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: c9261daa
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/traceability.json
+**Duration ms**: 62
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: b21f66b3
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FAILED
+**Fire id**: b21f66b3
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/entities.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-b21f66b3.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: c311f6c6
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FAILED
+**Fire id**: c311f6c6
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/rules.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-c311f6c6.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 472ea913
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:40Z
+**Event**: SENSOR_FAILED
+**Fire id**: 472ea913
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-472ea913.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3f486f54
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_FAILED
+**Fire id**: 3f486f54
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-3f486f54.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: cf412f0b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: cf412f0b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/entities.md
+**Duration ms**: 67
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3d1c964f
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3d1c964f
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/rules.md
+**Duration ms**: 68
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: d1532181
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: d1532181
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md
+**Duration ms**: 66
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: a59f423d
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_PASSED
+**Fire id**: a59f423d
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/traceability.json
+**Duration ms**: 67
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8eb83f9b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/entities.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FAILED
+**Fire id**: 8eb83f9b
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/entities.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-8eb83f9b.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9bec9091
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/rules.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FAILED
+**Fire id**: 9bec9091
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/rules.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-9bec9091.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FIRED
+**Fire id**: e1af7447
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:42Z
+**Event**: SENSOR_FAILED
+**Fire id**: e1af7447
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-e1af7447.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 957a8d22
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FAILED
+**Fire id**: 957a8d22
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-957a8d22.md
+**Findings count**: 1
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: cec42049
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FAILED
+**Fire id**: cec42049
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/entities.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-cec42049.md
+**Findings count**: 3
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 05dbc1c5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FAILED
+**Fire id**: 05dbc1c5
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/rules.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-05dbc1c5.md
+**Findings count**: 3
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:43Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2016713f
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FAILED
+**Fire id**: 2016713f
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-2016713f.md
+**Findings count**: 3
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: f9b20d99
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FAILED
+**Fire id**: f9b20d99
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-f9b20d99.md
+**Findings count**: 3
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8052f74a
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FAILED
+**Fire id**: 8052f74a
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/entities.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-8052f74a.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: f038e83e
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:44Z
+**Event**: SENSOR_FAILED
+**Fire id**: f038e83e
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/rules.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-f038e83e.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:45Z
+**Event**: SENSOR_FIRED
+**Fire id**: 369db8ef
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:45Z
+**Event**: SENSOR_FAILED
+**Fire id**: 369db8ef
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-369db8ef.md
+**Findings count**: 2
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-11T06:24:45Z
+**Event**: SENSOR_FIRED
+**Fire id**: d81d6013
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-11T06:24:45Z
+**Event**: SENSOR_FAILED
+**Fire id**: d81d6013
+**Sensor ID**: upstream-coverage
+**Stage slug**: functional-design
+**Output path**: aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-meal-planner/.aidlc-engine/sensors/functional-design/upstream-coverage-d81d6013.md
+**Findings count**: 2
+
+---
+
+## Stage Awaiting Approval
+**Timestamp**: 2026-10-11T06:24:53Z
+**Event**: STAGE_AWAITING_APPROVAL
+**Stage**: functional-design
+
+---
+
+## Gate Approved
+**Timestamp**: 2026-10-11T06:25:14Z
+**Event**: GATE_APPROVED
+**Stage**: functional-design
+**Review Finding Dispositions**: {"version":1,"dispositions":[{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:f19d86270c1e12642aa80db3c509b7a2759a904c3a399fc10feeea4c908d35fb","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.json","digest":"sha256:a6dd4726c6c36d3c82ae6e85e853aa90a3dfdec044637a492928dac8056c5e21"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:e18656cdeac3bdbac75f3ff3cb9960a90429d885138ea86c3938539f8d19785a","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.json","digest":"sha256:a6dd4726c6c36d3c82ae6e85e853aa90a3dfdec044637a492928dac8056c5e21"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/account-admin/functional-design/functional-spec.md","id":"R-03","fingerprint":"sha256:99439257e6d3959a2e89e40014fa23605118987b5a0bc87794db184000a6e323","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/account-admin/72833f762add2b8e/1.json","digest":"sha256:a6dd4726c6c36d3c82ae6e85e853aa90a3dfdec044637a492928dac8056c5e21"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:501f4e84fe0cb87aa2f6f76edca74bfe1a06001c2db28f2b7fa51c3f23f6b08e","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json","digest":"sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:7cb3d4473c23ba536a27d00884b960b40faf85ab6d998fd1c6a40de8fbb9524d","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json","digest":"sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md","id":"R-03","fingerprint":"sha256:6605e3b47adea866b5051de01a918f53119f30be09d9a6cd852eb9966d2d17e0","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json","digest":"sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md","id":"R-04","fingerprint":"sha256:64313978c2ab70b0a31ab61f6f5517ef8460648c4bed246344389ff11beae46e","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json","digest":"sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/cook-log/functional-design/functional-spec.md","id":"R-05","fingerprint":"sha256:62d77526434496368b5dcd7e3e7df5787ef4aafc80349d24bc1d7b7210416365","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/cook-log/72833f762add2b8e/1.json","digest":"sha256:d90a8dd49a825e79cd578c17e9ee653392ee9160d468f2d4a8ccfdc15a0bc188"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:b8ba046c09e21aac81fefb1110b6657bd7c054e2508ec3fb6f939438ca805c9f","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/images/72833f762add2b8e/1.json","digest":"sha256:fed2980cb53cd0bcaaa59e2e0d17a57a98ad364e279fa14ca7e8af2f1d5d551b"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/images/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:24026a332fa72ac892462c6648f58ee33b56eaa4b363082827c6b6549841c924","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/images/72833f762add2b8e/1.json","digest":"sha256:fed2980cb53cd0bcaaa59e2e0d17a57a98ad364e279fa14ca7e8af2f1d5d551b"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:24a8995ed5dd8122fb53a87fc881ae76804f9f3e0f84681018126e46225ac6dc","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:f1738deedc113fcddb1ed4a380195ff55cbe22079643afd310e400eea69a6a0a","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-03","fingerprint":"sha256:58c387467f98028d9ebc7f1ff831f7704ef979f0675f5c8e855c05652a88fdf1","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-04","fingerprint":"sha256:12ae97ff30b389ca15ba256762d755eca371259ae6c49e5b32423c6ccf1f6b92","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-05","fingerprint":"sha256:9fd7e155aa1d505afcae90a47f6a209dd7e23e55cf6c0a43457cc7b9d99c3b69","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/meal-plan/functional-design/functional-spec.md","id":"R-06","fingerprint":"sha256:c38c9856e9b6d6995d2c51f2ff790926724fdb9e947865b236b4285d2cf0af74","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/meal-plan/72833f762add2b8e/1.json","digest":"sha256:29c330037e71175a776957cabe7f49a2f68611bd2b86b609c2300d0ee18cfef3"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:2b6d1f242e43cff8c98327fdc548a65e529166079b9bdd86af3270da885e7ce6","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/shopping-list/72833f762add2b8e/1.json","digest":"sha256:3a903ff8abfa75e3dcfc8a0fc5caee78293cee867e8e54f740ad5545668b4105"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/shopping-list/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:eeebe99777807b476423b2ecbf18e434fa41924a995ee94868078d9bf2cfb411","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/shopping-list/72833f762add2b8e/1.json","digest":"sha256:3a903ff8abfa75e3dcfc8a0fc5caee78293cee867e8e54f740ad5545668b4105"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:d7b49816b666c446dd4dae894bad712b681b8b3e1a6a63da43ff4403f50673be","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:fe73a70bc50255bf5121fee47c8c61e5d5183ccfdb5459268c5f9da86e9d8191","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-03","fingerprint":"sha256:101d91d9e2c730340980a98bc418f949a064f2a517adc603275adcf405964394","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-04","fingerprint":"sha256:4138c63eea81084d98c3a0e90f890da64622dc121383973e390c0a6f720be4c6","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-05","fingerprint":"sha256:5652bb1547e4cf66299d516d5fc620a5e5659f38f4e7b172d9b47d5658cea369","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-06","fingerprint":"sha256:feaefaf27206adddc88e1bc8ef935d8537dd40414fb4ac349409780c4487adef","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-07","fingerprint":"sha256:fe7810ef25dda56f4912684191316516b4a7ba59e50e7ca56f9aa3a26d24892c","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-08","fingerprint":"sha256:6b1a295227e09e9267ea17024f6e6fec928148424193d27fc9ea05fe374fb082","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-09","fingerprint":"sha256:d863348f7b164cc7089f4bbc4575e9e192ecd90ff9b7d0ea30cfb1614b6d90e0","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-10","fingerprint":"sha256:fb6296bb350d7de756b49dc9c1b2d901e40ac78da4db23226fa2fd662f9949c8","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-11","fingerprint":"sha256:c576785f18f8b916a3b7d71f63cda63781477c73c3e3d5a4bf69df6156643e2f","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/skeleton/functional-design/functional-spec.md","id":"R-12","fingerprint":"sha256:0444c660c8a89bedf5a0424df21429183a2168c23587d331d2779c3a404cf974","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/skeleton/72833f762add2b8e/1.json","digest":"sha256:dbb2d4f3d1518cadf068a9ae597ae42d463bd35191418849879a6e88b3900f2c"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-01","fingerprint":"sha256:88a132685ec281018d75f7aab31c1dde6e5bb690477c3ad828b45d30cef685c0","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-02","fingerprint":"sha256:71576ca041bbf5bcb8f9d447617efe5dae5f5ffe41ccad2abceaaa20a123b8a5","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-03","fingerprint":"sha256:73e257e26ca59a3d01d32320ac7aad4d4822bef3f14f48750acfc4e65197aa42","status":"Accepted risk","decided_at_severity":"Major","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-04","fingerprint":"sha256:4f88c1a6b805c91ed593578f0423d41740e44ed379ef9866e63593fd7f8fa0d4","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-05","fingerprint":"sha256:74c11c774b0a5a7feacecfb43a7d4887a1ca31e9f3137d747397da3420bd0db4","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}},{"artifact":"aidlc/spaces/default/intents/261010-meal-planner/construction/taste-filter/functional-design/functional-spec.md","id":"R-06","fingerprint":"sha256:0533ee6f212e8f66ef9ec3ba4ab29d4c5d7492b782feebaca19516e4a1141c80","status":"Accepted risk","decided_at_severity":"Minor","reviewed_record":{"path":".aidlc-engine/reviews/functional-design/units/taste-filter/72833f762add2b8e/1.json","digest":"sha256:028385839baeac4947d0575703d8570eb7e316967b79bf77a4520cf025473cac"}}]}
+
+---
+
+## Stage Completion
+**Timestamp**: 2026-10-11T06:25:14Z
+**Event**: STAGE_COMPLETED
+**Stage**: functional-design
+**Validation Basis**: {"graphContract":"sha256:c0dd0abcf729725dd1610dbd62efc46a49c3d6e3d7efed0cf53a65f7d271fd9e","inputs":[{"artifact":"components","contentHash":"sha256:9ccbc6dbc5a3025cb6eafa579750e8c85400356ad00b34dc01ee983581d40613","instanceCount":1,"presentCount":1,"producer":"domain-design","required":true,"structureHash":"sha256:9fe59fda38045b5a7de39134a819cfc3ab9a56f43f4fa8d7a3b7afc0fdb71c11"},{"artifact":"contract-summary","contentHash":"sha256:68e9a6031ce15aa5ce51b7a0a5915a6a78f66b7ee4137c5944cac8d619b8492b","instanceCount":1,"presentCount":1,"producer":"contract-design","required":false,"structureHash":"sha256:7e1d96a86879f9467addcd15738cb7cf5636f8586e668b46570cf84d4ad46a7a"},{"artifact":"requirements","contentHash":"sha256:e97bb67be6354272484f34714737fbc1c90e9ab184cb5c9ce2283ee4a88c4012","instanceCount":1,"presentCount":1,"producer":"requirements-analysis","required":true,"structureHash":"sha256:87b83ddf2515f71c0df820274be1219e6ed8a81545c505e7f1a44a9c46654b05"},{"artifact":"unit-of-work-story-map","contentHash":"sha256:571ef287c0cef203463cb514d639fc93f040e22f0fdbedf73cf9b5e9045b8de5","instanceCount":1,"presentCount":1,"producer":"units-generation","required":false,"structureHash":"sha256:38fb29452a8933f8cac41dd9967c9ebad722fd795cd941f9b35a799d18ba1e26"},{"artifact":"unit-of-work","contentHash":"sha256:4293eb3ab951c8320823870860d1724ab7d58f4cdee4537727e221374ba1c412","instanceCount":1,"presentCount":1,"producer":"units-generation","required":true,"structureHash":"sha256:81a112a0e3f7250a380b01e350ba0f486a94f0fb7c186e8cc4b8d0b4153df755"}],"outputs":[{"artifact":"entities","contentHash":"sha256:c7811489d55985456423a419df07138e8cb801481c1a426137b00eebefaa680b","instanceCount":7,"presentCount":7,"producer":"functional-design","required":true,"structureHash":"sha256:9568bc46a906726ba9c2eb862f6d3b52ce3020d93beb4652d5a0b6175d7223fd"},{"artifact":"functional-spec","contentHash":"sha256:56caf810a3ba5aaff0789f6b16f639d8f95d6d455f0d8fc21ed1ef7055853f13","instanceCount":7,"presentCount":7,"producer":"functional-design","required":true,"structureHash":"sha256:c8dec662053b3574167769b6f76ab5242bcf384a2feb14603aad4c9e774676df"},{"artifact":"rules","contentHash":"sha256:44b33cc72439c310448835b7630ba9913eedba3a5fb8b1e9771975a98e1b2efd","instanceCount":7,"presentCount":7,"producer":"functional-design","required":true,"structureHash":"sha256:0975f3de5ea92525a799bce342768fb55dcb8628b9c6344a24daff16d6af2bcc"},{"artifact":"traceability","contentHash":"sha256:a323ecd1cd0065ae35bb00c8ce0e9515b3dbb23fbfc98c1fa6c05535d1221bcf","instanceCount":7,"presentCount":7,"producer":"functional-design","required":true,"structureHash":"sha256:466181b89a03767b8672f7a8021c3ee099b3f0142a1b450c074c2c96c1a0c6a5"}],"projectType":"greenfield","schema":3}
+**Details**: Stage Functional Design approved by gate
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-11T06:25:14Z
+**Event**: STAGE_STARTED
+**Stage**: nfr-requirements
+**Agent**: aidlc-architect-agent
+
+---
+
+## Memory Empty
+**Timestamp**: 2026-10-11T06:25:19Z
+**Event**: MEMORY_EMPTY
+**Stage**: functional-design
+
+---

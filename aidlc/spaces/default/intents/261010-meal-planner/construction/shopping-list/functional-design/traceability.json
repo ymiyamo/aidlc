@@ -1,0 +1,30 @@
+{
+  "stage": "functional-design",
+  "unit": "shopping-list",
+  "upstream_ids": [
+    "AC2.6.1", "AC2.6.2", "AC2.6.3",
+    "AC3.1.1", "AC3.1.2", "AC3.1.3", "AC3.1.4", "AC3.1.5",
+    "AC3.2.1", "AC3.2.2"
+  ],
+  "coverage": [
+    { "id": "AC2.6.1", "status": "Deferred", "target": "functional-design (unit U1 skeleton): 「選んだもの」の一覧を見ることは U1 の担当（BR4.6、BR4.11）" },
+    { "id": "AC2.6.2", "status": "OK", "target": "BR20.3, BR20.2, BR20.4" },
+    { "id": "AC2.6.3", "status": "OK", "target": "BR20.3" },
+    { "id": "AC3.1.1", "status": "OK", "target": "BR20.4, BR20.3" },
+    { "id": "AC3.1.2", "status": "OK", "target": "BR20.5" },
+    { "id": "AC3.1.3", "status": "OK", "target": "BR20.6" },
+    { "id": "AC3.1.4", "status": "OK", "target": "BR20.8" },
+    { "id": "AC3.1.5", "status": "OK", "target": "BR20.12" },
+    { "id": "AC3.2.1", "status": "OK", "target": "BR20.10, BR20.11" },
+    { "id": "AC3.2.2", "status": "OK", "target": "BR20.17" }
+  ],
+  "reverse": [
+    { "id": "BR20.1", "status": "N/A", "target": "グループで絞る（NFR3.2、ADR-005）。ストーリーの受け入れ条件には書かれていない、安全のための設計の判断" },
+    { "id": "BR20.7", "status": "N/A", "target": "数でない分量・分量が空の扱い（Q3 A）。AC3.1.2、AC3.1.3 の「合算」の範囲を決める設計の判断" },
+    { "id": "BR20.9", "status": "N/A", "target": "行の並び順（FR3.4）。受け入れ条件にはない、見やすさのための設計の判断" },
+    { "id": "BR20.13", "status": "N/A", "target": "「買い物おわり」で完了し、選んだものが外れる（Q5 A、U1 の ST2 の受け口）。受け入れ条件にはなく、U1 の設計が U3 に求めた受け口" },
+    { "id": "BR20.14", "status": "N/A", "target": "献立（U4）から渡された材料のリスト（ADR-010）。受け入れ条件は U4 のストーリーにあり、U3 は集計の窓口だけを提供する" },
+    { "id": "BR20.15", "status": "N/A", "target": "グループ削除の出来事の受け口（ADR-007、FR7.6）。受け入れ条件は U7 のストーリー（US7.5）にある" },
+    { "id": "BR20.16", "status": "N/A", "target": "人の参照は memberId のみ（ADR-009）。受け入れ条件にはない、設計の判断" }
+  ]
+}

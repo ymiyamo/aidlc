@@ -1,0 +1,30 @@
+{
+  "stage": "functional-design",
+  "unit": "account-admin",
+  "upstream_ids": [
+    "AC7.1.1", "AC7.1.2", "AC7.1.3",
+    "AC7.2.1", "AC7.2.2", "AC7.2.3",
+    "AC7.3.1", "AC7.3.2",
+    "AC7.4.1", "AC7.4.2",
+    "AC7.5.1"
+  ],
+  "coverage": [
+    { "id": "AC7.1.1", "status": "Deferred", "target": "functional-design (unit U1 skeleton): アカウントの登録とログインは U1 の担当（BR1.1〜BR1.6）。U7 は登録済みのアカウントに失敗の回数とロックを足す" },
+    { "id": "AC7.1.2", "status": "OK", "target": "BR50.1, BR50.2, BR50.3, BR50.4, BR50.25" },
+    { "id": "AC7.1.3", "status": "OK", "target": "BR50.5, BR50.6, BR50.7, BR50.8" },
+    { "id": "AC7.2.1", "status": "OK", "target": "BR50.9, BR50.10, BR50.14, BR50.28 (招待リンクの発行の部分。グループ作成は U1 の BR2.1, BR2.2, BR2.6)" },
+    { "id": "AC7.2.2", "status": "OK", "target": "BR50.11, BR50.12, BR50.14, BR50.15" },
+    { "id": "AC7.2.3", "status": "OK", "target": "BR50.13, BR50.11" },
+    { "id": "AC7.3.1", "status": "OK", "target": "BR50.16, BR50.17, BR50.19 (好き嫌いを外す処理そのものは functional-design の unit U2 taste-filter の受け口が担当。U7 は member-left を出す側)" },
+    { "id": "AC7.3.2", "status": "OK", "target": "BR50.18, BR50.16" },
+    { "id": "AC7.4.1", "status": "OK", "target": "BR50.20, BR50.21, BR50.17 (好き嫌いの削除は U2 の受け口が担当。U7 は account.deleted と member-left を出す側)" },
+    { "id": "AC7.4.2", "status": "OK", "target": "BR50.18, BR50.21" },
+    { "id": "AC7.5.1", "status": "OK", "target": "BR50.22, BR50.21 (暫定の案。各ユニットのデータを消す処理は、それぞれの unit の受け口が担当。U7 は household.deleted を出す側)" }
+  ],
+  "reverse": [
+    { "id": "BR50.23", "status": "N/A", "target": "出来事の配達の決まり（記録してから配る、at-least-once、ID のみ）。ADR-007 と契約 C3 に由来し、特定の AC には書かれていない" },
+    { "id": "BR50.24", "status": "N/A", "target": "出来事の再配達に対する受け口の冪等性（C3 の x-delivery）。技術的な制約で、AC には書かれていない" },
+    { "id": "BR50.26", "status": "N/A", "target": "ログの伏せ字（NFR3）。AC には書かれていない、セキュリティ上の設計の判断" },
+    { "id": "BR50.27", "status": "N/A", "target": "リンクを開いた画面の参照元の保護（NFR3）。AC には書かれていない、セキュリティ上の設計の判断" }
+  ]
+}

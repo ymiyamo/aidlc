@@ -1,0 +1,44 @@
+{
+  "stage": "functional-design",
+  "unit": "cook-log",
+  "upstream_ids": [
+    "AC6.2.1", "AC6.2.2", "AC6.2.3", "AC6.2.4", "AC6.2.5", "AC6.2.6", "AC6.2.7", "AC6.2.8",
+    "AC6.3.1", "AC6.3.2",
+    "AC6.4.1", "AC6.4.2", "AC6.4.3", "AC6.4.4", "AC6.4.5",
+    "AC6.5.1", "AC6.5.2", "AC6.5.3", "AC6.5.4", "AC6.5.5", "AC6.5.6",
+    "AC6.6.1", "AC6.6.2"
+  ],
+  "coverage": [
+    { "id": "AC6.2.1", "status": "OK", "target": "BR40.6, BR40.1" },
+    { "id": "AC6.2.2", "status": "OK", "target": "BR40.2, BR40.6" },
+    { "id": "AC6.2.3", "status": "OK", "target": "BR40.3, BR40.6" },
+    { "id": "AC6.2.4", "status": "OK", "target": "BR40.7" },
+    { "id": "AC6.2.5", "status": "OK", "target": "BR40.8" },
+    { "id": "AC6.2.6", "status": "OK", "target": "BR40.9" },
+    { "id": "AC6.2.7", "status": "OK", "target": "BR40.1" },
+    { "id": "AC6.2.8", "status": "OK", "target": "BR40.4" },
+    { "id": "AC6.3.1", "status": "OK", "target": "BR40.20, BR40.19" },
+    { "id": "AC6.3.2", "status": "OK", "target": "BR40.19" },
+    { "id": "AC6.4.1", "status": "OK", "target": "BR40.12" },
+    { "id": "AC6.4.2", "status": "OK", "target": "BR40.13" },
+    { "id": "AC6.4.3", "status": "OK", "target": "BR40.14" },
+    { "id": "AC6.4.4", "status": "OK", "target": "BR40.13" },
+    { "id": "AC6.4.5", "status": "OK", "target": "BR40.12" },
+    { "id": "AC6.5.1", "status": "OK", "target": "BR40.15, BR40.16" },
+    { "id": "AC6.5.2", "status": "OK", "target": "BR40.16" },
+    { "id": "AC6.5.3", "status": "OK", "target": "BR40.17" },
+    { "id": "AC6.5.4", "status": "OK", "target": "BR40.17, BR40.4" },
+    { "id": "AC6.5.5", "status": "OK", "target": "BR40.15, BR40.1" },
+    { "id": "AC6.5.6", "status": "OK", "target": "BR40.18 (保存の画面への案内の部分のみ。保存の画面そのものは functional-design の unit skeleton (U1) の BR3.13 が担当)" },
+    { "id": "AC6.6.1", "status": "OK", "target": "BR40.8" },
+    { "id": "AC6.6.2", "status": "OK", "target": "BR40.9" }
+  ],
+  "reverse": [
+    { "id": "BR40.5", "status": "N/A", "target": "記録を追加できる料理の条件（自分のグループ・削除済みでない）。ストーリーの受け入れ条件には書かれていない、所属確認（ADR-005）と論理削除（ADR-008）に基づく設計の判断" },
+    { "id": "BR40.10", "status": "N/A", "target": "グループの範囲とメンバーなら誰でも編集・削除できる決まり（NFR3.2、ADR-005、Q5 A）。受け入れ条件には書かれていない、設計の判断" },
+    { "id": "BR40.11", "status": "N/A", "target": "料理が論理削除されたときの記録の扱い（ADR-008、Q3 A）。受け入れ条件には書かれていない、設計の判断" },
+    { "id": "BR40.21", "status": "N/A", "target": "グループ削除の出来事を受けて記録を消す受け口（C3、ADR-007）。ストーリーの受け入れ条件には書かれていない、契約に基づく設計" },
+    { "id": "BR40.22", "status": "N/A", "target": "日付は日本時間で扱う（契約 C2 の共通規則）。受け入れ条件に直接の記述はない、技術的な検証規則" },
+    { "id": "BR40.23", "status": "N/A", "target": "記録した人の表示と退会したメンバーの扱い（FR7.5、ADR-009、BR2.5）。受け入れ条件には書かれていない、設計の判断" }
+  ]
+}

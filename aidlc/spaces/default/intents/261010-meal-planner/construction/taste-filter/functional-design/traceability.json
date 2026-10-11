@@ -1,0 +1,40 @@
+{
+  "stage": "functional-design",
+  "unit": "taste-filter",
+  "upstream_ids": [
+    "AC4.1.1", "AC4.1.2",
+    "AC4.3.1", "AC4.3.2",
+    "AC2.3.1", "AC2.3.2",
+    "AC2.2.1", "AC2.2.2", "AC2.2.3", "AC2.2.4", "AC2.2.5",
+    "AC2.5.1", "AC2.5.2", "AC2.5.3",
+    "AC2.4.1", "AC2.4.2"
+  ],
+  "coverage": [
+    { "id": "AC4.1.1", "status": "OK", "target": "BR10.1, BR10.2, BR10.5" },
+    { "id": "AC4.1.2", "status": "OK", "target": "BR10.6, BR10.8 (候補の部分のみ。献立で除外を使う部分は functional-design の unit U4 meal-plan が担当)" },
+    { "id": "AC4.3.1", "status": "OK", "target": "BR10.7, BR10.8" },
+    { "id": "AC4.3.2", "status": "OK", "target": "BR10.7" },
+    { "id": "AC2.3.1", "status": "OK", "target": "BR10.6, BR10.8" },
+    { "id": "AC2.3.2", "status": "OK", "target": "BR10.9" },
+    { "id": "AC2.2.1", "status": "OK", "target": "BR10.12" },
+    { "id": "AC2.2.2", "status": "OK", "target": "BR10.10, BR10.11, BR10.13" },
+    { "id": "AC2.2.3", "status": "OK", "target": "BR10.11" },
+    { "id": "AC2.2.4", "status": "OK", "target": "BR10.15" },
+    { "id": "AC2.2.5", "status": "OK", "target": "BR10.14" },
+    { "id": "AC2.5.1", "status": "OK", "target": "BR10.16" },
+    { "id": "AC2.5.2", "status": "OK", "target": "BR10.17" },
+    { "id": "AC2.5.3", "status": "OK", "target": "BR10.18" },
+    { "id": "AC2.4.1", "status": "Deferred", "target": "functional-design (unit U1 skeleton): 保存した項目が 0 件のときの案内は U1 の担当（BR4.4）" },
+    { "id": "AC2.4.2", "status": "OK", "target": "BR10.19" }
+  ],
+  "reverse": [
+    { "id": "BR10.3", "status": "N/A", "target": "1 人 50 件までの上限（Q6 A）。受け入れ条件には書かれていない、設計の判断" },
+    { "id": "BR10.4", "status": "N/A", "target": "嫌いな食材を外す操作と、本人だけが外せる決まり（FR4.1、US4.1 の説明、Q6 A）。受け入れ条件には書かれていない" },
+    { "id": "BR10.20", "status": "N/A", "target": "除外のせいで候補がすべて外れたときの案内（Q4 A）。AC2.4.2 は絞り込みの 0 件だけで、除外の 0 件は受け入れ条件にない設計の判断" },
+    { "id": "BR10.21", "status": "N/A", "target": "メンバーが抜けた出来事の受け口（ADR-007、契約 C3）。受け入れ条件 AC7.3.1 は U7 の担当で、U2 は受け側を作る" },
+    { "id": "BR10.22", "status": "N/A", "target": "グループが削除された出来事の受け口（ADR-007、契約 C3、暫定の案）。受け入れ条件 AC7.5.1 は U7 の担当で、U2 は受け側を作る" },
+    { "id": "BR10.23", "status": "N/A", "target": "グループの範囲に限る所属確認（ADR-005、NFR3）。横断的な制約で、個別の受け入れ条件はない" },
+    { "id": "BR10.24", "status": "N/A", "target": "アレルギーを防ぐものではない旨の表示（US4.2 は Won't、Q6 A）。誤解を防ぐ設計の判断" },
+    { "id": "BR10.25", "status": "N/A", "target": "窓口 TasteExclusion の新設と既定・本物の実装（U2 の作業）、取れないときは出さない決まり（契約 C2、ADR-002）。設計上の制約" }
+  ]
+}
