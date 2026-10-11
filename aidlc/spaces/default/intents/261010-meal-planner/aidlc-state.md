@@ -9,7 +9,7 @@
 - **Start Date**: 2026-10-10T04:16:42Z
 - **Question Id**: ee0cbdd9
 - **State Version**: 8
-- **Active Agent**: aidlc-architect-agent
+- **Active Agent**: aidlc-developer-agent
 - **Worktree Path**:
 - **Bolt Refs**:
 - **Practices Affirmed Timestamp**: 2026-10-10T04:29:09Z
@@ -36,7 +36,7 @@
 ## Execution Plan Summary
 - **Total Stages**: 17
 - **Completed**: 12
-- **In Progress**: nfr-design
+- **In Progress**: code-generation
 
 ## Runtime State
 - **Revision Count**: 2
@@ -128,9 +128,9 @@
 Per unit: [TBD]
 - [x] functional-design — EXECUTE
 - [S] nfr-requirements — EXECUTE
-- [-] nfr-design — EXECUTE
-- [ ] infrastructure-design — EXECUTE
-- [ ] code-generation — EXECUTE
+- [S] nfr-design — EXECUTE
+- [S] infrastructure-design — EXECUTE
+- [-] code-generation — EXECUTE
 - [ ] build-and-test — EXECUTE
 - [ ] ci-pipeline — SKIP
 
@@ -145,14 +145,14 @@ Per unit: [TBD]
 
 ## Current Status
 - **Lifecycle Phase**: CONSTRUCTION
-- **Current Stage**: nfr-design
-- **Next Stage**: infrastructure-design
+- **Current Stage**: code-generation
+- **Next Stage**: build-and-test
 - **Status**: Running
-- **Last Updated**: 2026-10-11T06:25:33Z
+- **Last Updated**: 2026-10-11T06:45:52Z
 
 - **Construction Autonomy Mode**: autonomous
 
 ## Session Resume Point
 - **Last Completed Stage**: functional-design
-- **Next Action**: Execute NFR Design
+- **Next Action**: Execute Code Generation
 - **Pending Artifacts**: none
