@@ -12477,3 +12477,67 @@
 **Stage**: functional-design
 
 ---
+
+## Stage Skip
+**Timestamp**: 2026-10-11T06:25:33Z
+**Event**: STAGE_SKIPPED
+**Stage**: nfr-requirements
+**Reason**: U2〜U7 は U1（skeleton）の技術スタック・NFR・基盤の上に載る追加機能で、新しい技術選定がない。ユニット固有の目標（献立 3 秒、買い物リスト 1 秒、ログイン失敗の制限、画像 5MB など）は requirements.md の NFR と各ユニットの機能設計の業務ルールに含まれる。U1 の NFR 要件（construction/skeleton/nfr-requirements/）を継承する
+**Skip Kind**: conditional-runtime
+
+---
+
+## Stage Start
+**Timestamp**: 2026-10-11T06:25:33Z
+**Event**: STAGE_STARTED
+**Stage**: nfr-design
+**Agent**: aidlc-architect-agent
+
+---
+
+## Checkpoint Verification Recorded
+**Timestamp**: 2026-10-11T06:26:27Z
+**Event**: CHECKPOINT_VERIFICATION_RECORDED
+**Unit**: skeleton
+**Kind**: skeleton
+**Stage**: code-generation
+**Stages**: functional-design, nfr-design, infrastructure-design, code-generation
+**Verification Id**: acb92621-4bdc-4256-8330-49128b16c55f
+**Fingerprint**: sha256:964abea98c0f78614ba4dc2da810a865a9f96dac3a911e153153038cf52821e0
+**Command SHA-256**: 8ed93bd71904ad737d0d23cc62e9ae4cb8b3539c74a125c1db246ed0daf2823f
+**Exit Code**: 0
+**Verified**: true
+**Run floor**: WORKFLOW_STARTED:2026-10-10T04:16:42Z#1
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-11T06:26:31Z
+**Event**: DECISION_RECORDED
+**Checkpoint**: Construction Unit Approval
+**Unit**: skeleton
+**Kind**: skeleton
+**Stage**: code-generation
+**Fingerprint**: sha256:964abea98c0f78614ba4dc2da810a865a9f96dac3a911e153153038cf52821e0
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+**Options**: Approve,Request Changes
+**Asked Evidence**: {"functional-design":["sha256:dc837198e890e7689ea385a07cdf8cb35d358d06d0b93925ce7545f31faeafc6",null],"nfr-design":["sha256:bbcd26e11014d42d6ba1a1cef21e9596ef4a3387b48fdd1f1dd2b2676875e609",null],"infrastructure-design":["sha256:b92ed04c0ef859b24d9ea28fe89deb404f7749af58be435177a2fec13d1d6dec",null],"code-generation":["sha256:1085461eaf09ee6403609f349988d049a68ead878a8f4891da0add91db913bbe","sha256:e0cdc2fb1ef73f7a0c1cfdd8214ad62f58993ee5ee6c747b14e640ee81de2af3"]}
+**Run floors**: {"functional-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","nfr-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","infrastructure-design":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1","code-generation":"WORKFLOW_STARTED:2026-10-10T04:16:42Z#1"}
+
+---
+
+## Decision Recorded
+**Timestamp**: 2026-10-11T06:26:54Z
+**Event**: DECISION_RECORDED
+**Stage**: code-generation
+**Decision**: 骨組み（skeleton）の再承認を利用者に確認した（NFR要件の省略で指紋が変わったため。確認コマンドは成功。回答待ち：1 承認 / 2 変更）
+**Unit**: skeleton
+
+---
+
+## Human Turn
+**Timestamp**: 2026-10-11T06:30:48Z
+**Event**: HUMAN_TURN
+**Session**: sess_d02ae895-3711-4706-89bc-ee67b8495824
+
+---

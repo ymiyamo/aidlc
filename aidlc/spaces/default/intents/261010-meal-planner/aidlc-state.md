@@ -36,7 +36,7 @@
 ## Execution Plan Summary
 - **Total Stages**: 17
 - **Completed**: 12
-- **In Progress**: nfr-requirements
+- **In Progress**: nfr-design
 
 ## Runtime State
 - **Revision Count**: 2
@@ -127,8 +127,8 @@
 ### CONSTRUCTION PHASE
 Per unit: [TBD]
 - [x] functional-design — EXECUTE
-- [-] nfr-requirements — EXECUTE
-- [ ] nfr-design — EXECUTE
+- [S] nfr-requirements — EXECUTE
+- [-] nfr-design — EXECUTE
 - [ ] infrastructure-design — EXECUTE
 - [ ] code-generation — EXECUTE
 - [ ] build-and-test — EXECUTE
@@ -145,14 +145,14 @@ Per unit: [TBD]
 
 ## Current Status
 - **Lifecycle Phase**: CONSTRUCTION
-- **Current Stage**: nfr-requirements
-- **Next Stage**: nfr-design
+- **Current Stage**: nfr-design
+- **Next Stage**: infrastructure-design
 - **Status**: Running
-- **Last Updated**: 2026-10-11T06:25:14Z
+- **Last Updated**: 2026-10-11T06:25:33Z
 
 - **Construction Autonomy Mode**: autonomous
 
 ## Session Resume Point
 - **Last Completed Stage**: functional-design
-- **Next Action**: Execute NFR Requirements
+- **Next Action**: Execute NFR Design
 - **Pending Artifacts**: none
