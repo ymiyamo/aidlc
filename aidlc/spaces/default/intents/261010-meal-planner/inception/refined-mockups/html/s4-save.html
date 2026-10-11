@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S4 保存する</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="s5-saved-list.html" aria-label="戻る">←</a><h1>保存する</h1><span style="width:44px"></span></header>
+  <main>
+    <form>
+      <p><label for="url">投稿の URL（必須）</label><input id="url" type="url" placeholder="https://"></p>
+      <p class="error" role="alert">URL の形が正しくありません。（表示例）</p>
+      <p><label for="name">料理名（必須）</label><input id="name" type="text"></p>
+
+      <details>
+        <summary style="min-height:44px">くわしく入力する（任意）</summary>
+        <fieldset>
+          <legend>調理時間</legend>
+          <label><input type="radio" name="time"> 15分以内</label>
+          <label><input type="radio" name="time"> 30分以内</label>
+          <label><input type="radio" name="time"> それ以上</label>
+        </fieldset>
+        <fieldset>
+          <legend>手間</legend>
+          <label><input type="radio" name="effort"> 楽</label>
+          <label><input type="radio" name="effort"> ふつう</label>
+          <label><input type="radio" name="effort"> 頑張れる</label>
+        </fieldset>
+        <p><label for="tag">気分のタグ</label><input id="tag" type="text" placeholder="例：さっぱり"></p>
+        <p><label for="ing">材料と分量</label><input id="ing" type="text" placeholder="例：鮭 2切れ"></p>
+        <fieldset>
+          <legend>食材の種類</legend>
+          <label><input type="radio" name="kind"> 肉</label>
+          <label><input type="radio" name="kind"> 魚</label>
+          <label><input type="radio" name="kind"> 野菜</label>
+          <label><input type="radio" name="kind"> 卵・大豆</label>
+          <label><input type="radio" name="kind"> その他</label>
+        </fieldset>
+        <p><label for="memo">メモ</label><textarea id="memo" rows="3"></textarea></p>
+      </details>
+
+      <p><a class="btn primary block" href="s5-saved-list.html">保存</a></p>
+    </form>
+  </main>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html" aria-current="page">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+</div>
+</body>
+</html>

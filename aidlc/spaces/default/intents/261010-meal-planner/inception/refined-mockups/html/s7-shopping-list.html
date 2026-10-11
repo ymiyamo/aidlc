@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S7 買い物リスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="s3-before-shopping.html" aria-label="戻る">←</a><h1>買い物リスト</h1><span style="width:44px"></span></header>
+  <main>
+    <p class="meta">選んだ料理：鮭のホイル焼き、鶏肉のトマト煮</p>
+    <ul class="list">
+      <li><label style="margin:0;display:flex;gap:12px;align-items:center;min-height:44px;flex:1"><input type="checkbox" style="width:24px;height:24px"> <span>鮭　2切れ</span></label></li>
+      <li><label style="margin:0;display:flex;gap:12px;align-items:center;min-height:44px;flex:1"><input type="checkbox" style="width:24px;height:24px"> <span>玉ねぎ　1個</span></label></li>
+      <li><label style="margin:0;display:flex;gap:12px;align-items:center;min-height:44px;flex:1"><input type="checkbox" style="width:24px;height:24px"> <span>鶏もも肉　300g</span></label></li>
+      <li class="done"><label style="margin:0;display:flex;gap:12px;align-items:center;min-height:44px;flex:1"><input type="checkbox" checked style="width:24px;height:24px"> <span>トマト缶　1缶</span></label></li>
+    </ul>
+    <section class="card" role="note">
+      <strong>⚠ 豆腐の和風ステーキ</strong>
+      <p class="meta">材料の入力が必要です。</p>
+      <a class="btn" href="s6-detail.html">材料を入力する</a>
+    </section>
+    <section class="empty card" aria-label="空の状態の例">
+      <p class="meta">（材料が 1 件もないとき）リストはまだ空です。</p>
+    </section>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html" aria-current="page">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+</div>
+</body>
+</html>

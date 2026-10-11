@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>保存する（入力エラー）</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="p-home.html" aria-label="戻る">←</a><h1>保存する</h1><span style="width:44px"></span></header>
+  <main>
+    <p><label for="url">投稿の URL（必須）</label><input id="url" type="url" value="example"></p>
+    <p class="error" role="alert">URL の形が正しくありません。http または https で始まる URL を入力してください。</p>
+    <p><label for="name">料理名（必須）</label><input id="name" type="text" value="サンプル料理"></p>
+    <a class="btn primary block" href="p-saved-new.html">保存（直したことにして進む）</a>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 今日の気分</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="s3-before-shopping.html" aria-label="閉じる">✕</a><h1>今日の気分は？</h1><button class="btn" style="min-height:44px">クリア</button></header>
+  <main>
+    <p class="hint">当てはまるものを選んでください。選ばなければ、すべての中から出します。</p>
+
+    <fieldset class="group">
+      <legend>どのくらい時間をかけられる？</legend>
+      <div class="tiles">
+        <button class="tile" aria-pressed="true">⚡<br>15分以内</button>
+        <button class="tile" aria-pressed="false">⏱<br>30分以内</button>
+        <button class="tile" aria-pressed="false">🍳<br>じっくり</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>どのくらい頑張れる？</legend>
+      <div class="tiles">
+        <button class="tile" aria-pressed="true">😪<br>楽したい</button>
+        <button class="tile" aria-pressed="false">🙂<br>ふつう</button>
+        <button class="tile" aria-pressed="false">💪<br>頑張れる</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>食べたい気分は？</legend>
+      <div class="tiles two">
+        <button class="tile" aria-pressed="false">さっぱり</button>
+        <button class="tile" aria-pressed="false">がっつり</button>
+        <button class="tile" aria-pressed="false">あたたかい</button>
+        <button class="tile" aria-pressed="false">野菜たっぷり</button>
+        <button class="tile" aria-pressed="false">ごはんが進む</button>
+        <button class="tile" aria-pressed="false">＋ 気分を足す</button>
+      </div>
+    </fieldset>
+  </main>
+  <section class="sheet" aria-label="結果">
+    <p class="progress" aria-live="polite"><strong>8 件</strong>が見つかりました</p>
+    <a class="btn primary block" href="s3-before-shopping.html">8 件を見る</a>
+    <a class="btn block" href="#">この気分で外で探す ↗</a>
+  </section>
+  <div class="note">モック上の注記：下から出るパネルとして使います。横にスクロールせず、大きなボタンで選びます。選ぶたびに、該当する件数が変わります。</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日の気分</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="p-home.html" aria-label="閉じる">✕</a><h1>今日の気分は？</h1><a class="btn" href="p-mood.html" style="min-height:44px">クリア</a></header>
+  <main>
+    <p class="hint">当てはまるものを選んでください。選ばなければ、すべての中から出します。（モックでは、選択の切り替えはできません）</p>
+    <fieldset class="group"><legend>どのくらい時間をかけられる？</legend>
+      <div class="tiles"><a class="tile" aria-pressed="true" href="p-mood.html">⚡<br>15分以内</a><a class="tile" aria-pressed="false" href="p-mood.html">⏱<br>30分以内</a><a class="tile" aria-pressed="false" href="p-mood.html">🍳<br>じっくり</a></div></fieldset>
+    <fieldset class="group"><legend>どのくらい頑張れる？</legend>
+      <div class="tiles"><a class="tile" aria-pressed="true" href="p-mood.html">😪<br>楽したい</a><a class="tile" aria-pressed="false" href="p-mood.html">🙂<br>ふつう</a><a class="tile" aria-pressed="false" href="p-mood.html">💪<br>頑張れる</a></div></fieldset>
+    <fieldset class="group"><legend>食べたい気分は？</legend>
+      <div class="tiles two"><a class="tile" aria-pressed="false" href="p-mood.html">さっぱり</a><a class="tile" aria-pressed="false" href="p-mood.html">がっつり</a><a class="tile" aria-pressed="false" href="p-mood.html">あたたかい</a><a class="tile" aria-pressed="false" href="p-mood.html">野菜たっぷり</a><a class="tile" aria-pressed="false" href="p-mood.html">ごはんが進む</a><a class="tile" aria-pressed="false" href="p-mood.html">＋ 気分を足す</a></div></fieldset>
+  </main>
+  <section class="sheet" aria-label="結果">
+    <p class="progress"><strong>8 件</strong>が見つかりました</p>
+    <a class="btn primary block" href="p-home-mood.html">8 件を見る</a>
+    <a class="btn block" href="p-external.html">この気分で外で探す ↗</a>
+  </section>
+</div>
+<style>.tile{display:flex;align-items:center;justify-content:center;text-decoration:none}</style>
+</body>
+</html>

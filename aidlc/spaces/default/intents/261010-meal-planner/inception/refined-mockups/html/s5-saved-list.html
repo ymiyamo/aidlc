@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S5 保存した項目の一覧</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>保存</h1><span></span></header>
+  <main>
+    <div class="seg" role="group" aria-label="表示の切り替え">
+      <button aria-pressed="true">すべて</button>
+      <button aria-pressed="false">お気に入り</button>
+    </div>
+    <ul class="list">
+      <li>
+        <div class="thumb small" role="img" aria-label="鮭のホイル焼きのイメージ">🐟</div>
+        <a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><strong>鮭のホイル焼き</strong><br><span class="meta">15分・楽</span></a>
+        <span aria-label="お気に入り" style="color:var(--fav)">♡</span>
+      </li>
+      <li>
+        <div class="thumb small rose" role="img" aria-label="鶏肉のトマト煮のイメージ">🍅</div>
+        <a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><strong>鶏肉のトマト煮</strong><br><span class="meta">30分・ふつう</span></a>
+        <span aria-label="お気に入り済み" style="color:var(--fav)">♥</span>
+      </li>
+      <li>
+        <div class="thumb small green" role="img" aria-label="豆腐の和風ステーキのイメージ（AI が作った画像）">🥬</div>
+        <a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><strong>豆腐の和風ステーキ</strong> <span class="sample-note">サンプルの料理</span><br><span class="meta">15分・楽　AI が作ったイメージ</span></a>
+        <span aria-label="お気に入り" style="color:var(--fav)">♡</span>
+      </li>
+    </ul>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html" aria-current="page">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+</div>
+</body>
+</html>

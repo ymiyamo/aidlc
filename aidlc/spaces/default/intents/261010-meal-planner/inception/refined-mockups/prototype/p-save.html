@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>保存する</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="p-home.html" aria-label="戻る">←</a><h1>保存する</h1><span style="width:44px"></span></header>
+  <main>
+    <p><label for="url">投稿の URL（必須）</label><input id="url" type="url" placeholder="https://"></p>
+    <p><label for="name">料理名（必須）</label><input id="name" type="text"></p>
+    <details>
+      <summary style="min-height:44px">くわしく入力する（任意）</summary>
+      <fieldset><legend>調理時間</legend><label><input type="radio" name="t"> 15分以内</label><label><input type="radio" name="t"> 30分以内</label><label><input type="radio" name="t"> それ以上</label></fieldset>
+      <fieldset><legend>手間</legend><label><input type="radio" name="e"> 楽</label><label><input type="radio" name="e"> ふつう</label><label><input type="radio" name="e"> 頑張れる</label></fieldset>
+      <p><label for="tag">気分のタグ</label><input id="tag" type="text"></p>
+      <p><label for="ing">材料と分量</label><input id="ing" type="text"></p>
+      <p><button class="btn block">画像を登録する（任意）</button></p>
+      <p><label for="memo">メモ</label><textarea id="memo" rows="3"></textarea></p>
+    </details>
+    <a class="btn primary block" href="p-saved-new.html">保存</a>
+    <p><a href="p-save-error.html">（試す）URL の形が正しくない場合</a></p>
+  </main>
+  <nav class="tabs" aria-label="主な画面"><a href="p-home.html">🍽<span>買い物前</span></a><a href="p-saved.html" aria-current="page">📌<span>保存</span></a><a href="p-menu.html">📅<span>献立</span></a><a href="p-history.html">📝<span>記録</span></a></nav>
+</div>
+</body>
+</html>

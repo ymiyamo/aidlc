@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S9 記録</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>記録</h1><span></span></header>
+  <main>
+    <div class="seg" role="group" aria-label="表示の切り替え">
+      <button aria-pressed="true">カレンダー</button>
+      <button aria-pressed="false">一覧</button>
+    </div>
+
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <button class="icon-btn" aria-label="前の月">◀</button>
+      <strong>2026 年 10 月</strong>
+      <button class="icon-btn" aria-label="次の月">▶</button>
+    </div>
+
+    <div class="cal" role="grid" aria-label="10 月の記録">
+      <div class="dow">日</div><div class="dow">月</div><div class="dow">火</div><div class="dow">水</div><div class="dow">木</div><div class="dow">金</div><div class="dow">土</div>
+      <div class="day empty-day"></div><div class="day empty-day"></div><div class="day empty-day"></div><div class="day empty-day"></div>
+      <div class="day"><span class="n">1</span></div>
+      <div class="day"><span class="n">2</span></div>
+      <div class="day"><span class="n">3</span><span class="dish">♥ 豚の生姜焼き</span></div>
+      <div class="day"><span class="n">4</span></div>
+      <div class="day"><span class="n">5</span><span class="dish">✕ 鶏のトマト煮</span></div>
+      <div class="day"><span class="n">6</span></div>
+      <div class="day"><span class="n">7</span></div>
+      <div class="day"><span class="n">8</span></div>
+      <div class="day"><span class="n">9</span><span class="dish">♥ 鮭のホイル焼き</span><span class="dish">♥ 味噌汁</span></div>
+      <div class="day"><span class="n">10</span></div>
+    </div>
+    <p class="hint">♥：また作りたい　✕：もう作りたくない</p>
+
+    <h2 style="font-size:16px;margin:8px 0 0">10 月の記録</h2>
+    <ul class="list">
+      <li><a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/09</span><br><strong>鮭のホイル焼き</strong>　♥ また作りたい<br><span class="meta">メモ：弱火で。ホイルの口はしっかり閉じる。</span></a></li>
+      <li><a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/05</span><br><strong>鶏肉のトマト煮</strong>　✕ もう作りたくない</a></li>
+      <li><a href="s6-detail.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/03</span><br><strong>豚の生姜焼き</strong>　♥ また作りたい</a></li>
+    </ul>
+    <section class="empty card" aria-label="空の状態の例">
+      <p class="meta">（記録が 0 件のとき）まだ記録がありません。作ったら、感想を残してみましょう。</p>
+    </section>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html" aria-current="page">📝<span>記録</span></a>
+  </nav>
+  <div class="note">モック上の注記：日をタップしなくても、料理名と感想の印が見えます。下には、その月の一覧も出ます。日をタップすると、その日の詳細が出ます。</div>
+</div>
+</body>
+</html>

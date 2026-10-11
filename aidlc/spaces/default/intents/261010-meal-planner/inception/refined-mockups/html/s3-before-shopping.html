@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 買い物前</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar">
+    <h1>買い物前</h1>
+    <span>
+      <a class="icon-btn" href="s7-shopping-list.html" aria-label="買い物リストを見る">🛒</a>
+      <a class="icon-btn" href="s10-dislikes.html" aria-label="メニュー">⋮</a>
+    </span>
+  </header>
+  <main>
+    <div class="row">
+      <a class="btn primary" href="s3c-mood.html">今日の気分：15分以内・楽 ▾</a>
+      <button class="btn">おまかせ</button>
+    </div>
+
+    <div class="swipe-area">
+      <p class="progress" aria-live="polite">3 / 12 件目（選んだもの：1 件）</p>
+      <article class="card" aria-label="候補のカード。右にスワイプで選ぶ、左にスワイプでパス">
+        <div class="thumb big" role="img" aria-label="鮭のホイル焼きのイメージ（AI が作った画像）">
+          <span class="badge-ai">AI が作ったイメージ</span>
+          鮭のホイル焼き
+        </div>
+        <p class="meta" style="margin-top:12px">15分・楽・さっぱり　<button class="icon-btn" aria-label="お気に入りにする" style="color:var(--fav)">♡</button></p>
+        <a class="btn block" href="s6-detail.html">元の投稿を見る ↗ ／ くわしく</a>
+      </article>
+      <div class="swipe-hint" aria-hidden="true"><span>← パス</span><span>これにする →</span></div>
+      <div class="swipe-actions">
+        <button class="btn pass">✕ パス</button>
+        <button class="btn primary">♥ これにする</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <a class="btn" href="s4-save.html">貼り付けて保存</a>
+      <a class="btn" href="#">外で探す ↗</a>
+    </div>
+    <a class="btn primary block" href="s7-shopping-list.html">選んだもの 1 件　買い物リストを見る</a>
+    <p class="hint">「これにする」で選んだ料理の材料は、買い物リストに自動で入ります。</p>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html" aria-current="page">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+  <div class="note">モック上の注記：画像は色の枠で代用しています。実際は、利用者の登録画像、なければ生成 AI の画像を表示します。カードは左右にスワイプでき、ボタンでも同じ操作ができます。</div>
+</div>
+</body>
+</html>

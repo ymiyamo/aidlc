@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>記録（カレンダー）</title>
+<link rel="stylesheet" href="../html/style.css">
+<style>.day{display:block;color:inherit;text-decoration:none}</style>
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>記録</h1><span></span></header>
+  <main>
+    <div class="seg" role="group" aria-label="表示の切り替え"><a class="btn" href="p-history.html" aria-current="true">カレンダー</a><a class="btn" href="p-history-list.html">一覧</a></div>
+    <div class="row" style="justify-content:space-between;align-items:center"><a class="icon-btn" href="p-history.html" aria-label="前の月">◀</a><strong>2026 年 10 月</strong><a class="icon-btn" href="p-history.html" aria-label="次の月">▶</a></div>
+    <p class="hint">日付を押すと、その日の記録が開き、作ったものを追加できます。</p>
+    <div class="cal">
+      <div class="dow">日</div><div class="dow">月</div><div class="dow">火</div><div class="dow">水</div><div class="dow">木</div><div class="dow">金</div><div class="dow">土</div>
+      <div class="day empty-day"></div><div class="day empty-day"></div><div class="day empty-day"></div><div class="day empty-day"></div>
+      <a class="day" href="p-day-empty.html"><span class="n">1</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">2</span></a>
+      <a class="day" href="p-day.html"><span class="n">3</span><span class="dish">♥ 豚の生姜焼き</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">4</span></a>
+      <a class="day" href="p-day.html"><span class="n">5</span><span class="dish">✕ 鶏のトマト煮</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">6</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">7</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">8</span></a>
+      <a class="day" href="p-day.html"><span class="n">9</span><span class="dish">♥ 鮭のホイル焼き</span><span class="dish">♥ 味噌汁</span></a>
+      <a class="day" href="p-day-empty.html"><span class="n">10</span><span class="dish">（今日）</span></a>
+      <a class="day" href="p-day-future.html"><span class="n">11</span></a>
+      <a class="day" href="p-day-future.html"><span class="n">12</span></a>
+    </div>
+    <p class="hint">♥：また作りたい　✕：もう作りたくない。今日は 10/10 とします。</p>
+    <h2 style="font-size:16px;margin:8px 0 0">10 月の記録</h2>
+    <ul class="list">
+      <li><a href="p-day.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/09</span><br><strong>鮭のホイル焼き</strong>　♥ また作りたい</a></li>
+      <li><a href="p-day.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/05</span><br><strong>鶏肉のトマト煮</strong>　✕ もう作りたくない</a></li>
+      <li><a href="p-day.html" style="flex:1;color:inherit;text-decoration:none"><span class="meta">10/03</span><br><strong>豚の生姜焼き</strong>　♥ また作りたい</a></li>
+    </ul>
+    <p><a href="p-history-empty.html">（試す）記録が 0 件のとき</a></p>
+  </main>
+  <a class="fab" href="p-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面"><a href="p-home.html">🍽<span>買い物前</span></a><a href="p-saved.html">📌<span>保存</span></a><a href="p-menu.html">📅<span>献立</span></a><a href="p-history.html" aria-current="page">📝<span>記録</span></a></nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>献立（作らない日を設定）</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>献立</h1><a class="btn" href="p-saved-menus.html" style="min-height:44px">保存した献立</a></header>
+  <main>
+    <p class="card" role="status">✓ 水曜を「作らない」にしました。買い物リストからも外れます。</p>
+    <ul class="list">
+      <li><strong style="width:2em">月</strong><span style="flex:1">鮭のホイル焼き</span><a class="btn" href="p-menu-redo.html">やり直し</a></li>
+      <li><strong style="width:2em">火</strong><span style="flex:1">鶏肉のトマト煮</span><a class="btn" href="p-menu-redo.html">やり直し</a></li>
+      <li class="skip"><strong style="width:2em">水</strong><span style="flex:1">作らない（外食・惣菜など）</span><a class="btn" href="p-menu.html">解除</a></li>
+      <li><strong style="width:2em">木</strong><span style="flex:1">豚肉の生姜焼き</span><div class="row"><a class="btn" href="p-menu-redo.html">やり直し</a><a class="btn" href="p-menu-skip.html">作らない</a></div></li>
+      <li><strong style="width:2em">金</strong><span style="flex:1">野菜たっぷりの味噌汁定食</span><div class="row"><a class="btn" href="p-menu-redo.html">やり直し</a><a class="btn" href="p-menu-skip.html">作らない</a></div></li>
+      <li><strong style="width:2em">土</strong><span style="flex:1">卵とほうれん草の炒め物</span><div class="row"><a class="btn" href="p-menu-redo.html">やり直し</a><a class="btn" href="p-menu-skip.html">作らない</a></div></li>
+      <li><strong style="width:2em">日</strong><span style="flex:1">鮭の塩焼き</span><div class="row"><a class="btn" href="p-menu-redo.html">やり直し</a><a class="btn" href="p-menu-skip.html">作らない</a></div></li>
+    </ul>
+    <p class="hint">「解除」を押すと、その日が元に戻ります（モックでは、押すと「献立」の最初の画面に戻ります）。</p>
+    <a class="btn block" href="p-list.html">この献立の買い物リストを見る</a>
+  </main>
+  <nav class="tabs" aria-label="主な画面"><a href="p-home.html">🍽<span>買い物前</span></a><a href="p-saved.html">📌<span>保存</span></a><a href="p-menu.html" aria-current="page">📅<span>献立</span></a><a href="p-history.html">📝<span>記録</span></a></nav>
+</div>
+</body>
+</html>

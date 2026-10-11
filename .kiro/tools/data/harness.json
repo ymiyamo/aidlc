@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "distribution": "kiro-ide",
+  "productName": "Kiro IDE",
+  "configNextStep": "open this project in Kiro IDE; if the Restricted Mode banner shows at the top of the window and you know what is in this folder, select Manage on it, then Trust; run `Developer: Reload Window` from the Command Palette (Ctrl+Shift+P, or Cmd+Shift+P on macOS), choose the aidlc agent in the chat panel's agent picker, then run `/aidlc --doctor` (in Kiro CLI, start `kiro-cli` in the project instead and run `/aidlc --doctor`)",
+  "name": "kiro-ide",
+  "harnessDir": ".kiro",
+  "rulesSubdir": "steering",
+  "hookActivation": {
+    "recovery": "In Kiro IDE, trust this folder: choose Trust Folder & Continue when Kiro asks whether you trust it, or select Manage on the Restricted Mode banner, then Trust. Then run Developer: Reload Window from the Command Palette (Ctrl+Shift+P, or Cmd+Shift+P on macOS), and say carry on. In Kiro CLI, quit Kiro and start `kiro-cli` again in this folder. If you drive Kiro from an ACP client, the Kiro IDE guide names what that client must send.",
+    "missedReply": "If the person already replied, that reply was not recorded. Do not ask them to answer again. Tell them exactly this, with nothing about why, then only the line below for the tool they are in: \"Your answer was not recorded, so you don't need to answer again.\" In Kiro CLI, quit Kiro and start `kiro-cli` again in this folder. If you drive Kiro from an ACP client, the Kiro IDE guide names what that client must send.",
+    "missedReplyInHost": {
+      "env": [
+        "VSCODE_IPC_HOOK",
+        "VSCODE_PID"
+      ],
+      "text": "If the person already replied, that reply was not recorded. Do not ask them to answer again. Tell them exactly this, with nothing about why: \"Your answer was not recorded, so you don't need to answer again. In Kiro IDE, trust this folder: choose Trust Folder & Continue when Kiro asks whether you trust it, or select Manage on the Restricted Mode banner, then Trust. Then run Developer: Reload Window from the Command Palette (Ctrl+Shift+P, or Cmd+Shift+P on macOS), and say carry on.\""
+    },
+    "notRunYet": "This is expected before your first chat message here. If you already sent one, trust this folder in Kiro IDE: choose Trust Folder & Continue when Kiro asks whether you trust it, or select Manage on the Restricted Mode banner, then Trust. Then run Developer: Reload Window from the Command Palette (Ctrl+Shift+P, or Cmd+Shift+P on macOS), send a message and run doctor again. In Kiro CLI, quit Kiro and start `kiro-cli` again in this folder."
+  },
+  "kiroLayout": "kas",
+  "project": {
+    "schemaVersion": 1,
+    "mcp": "defaults",
+    "completions": "none"
+  }
+}

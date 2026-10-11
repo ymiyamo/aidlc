@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S8 1 週間の献立</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>献立</h1><button class="btn" style="min-height:44px">保存した献立</button></header>
+  <main>
+    <button class="btn primary block">1 週間の献立を作る</button>
+
+    <section class="card" aria-label="買い物前で選んだもの">
+      <h2 style="font-size:16px">買い物前で選んだもの（2 件）</h2>
+      <p class="meta">日に割り当てると、献立に入ります。</p>
+      <div class="row">
+        <span class="chip">鮭のホイル焼き</span>
+        <span class="chip">鶏肉のトマト煮</span>
+      </div>
+    </section>
+
+    <ul class="list">
+      <li><strong style="width:2em">月</strong><span style="flex:1">鮭のホイル焼き</span><button class="btn">やり直し</button></li>
+      <li><strong style="width:2em">火</strong><span style="flex:1">鶏肉のトマト煮</span><button class="btn">やり直し</button></li>
+      <li class="skip"><strong style="width:2em">水</strong><span style="flex:1">作らない（外食）</span><button class="btn">解除</button></li>
+      <li><strong style="width:2em">木</strong><span style="flex:1">卵とほうれん草の炒め物</span><div class="row"><button class="btn">やり直し</button><button class="btn">作らない</button></div></li>
+      <li><strong style="width:2em">金</strong><span style="flex:1">豚肉の生姜焼き</span><div class="row"><button class="btn">やり直し</button><button class="btn">作らない</button></div></li>
+      <li><strong style="width:2em">土</strong><span style="flex:1">（空き）条件に合う料理が足りません。料理を保存してみませんか</span><a class="btn" href="s4-save.html">保存する</a></li>
+      <li><strong style="width:2em">日</strong><span style="flex:1">野菜たっぷりの味噌汁定食</span><div class="row"><button class="btn">やり直し</button><button class="btn">作らない</button></div></li>
+    </ul>
+    <div class="row">
+      <button class="btn">週全体をやり直す</button>
+      <button class="btn primary">保存</button>
+    </div>
+    <p class="hint">「作らない」の日は、提案と買い物リストから外れます。「解除」で元に戻せます。同じ料理は 1 週間に 2 回まで。</p>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html" aria-current="page">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+  <div class="note">モック上の注記：水曜は「作らない」を設定した状態です。「保存した献立」から、保存した献立を呼び出せます。</div>
+</div>
+</body>
+</html>

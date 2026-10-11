@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S6 項目の詳細</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="s5-saved-list.html" aria-label="戻る">←</a><h1>鮭のホイル焼き</h1><button class="icon-btn" aria-label="お気に入りにする" style="color:var(--fav)">♡</button></header>
+  <main>
+    <div class="thumb big" role="img" aria-label="鮭のホイル焼きのイメージ（AI が作った画像）">
+      <span class="badge-ai">AI が作ったイメージ</span>
+      鮭のホイル焼き
+    </div>
+    <a class="btn block" href="#">元の投稿を見る ↗</a>
+    <button class="btn block">画像を登録する（任意）</button>
+    <section class="card">
+      <p class="meta">15分・楽・さっぱり</p>
+      <p><strong>材料</strong>：鮭 2切れ、玉ねぎ 1/2個、バター 少々</p>
+      <p><strong>メモ</strong>：レモンを添えるとおいしい。</p>
+    </section>
+    <section class="card">
+      <h2>料理中の注意点</h2>
+      <p>焦げやすいので弱火で。ホイルの口はしっかり閉じる。</p>
+    </section>
+    <section class="card">
+      <h2>作った日（3 回）</h2>
+      <ul class="list">
+        <li><div style="flex:1"><strong>10/09</strong>　♥ また作りたい<br><span class="meta">メモ：弱火で。ホイルの口はしっかり閉じる。</span></div></li>
+        <li><div style="flex:1"><strong>09/20</strong>　✕ もう作りたくない<br><span class="meta">メモ：焦がした。</span></div></li>
+        <li><div style="flex:1"><strong>09/02</strong>　（感想なし）</div></li>
+      </ul>
+    </section>
+    <button class="btn primary block">＋ 作った日を追加</button>
+    <div class="row">
+      <button class="btn">編集</button>
+      <button class="btn danger">削除</button>
+    </div>
+  </main>
+
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <h2 id="sheet-title" style="margin:0;font-size:20px">作った感想</h2>
+    <fieldset>
+      <legend class="sr-only">感想</legend>
+      <label><input type="radio" name="rate" checked> また作りたい</label>
+      <label><input type="radio" name="rate"> もう作りたくない</label>
+    </fieldset>
+    <p><label for="caution">料理中の注意点メモ（任意）</label><textarea id="caution" rows="3"></textarea></p>
+    <div class="row">
+      <button class="btn">閉じる</button>
+      <button class="btn primary">保存</button>
+    </div>
+  </section>
+  <div class="note">モック上の注記：画像は色の枠で代用しています。登録した画像があればそれを、なければ生成 AI の画像を表示します。下のパネルは、ボタンを押すと下から出る部分です（開いた状態）。</div>
+</div>
+</body>
+</html>

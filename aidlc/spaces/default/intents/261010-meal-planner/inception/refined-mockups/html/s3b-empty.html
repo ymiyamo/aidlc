@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 買い物前（保存が 0 件）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>買い物前</h1><a class="icon-btn" href="s7-shopping-list.html" aria-label="買い物リストを見る">🛒</a></header>
+  <main>
+    <section class="empty card">
+      <h2>まだ保存がありません</h2>
+      <p>おいしそうな投稿を見つけたら、ここにためておきましょう。</p>
+      <a class="btn primary" href="s4-save.html">保存する</a>
+    </section>
+    <section class="empty card">
+      <h2>その条件に合うものがありません</h2>
+      <p>条件をゆるめてみませんか。</p>
+      <button class="btn">条件をはずす</button>
+    </section>
+    <section class="empty card">
+      <h2>ひと通り見ました</h2>
+      <p>また最初から見ますか。</p>
+      <button class="btn">最初から見る</button>
+    </section>
+    <section class="empty card" role="alert">
+      <h2>うまく読み込めませんでした</h2>
+      <button class="btn">もう一度試す</button>
+    </section>
+  </main>
+  <a class="fab" href="s4-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面">
+    <a href="s3-before-shopping.html" aria-current="page">🍽<span>買い物前</span></a>
+    <a href="s5-saved-list.html">📌<span>保存</span></a>
+    <a href="s8-weekly-menu.html">📅<span>献立</span></a>
+    <a href="s9-history.html">📝<span>記録</span></a>
+  </nav>
+  <div class="note">モック上の注記：4 つの状態（保存 0 件／絞り込み 0 件／出尽くした／エラー）を並べて表示しています。</div>
+</div>
+</body>
+</html>

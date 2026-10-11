@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S11 グループとアカウント</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="s10-dislikes.html" aria-label="戻る">←</a><h1>グループ</h1><span style="width:44px"></span></header>
+  <main>
+    <section class="card">
+      <h2>メンバー</h2>
+      <p>さくら、はると</p>
+      <button class="btn primary block">招待リンクを作る</button>
+      <p class="hint">招待リンクは 7 日間有効です。</p>
+      <button class="btn danger block">グループから抜ける</button>
+    </section>
+    <section class="card">
+      <h2>アカウント</h2>
+      <button class="btn block">ログアウト</button>
+      <p></p>
+      <button class="btn danger block">アカウントを削除</button>
+    </section>
+
+    <section class="sheet" role="alertdialog" aria-modal="true" aria-labelledby="dlg-title">
+      <h2 id="dlg-title" style="margin:0;font-size:20px">グループから抜けますか</h2>
+      <p>あなたの好き嫌いの登録は、提案の条件から外れます。保存した項目と記録は、グループに残ります。この操作は元に戻せません。</p>
+      <p class="hint">最後の 1 人が抜けるときは、グループのデータが削除されます。</p>
+      <div class="row">
+        <button class="btn primary">やめる</button>
+        <button class="btn danger">抜ける</button>
+      </div>
+    </section>
+  </main>
+  <div class="note">モック上の注記：下の確認のダイアログは、「グループから抜ける」を押したときに出ます（ここでは開いた状態を表示）。</div>
+</div>
+</body>
+</html>

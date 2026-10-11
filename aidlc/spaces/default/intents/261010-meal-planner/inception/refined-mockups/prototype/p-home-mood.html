@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>買い物前（気分で絞り込み）</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><h1>買い物前</h1><span><a class="icon-btn" href="p-list.html" aria-label="買い物リスト">🛒</a><a class="icon-btn" href="p-dislikes.html" aria-label="メニュー">⋮</a></span></header>
+  <main>
+    <div class="row"><a class="btn primary" href="p-mood.html">今日の気分：15分以内・楽 ▾</a><a class="btn" href="p-random.html">おまかせ</a></div>
+    <div class="swipe-area">
+      <p class="progress">1 / 8 件目（絞り込み中）</p>
+      <article class="card">
+        <div class="thumb big green" role="img" aria-label="卵とほうれん草の炒め物のイメージ"><span class="badge-ai">AI が作ったイメージ</span>卵とほうれん草の炒め物</div>
+        <p class="meta" style="margin-top:12px">15分・楽・さっぱり</p>
+        <a class="btn block" href="p-detail.html">くわしく</a>
+      </article>
+      <div class="swipe-hint" aria-hidden="true"><span>← パス</span><span>これにする →</span></div>
+      <div class="swipe-actions"><a class="btn pass" href="p-home-end.html">✕ パス</a><a class="btn primary" href="p-picked-3.html">♥ これにする</a></div>
+    </div>
+    <a class="btn block" href="p-nomatch.html">（試す）条件に合うものがなかった場合</a>
+  </main>
+  <a class="fab" href="p-save.html" aria-label="保存する">＋</a>
+  <nav class="tabs" aria-label="主な画面"><a href="p-home.html" aria-current="page">🍽<span>買い物前</span></a><a href="p-saved.html">📌<span>保存</span></a><a href="p-menu.html">📅<span>献立</span></a><a href="p-history.html">📝<span>記録</span></a></nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作った日を追加</title>
+<link rel="stylesheet" href="../html/style.css">
+</head>
+<body>
+<div class="phone">
+  <header class="bar"><a class="icon-btn" href="p-detail.html" aria-label="閉じる">✕</a><h1>鮭のホイル焼き</h1><span style="width:44px"></span></header>
+  <main>
+    <div class="thumb big" role="img" aria-label="鮭のホイル焼きのイメージ"><span class="badge-ai">AI が作ったイメージ</span>鮭のホイル焼き</div>
+  </main>
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="t">
+    <h2 id="t" style="margin:0;font-size:20px">作った日を追加</h2>
+    <p><strong>作った日</strong>：10 月 10 日（今日）　<a href="p-feedback.html">日付を変える（今日まで）</a></p>
+    <fieldset><legend>感想（任意）</legend><label><input type="radio" name="r" checked> また作りたい</label><label><input type="radio" name="r"> もう作りたくない</label></fieldset>
+    <p><label for="c">料理中の注意点メモ（任意）</label><textarea id="c" rows="3"></textarea></p>
+    <div class="row"><a class="btn" href="p-detail.html">閉じる</a><a class="btn primary" href="p-recorded.html">保存</a></div>
+    <p><a href="p-add-duplicate.html">（試す）すでに同じ日の記録がある場合</a></p>
+  </section>
+</div>
+</body>
+</html>
