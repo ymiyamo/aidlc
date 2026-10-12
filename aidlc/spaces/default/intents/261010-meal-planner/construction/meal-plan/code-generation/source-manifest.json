@@ -1,0 +1,28 @@
+{
+  "stage": "code-generation",
+  "unit": "meal-plan",
+  "version": 1,
+  "writes": [
+    { "path": "db/migrations/004_meal_plan.sql" },
+    { "path": "db/migrations/008_meal_plan_integrity.sql" },
+    { "path": "src/repo/mealplan/" },
+    { "path": "src/domain/mealplan/" },
+    { "path": "src/api/routes/mealplan.ts" },
+    { "path": "src/api/routes/__tests__/mealplan-harness.ts" },
+    { "path": "src/api/routes/__tests__/mealplan.test.ts" },
+    { "path": "src/api/router.ts" },
+    { "path": "src/app/meal-plan/" },
+    { "path": "src/ui/mealplan/" },
+    { "path": "src/repo/dishes.ts" },
+    { "path": "src/domain/suggestion.ts" },
+    { "path": "src/domain/seed.ts" },
+    { "path": "src/domain/validation.ts" },
+    { "path": "src/ui/DishForm.tsx" },
+    { "path": "src/ui/types.ts" },
+    { "path": "src/api/http.ts" },
+    { "path": "src/api/__tests__/api.test.ts" },
+    { "path": "src/db/__tests__/mealplan-schema.test.ts" },
+    { "path": "README.md" },
+    { "path": "vitest.config.ts" }
+  ]
+}

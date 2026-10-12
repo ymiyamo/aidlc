@@ -234,3 +234,25 @@ npx vitest run src/db/__tests__/images-schema.test.ts src/repo/images/__tests__ 
 ```bash
 npx vitest run src/db/__tests__/taste-schema.test.ts src/repo/taste/__tests__ src/domain/taste/__tests__ src/api/routes/__tests__/taste.test.ts src/ui/taste/__tests__
 ```
+
+## 献立（U4）と、デモの手順
+
+1 週間（7 日分）の献立を提案します。画面の URL は `/meal-plan`（ホームの「📅 1 週間の献立」）。初期データ 30 件だけのグループでも、空欄なしで 7 日分が埋まります。
+
+1. `/meal-plan` を開き、「提案を作る」を押す（はじめの日は空なら今日。日付を入れて指定もできる）。同じ料理は 1 週間に 1 回まで、同じ「主な食材の種類」（肉・魚・野菜・卵・大豆・その他）が 3 日続かないように決まる。家族が登録した「嫌いな食材」を含む料理は入らない。
+2. 「この日をやり直す」で、その日だけ別の料理に変わる（他の日は変わらない）。「週全体をやり直す」で、作らない日を残して全体が変わる。
+3. 「この日は作らない」で、外食や惣菜の日を除ける（料理が入らず、空きの数にも数えない）。「作る日に戻す」で空欄に戻り、「この日をやり直す」で料理が入る。
+4. 料理が足りない日は空欄になり、理由と「料理を保存する」への入口が出る（保存した料理が 7 件に満たないとき）。
+5. 「選んだもの」（買い物前で「これにする」を押した料理）は、日ごとの「選んだものから入れる」で割り当てられる。同じ料理は 2 回まで。同じ種類が 3 日続くときは注意が出る。作らない日には入れられない。
+6. 「保存する」（名前は空なら「M/D からの献立」）で保存する。保存した献立は変更できない。「呼び出す」と写しが作業中の献立として開き、変更してから保存し直すと、別の保存済みの献立になる。作業中の献立を捨てる操作（新しい提案、呼び出し）は、確認が出る。
+7. 「この献立の買い物リストを作る」で、料理が入っている日の材料だけが買い物リスト（U3 の合算）に渡る。作らない日・空欄の日の材料は入らない。削除済みの料理は含めず、案内が出る。
+
+料理の保存・編集画面の「くわしい情報」に「主な食材の種類」を足しています（未入力でもよく、未入力の料理は 3 日続きの判定に使いません）。
+
+API は `GET /api/meal-plans/current`（作業中の献立）、`POST /api/meal-plans`（提案。`{"startDate": "2026-03-02", "skipDates": [...]}` は任意）、`GET /api/meal-plans`（保存済みの一覧）、`GET /api/meal-plans/assignable`（割り当てられる「選んだもの」）、`GET /api/meal-plans/:planId`、`POST /api/meal-plans/:planId/redo`（週全体）、`POST /api/meal-plans/:planId/days/:date/redo`（日）、`PUT /api/meal-plans/:planId/days/:date/skip`（`{"skip": true|false}`）、`PUT /api/meal-plans/:planId/days/:date/dish`（`{"dishId": "..."}`）、`POST /api/meal-plans/:planId/save`、`POST /api/meal-plans/:planId/recall`、`POST /api/meal-plans/:planId/shopping-list`。
+
+> API を使うには、`src/api/router.ts` の `routes` に `...mealPlanRoutes`（`./routes/mealplan` から import）を足して登録する。移行は `db/migrations/004_meal_plan.sql`（起動時に自動で適用。既存のグループの初期データにも「主な食材の種類」が付く）。
+
+```bash
+npx vitest run src/db/__tests__/mealplan-schema.test.ts src/repo/mealplan/__tests__ src/domain/mealplan/__tests__ src/api/routes/__tests__/mealplan.test.ts src/ui/mealplan/__tests__
+```

@@ -74,6 +74,16 @@ export const dishSchema = z.object({
     ),
   cookTime: optionalEnum(['within15', 'within30', 'over30'], '調理時間'),
   effort: optionalEnum(['easy', 'normal', 'hard'], '手間'),
+  // 主な食材の種類（U4。BR30.4）。送らなければ undefined（更新では今の値を変えない）、空文字は「未入力」
+  ingredientKind: z.preprocess(
+    (v) => (v === undefined ? undefined : emptyToNull(v)),
+    z
+      .enum(['meat', 'fish', 'vegetable', 'egg_soy', 'other'], {
+        message: '食材の種類の選択肢が正しくありません',
+      })
+      .nullable()
+      .optional(),
+  ),
   moodTags: z
     .array(tag)
     .max(5, 'タグは5個までです')

@@ -75,6 +75,7 @@ export function dishJson(d: Dish) {
     url: d.url,
     cookTime: d.cookTime,
     effort: d.effort,
+    ingredientKind: d.ingredientKind,
     moodTags: d.moodTags,
     ingredients: d.ingredients,
     memo: d.memo,

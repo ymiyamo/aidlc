@@ -28,6 +28,7 @@ import { cooklogRoutes } from './routes/cooklog';
 import { imagesRoutes } from './routes/images';
 import { shoppingRoutes } from './routes/shopping';
 import { tasteRoutes } from './routes/taste';
+import { mealPlanRoutes } from './routes/mealplan';
 import {
   CSRF_COOKIE,
   SESSION_COOKIE,
@@ -323,6 +324,8 @@ const routes: Route[] = [
   ...tasteRoutes,
   // U3（買い物リスト）
   ...shoppingRoutes,
+  // U4（献立）
+  ...mealPlanRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {

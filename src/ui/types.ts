@@ -4,12 +4,24 @@ export interface IngredientDto {
   unit: string | null;
 }
 
+export type IngredientKindDto = 'meat' | 'fish' | 'vegetable' | 'egg_soy' | 'other';
+
+export const INGREDIENT_KIND_LABEL: Record<IngredientKindDto, string> = {
+  meat: '肉',
+  fish: '魚',
+  vegetable: '野菜',
+  egg_soy: '卵・大豆',
+  other: 'その他',
+};
+
 export interface DishDto {
   id: string;
   name: string;
   url: string;
   cookTime: 'within15' | 'within30' | 'over30' | null;
   effort: 'easy' | 'normal' | 'hard' | null;
+  /** 主な食材の種類（U4）。未入力は null */
+  ingredientKind?: IngredientKindDto | null;
   moodTags: string[];
   ingredients: IngredientDto[];
   memo: string | null;

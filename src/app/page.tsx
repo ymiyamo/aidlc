@@ -54,6 +54,9 @@ export default function HomePage() {
       <Link className="btn block" href="/picked" data-testid="go-picked">
         選んだもの{pickedCount !== null ? ` ${pickedCount} 件` : ''}
       </Link>
+      <Link className="btn block" href="/meal-plan" data-testid="go-meal-plan">
+        📅 1 週間の献立
+      </Link>
       <Link className="btn block" href="/shopping" data-testid="go-shopping">
         🛒 買い物リスト
       </Link>

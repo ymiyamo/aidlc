@@ -2,6 +2,15 @@ import type { Queryable } from '@/db/types';
 
 export type CookTime = 'within15' | 'within30' | 'over30';
 export type Effort = 'easy' | 'normal' | 'hard';
+/** 主な食材の種類（U4。BR30.4）。肉 / 魚 / 野菜 / 卵・大豆 / その他。未入力は null（3 日続きの判定の対象外） */
+export type IngredientKind = 'meat' | 'fish' | 'vegetable' | 'egg_soy' | 'other';
+export const INGREDIENT_KINDS: readonly IngredientKind[] = [
+  'meat',
+  'fish',
+  'vegetable',
+  'egg_soy',
+  'other',
+];
 
 export interface Ingredient {
   name: string;
@@ -15,6 +24,7 @@ export interface Dish {
   url: string;
   cookTime: CookTime | null;
   effort: Effort | null;
+  ingredientKind: IngredientKind | null;
   moodTags: string[];
   ingredients: Ingredient[];
   memo: string | null;
@@ -34,6 +44,11 @@ export interface DishInput {
   moodTags: string[];
   ingredients: Ingredient[];
   memo: string | null;
+  /**
+   * 主な食材の種類（U4）。省略すると、保存では「未入力」、更新では今の値を変えない
+   * （この項目を知らない呼び出しが、値を消してしまわないように）
+   */
+  ingredientKind?: IngredientKind | null;
 }
 
 interface RawDish {
@@ -42,6 +57,7 @@ interface RawDish {
   url: string;
   cook_time: CookTime | null;
   effort: Effort | null;
+  ingredient_kind: IngredientKind | null;
   mood_tags: string[];
   ingredients: Ingredient[];
   memo: string | null;
@@ -55,7 +71,7 @@ interface RawDish {
 
 // 材料は 1 回の問い合わせで一緒に読む（position 順）
 const SELECT_DISH = `
-  select d.dish_id, d.name, d.url, d.cook_time, d.effort, d.mood_tags, d.memo, d.is_favorite,
+  select d.dish_id, d.name, d.url, d.cook_time, d.effort, d.ingredient_kind, d.mood_tags, d.memo, d.is_favorite,
          d.source, d.seed_key, d.created_by, d.created_at, d.updated_at,
          coalesce((
            select json_agg(json_build_object('name', i.ingredient_name, 'amount', i.amount, 'unit', i.unit)
@@ -70,6 +86,7 @@ const toDish = (r: RawDish): Dish => ({
   url: r.url,
   cookTime: r.cook_time,
   effort: r.effort,
+  ingredientKind: r.ingredient_kind,
   moodTags: r.mood_tags,
   ingredients: r.ingredients,
   memo: r.memo,
@@ -101,8 +118,8 @@ export async function insertDish(
 ): Promise<void> {
   await q.query(
     `insert into dishes (dish_id, household_id, name, url, cook_time, effort, mood_tags, memo,
-                         source, created_by, created_at, updated_at)
-     values ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, 'user', $9, $10, $10)`,
+                         source, created_by, created_at, updated_at, ingredient_kind)
+     values ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, 'user', $9, $10, $10, $11)`,
     [
       d.dishId,
       householdId,
@@ -114,6 +131,7 @@ export async function insertDish(
       d.memo,
       d.createdBy,
       d.now,
+      d.ingredientKind ?? null,
     ],
   );
   await replaceIngredients(q, d.dishId, d.ingredients);
@@ -127,8 +145,8 @@ export async function insertSeedDish(
 ): Promise<boolean> {
   const res = await q.query(
     `insert into dishes (dish_id, household_id, name, url, cook_time, effort, mood_tags, memo,
-                         source, seed_key, created_at, updated_at)
-     values ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, 'seed', $9, $10, $10)
+                         source, seed_key, created_at, updated_at, ingredient_kind)
+     values ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, 'seed', $9, $10, $10, $11)
      on conflict do nothing`,
     [
       d.dishId,
@@ -141,6 +159,7 @@ export async function insertSeedDish(
       d.memo,
       d.seedKey,
       d.now,
+      d.ingredientKind ?? null,
     ],
   );
   if (res.rowCount !== 1) return false;
@@ -187,7 +206,8 @@ export async function updateDish(
 ): Promise<boolean> {
   const res = await q.query(
     `update dishes set name = $3, url = $4, cook_time = $5, effort = $6, mood_tags = $7::jsonb,
-                       memo = $8, updated_at = $9
+                       memo = $8, updated_at = $9,
+                       ingredient_kind = case when $10::boolean then $11::text else ingredient_kind end
      where household_id = $1 and dish_id = $2 and deleted_at is null`,
     [
       householdId,
@@ -199,6 +219,8 @@ export async function updateDish(
       JSON.stringify(d.moodTags),
       d.memo,
       d.now,
+      d.ingredientKind !== undefined,
+      d.ingredientKind ?? null,
     ],
   );
   if (res.rowCount !== 1) return false;
@@ -344,14 +366,18 @@ export async function countMatchingDishes(
   return Number(res.rows[0].n);
 }
 
-/** 候補の対象：削除済みと「選んだもの」を除いた料理の ID（BR4.1）。条件があれば除外と絞り込みも通す */
+/**
+ * 候補の対象：削除済みと「選んだもの」を除いた料理の ID（BR4.1）。条件があれば除外と絞り込みも通す。
+ * includePicked を true にすると「選んだもの」を除かない（U4 の献立用。BR30.2）。指定しない呼び出しの動きは変わらない
+ */
 export async function listCandidateIds(
   q: Queryable,
   householdId: string,
-  opts: MatchOptions = {},
+  opts: MatchOptions & { includePicked?: boolean } = {},
 ): Promise<string[]> {
-  return (await listMatchingDishes(q, householdId, opts))
-    .filter((m) => !m.picked)
+  const { includePicked, ...match } = opts;
+  return (await listMatchingDishes(q, householdId, match))
+    .filter((m) => includePicked === true || !m.picked)
     .map((m) => m.dishId);
 }
 

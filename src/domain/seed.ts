@@ -60,6 +60,7 @@ export async function ensureSeeds(
         url: d.url,
         cookTime: d.cookTime,
         effort: d.effort,
+        ingredientKind: d.ingredientKind ?? null,
         moodTags: d.moodTags,
         ingredients: d.ingredients.map((i) => ({ name: i.name, amount: i.amount, unit: i.unit })),
         memo: d.memo,

@@ -4,7 +4,13 @@ import { useState, type FormEvent } from 'react';
 import { ApiError } from './api-client';
 import { imageErrorText, uploadImage } from './images/client';
 import { ImagePicker } from './images/ImagePicker';
-import { COOK_TIME_LABEL, EFFORT_LABEL, type DishDto, type IngredientDto } from './types';
+import {
+  COOK_TIME_LABEL,
+  EFFORT_LABEL,
+  INGREDIENT_KIND_LABEL,
+  type DishDto,
+  type IngredientDto,
+} from './types';
 
 export interface DishFormValues {
   name: string;
@@ -14,6 +20,8 @@ export interface DishFormValues {
   moodTags: string[];
   ingredients: IngredientDto[];
   memo: string | null;
+  /** 主な食材の種類（U4）。触っていない新規では含めない（編集で消すときだけ null を送る） */
+  ingredientKind?: string | null;
 }
 
 /** 「材料名 分量 単位」を 1 行に 1 つ書く形を、材料の配列にする */
@@ -71,6 +79,7 @@ export function DishForm({
   const [url, setUrl] = useState(initial?.url ?? initialUrl);
   const [cookTime, setCookTime] = useState(initial?.cookTime ?? '');
   const [effort, setEffort] = useState(initial?.effort ?? '');
+  const [ingredientKind, setIngredientKind] = useState<string>(initial?.ingredientKind ?? '');
   const [tags, setTags] = useState((initial?.moodTags ?? []).join(' '));
   const [ingredients, setIngredients] = useState(formatIngredientLines(initial?.ingredients ?? []));
   const [memo, setMemo] = useState(initial?.memo ?? '');
@@ -91,6 +100,10 @@ export function DishForm({
     moodTags: parseTags(tags),
     ingredients: parseIngredientLines(ingredients),
     memo: memo.trim() || null,
+    // 選んでいない新規は送らない。もとの値を消す編集のときだけ null を送る
+    ...(ingredientKind || initial?.ingredientKind
+      ? { ingredientKind: ingredientKind || null }
+      : {}),
   });
 
   const submit = async (confirmDuplicate: boolean) => {
@@ -229,6 +242,24 @@ export function DishForm({
             </option>
           ))}
         </select>
+
+        <label htmlFor="dish-ingredient-kind">
+          主な食材の種類（献立で同じ種類が続かないようにします）
+        </label>
+        <select
+          id="dish-ingredient-kind"
+          data-testid="input-ingredient-kind"
+          value={ingredientKind}
+          onChange={(e) => setIngredientKind(e.target.value)}
+        >
+          <option value="">未入力</option>
+          {Object.entries(INGREDIENT_KIND_LABEL).map(([v, l]) => (
+            <option key={v} value={v}>
+              {l}
+            </option>
+          ))}
+        </select>
+        {fieldError('ingredientKind')}
 
         <label htmlFor="dish-tags">気分のタグ（空白かカンマ区切り、5個まで・1つ20文字まで）</label>
         <input

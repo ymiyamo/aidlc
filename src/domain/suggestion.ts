@@ -2,6 +2,7 @@ import {
   countLiveDishes,
   countMatchingDishes,
   getDish,
+  listCandidateIds,
   listMatchingDishes,
   type Dish,
   type DishFilter,
@@ -46,6 +47,36 @@ async function preferredPool(deps: AppDeps, householdId: string, ids: string[]):
   } catch (err) {
     deps.logger.error('impression_judge_failed', { error: err });
     return ids;
+  }
+}
+
+/** 献立用の候補（U4。BR30.2）。front は先に使いたい料理、back は「もう作りたくない」で後ろにずらす料理 */
+export interface PlanCandidates {
+  front: string[];
+  back: string[];
+}
+
+/**
+ * U4 の献立用の入口（SuggestionJudge.pickCandidates）。削除済みを除き、家族の除外（U2）を通した全部の料理。
+ * 「選んだもの」は除かない（includePicked。BR30.2）。U5 の並べ替えは、後ろにずらす料理を back に分けて返す。
+ * 除外の一覧が取れなかったときは、失敗をそのまま返す（BR10.25）。感想の判定の失敗は、並べ替えをしないだけにする
+ */
+export async function listPlanCandidates(
+  deps: AppDeps,
+  householdId: string,
+): Promise<PlanCandidates> {
+  const excluded = await excludedIngredients(deps, householdId);
+  const ids = await listCandidateIds(deps.db, householdId, { excluded, includePicked: true });
+  if (!impressionJudge || ids.length === 0) return { front: ids, back: [] };
+  try {
+    const latest = await impressionJudge(deps, householdId, ids);
+    return {
+      front: ids.filter((id) => latest.get(id) !== 'never_again'),
+      back: ids.filter((id) => latest.get(id) === 'never_again'),
+    };
+  } catch (err) {
+    deps.logger.error('impression_judge_failed', { error: err });
+    return { front: ids, back: [] };
   }
 }
 
