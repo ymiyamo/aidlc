@@ -1,0 +1,46 @@
+{
+  "stage": "code-generation",
+  "unit": "shopping-list",
+  "version": 1,
+  "writes": [
+    {
+      "path": "db/migrations/003_shopping.sql"
+    },
+    {
+      "path": "src/repo/shopping/"
+    },
+    {
+      "path": "src/domain/shopping/"
+    },
+    {
+      "path": "src/api/routes/shopping.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/shopping-harness.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/shopping.test.ts"
+    },
+    {
+      "path": "src/api/router.ts"
+    },
+    {
+      "path": "src/app/shopping/"
+    },
+    {
+      "path": "src/app/page.tsx"
+    },
+    {
+      "path": "src/app/picked/page.tsx"
+    },
+    {
+      "path": "src/ui/shopping/"
+    },
+    {
+      "path": "src/db/__tests__/shopping-schema.test.ts"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}

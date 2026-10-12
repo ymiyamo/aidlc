@@ -1,0 +1,68 @@
+{
+  "stage": "code-generation",
+  "unit": "shopping-list",
+  "upstream_ids": [
+    "AC2.6.1",
+    "AC2.6.2",
+    "AC2.6.3",
+    "AC3.1.1",
+    "AC3.1.2",
+    "AC3.1.3",
+    "AC3.1.4",
+    "AC3.1.5",
+    "AC3.2.1",
+    "AC3.2.2"
+  ],
+  "coverage": [
+    {
+      "id": "AC2.6.1",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC2.6.2",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC2.6.3",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.1.1",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.1.2",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.1.3",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.1.4",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.1.5",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.2.1",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    },
+    {
+      "id": "AC3.2.2",
+      "status": "OK",
+      "target": "src/api/routes/shopping.ts"
+    }
+  ]
+}

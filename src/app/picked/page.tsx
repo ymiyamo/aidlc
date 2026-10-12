@@ -46,27 +46,32 @@ export default function PickedPage() {
           </Link>
         </div>
       ) : (
-        <ul className="list" data-testid="picked-list">
-          {items.map((p) => (
-            <li key={p.dish.id} className="card">
-              <strong>{p.dish.name}</strong>
-              <div className="row" style={{ marginTop: 8 }}>
-                <Link className="btn small" href={`/dishes/${p.dish.id}`}>
-                  くわしく
-                </Link>
-                <button
-                  type="button"
-                  className="btn small"
-                  data-testid="unpick-button"
-                  aria-label={`${p.dish.name}を外す`}
-                  onClick={() => remove(p.dish.id)}
-                >
-                  外す
-                </button>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <>
+          <Link className="btn primary block" href="/shopping" data-testid="go-shopping">
+            買い物リストを見る
+          </Link>
+          <ul className="list" data-testid="picked-list">
+            {items.map((p) => (
+              <li key={p.dish.id} className="card">
+                <strong>{p.dish.name}</strong>
+                <div className="row" style={{ marginTop: 8 }}>
+                  <Link className="btn small" href={`/dishes/${p.dish.id}`}>
+                    くわしく
+                  </Link>
+                  <button
+                    type="button"
+                    className="btn small"
+                    data-testid="unpick-button"
+                    aria-label={`${p.dish.name}を外す`}
+                    onClick={() => remove(p.dish.id)}
+                  >
+                    外す
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </Shell>
   );

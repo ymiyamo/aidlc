@@ -26,6 +26,7 @@ import { newCsrfToken, csrfOk, SAFE_METHODS } from './csrf';
 import { adminRoutes } from './routes/admin';
 import { cooklogRoutes } from './routes/cooklog';
 import { imagesRoutes } from './routes/images';
+import { shoppingRoutes } from './routes/shopping';
 import { tasteRoutes } from './routes/taste';
 import {
   CSRF_COOKIE,
@@ -320,6 +321,8 @@ const routes: Route[] = [
   ...imagesRoutes,
   // U2（好き嫌いと絞り込み）
   ...tasteRoutes,
+  // U3（買い物リスト）
+  ...shoppingRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {
