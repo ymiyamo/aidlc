@@ -16,8 +16,12 @@ function NewDish() {
   if (!me) return <p role="status">読み込み中…</p>;
 
   const onSubmit = async (v: DishFormValues, opts: { confirmDuplicate: boolean }) => {
-    await api('POST', '/api/dishes', { ...v, confirmDuplicate: opts.confirmDuplicate });
-    router.replace('/dishes');
+    const r = await api<{ dish: { id: string } }>('POST', '/api/dishes', {
+      ...v,
+      confirmDuplicate: opts.confirmDuplicate,
+    });
+    // 画像の登録は DishForm が行う。移動は、画像の登録が終わってから（onSaved）
+    return { dishId: r.dish.id };
   };
 
   return (
@@ -29,6 +33,8 @@ function NewDish() {
         key={sharedUrl}
         initialUrl={sharedUrl}
         onSubmit={onSubmit}
+        onSaved={() => router.replace('/dishes')}
+        onOpenEdit={(id) => router.replace(`/dishes/${id}`)}
         onCancel={() => router.back()}
       />
     </Shell>

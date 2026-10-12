@@ -1,0 +1,44 @@
+{
+  "stage": "code-generation",
+  "unit": "images",
+  "upstream_ids": [
+    "AC1.5.1",
+    "AC1.5.2",
+    "AC1.5.3",
+    "AC1.5.4",
+    "AC9.1.7",
+    "AC9.1.8"
+  ],
+  "coverage": [
+    {
+      "id": "AC1.5.1",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    },
+    {
+      "id": "AC1.5.2",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    },
+    {
+      "id": "AC1.5.3",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    },
+    {
+      "id": "AC1.5.4",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    },
+    {
+      "id": "AC9.1.7",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    },
+    {
+      "id": "AC9.1.8",
+      "status": "OK",
+      "target": "src/api/routes/images.ts"
+    }
+  ]
+}

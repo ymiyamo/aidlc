@@ -164,3 +164,24 @@ npx vitest run src/db/__tests__/admin-schema.test.ts src/repo/admin/__tests__ sr
 ```bash
 npx vitest run src/db/__tests__/cooklog-schema.test.ts src/repo/cooklog/__tests__ src/domain/cooklog/__tests__ src/api/routes/__tests__/cooklog.test.ts src/ui/cooklog/__tests__
 ```
+
+## 画像（U6）と、初期データの画像の入れ替え
+
+料理には、利用者が登録した画像（5MB 以下の JPEG・PNG・WebP・GIF。中身で判定します）か、登録がなければ「AI が作ったイメージ」の印つきの画像が出ます。画像はグループの外には見えません（画像の取得も、そのたびにログインとグループを確認します）。
+
+- **生成 AI は呼びません。** サービスが未決定のため、通し版は料理名から色を決めたダミーの絵（PNG）を、ローカルで作ります。差し替えるときは `src/domain/images/dummy.ts` の `ImageGeneratorPort` の実装だけを替えます（`setImageServices` で注入できます）。
+- **画像の保管**：ローカルは `.data/images/`（`IMAGE_STORAGE_DIR` で変更。`.gitignore` 済み。`npm run db:reset` で一緒に消えます）。保管は `src/lib/storage` の抽象の後ろにあり、AWS の保管場所への差し替えは TODO です。
+- **画像の登録 API**：`PUT /api/dishes/:id/image`（本文は `{"data": "<base64>"}`）。5MB 超は 413、画像でないものは 415。ほかに `GET`・`DELETE /api/dishes/:id/image`（状態・外す）、`POST /api/dishes/:id/image/generate`（AI の画像の要求）、`GET /api/dishes/:id/image/file`（実体）。
+- **新しい料理に画像を付ける**：料理を先に保存し、そのあとで画像を登録します。画像が拒否されても料理は保存済みで、編集の画面から登録し直せます。
+
+### 初期データの画像を入れ替える（プログラムは変えません）
+
+初期データ 30 件の画像は、`data/seed-images/<seedKey>.png`（`.jpg`・`.jpeg`・`.webp`・`.gif` も可。`SEED_IMAGE_DIR` で置き場を変更）に置いたファイルを、全グループで共有して使います。
+
+1. `data/seed-dishes.json` の `seedKey`（例：`nikujaga`）と同じ名前で、画像ファイルを `data/seed-images/` に置く（置き換える）。
+2. 5MB 以下の JPEG・PNG・WebP・GIF にする。画像でない、または 5MB を超えるファイルは、その料理だけ色の枠になり、ログに `seed_image_invalid` が出ます（ほかの料理は止まりません）。
+3. 新しいグループも既存のグループも、以後の表示で入れ替えた画像になります（読み取り専用で共有するため）。ファイルを置いていない料理は、ダミーの絵が出ます。
+
+```bash
+npx vitest run src/db/__tests__/images-schema.test.ts src/repo/images/__tests__ src/domain/images/__tests__ src/api/routes/__tests__/images.test.ts src/ui/images/__tests__
+```

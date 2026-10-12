@@ -1,0 +1,46 @@
+{
+  "stage": "code-generation",
+  "unit": "images",
+  "version": 1,
+  "writes": [
+    {
+      "path": "db/migrations/006_images.sql"
+    },
+    {
+      "path": "src/lib/storage/"
+    },
+    {
+      "path": "src/repo/images/"
+    },
+    {
+      "path": "src/domain/images/"
+    },
+    {
+      "path": "src/api/routes/images.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/images-harness.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/images.test.ts"
+    },
+    {
+      "path": "src/api/router.ts"
+    },
+    {
+      "path": "src/ui/images/"
+    },
+    {
+      "path": "src/ui/DishCard.tsx"
+    },
+    {
+      "path": "src/ui/DishForm.tsx"
+    },
+    {
+      "path": "src/db/__tests__/images-schema.test.ts"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}

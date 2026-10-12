@@ -2,6 +2,8 @@
 
 import { useState, type FormEvent } from 'react';
 import { ApiError } from './api-client';
+import { imageErrorText, uploadImage } from './images/client';
+import { ImagePicker } from './images/ImagePicker';
 import { COOK_TIME_LABEL, EFFORT_LABEL, type DishDto, type IngredientDto } from './types';
 
 export interface DishFormValues {
@@ -44,12 +46,25 @@ export function DishForm({
   initialUrl = '',
   submitLabel = '保存する',
   onSubmit,
+  onSaved,
+  onOpenEdit,
   onCancel,
 }: {
   initial?: DishDto;
   initialUrl?: string;
   submitLabel?: string;
-  onSubmit: (values: DishFormValues, opts: { confirmDuplicate: boolean }) => Promise<void>;
+  /**
+   * 新しい料理の保存では、保存した料理の ID を返すと、そのあとで選んだ画像を登録できる
+   * （料理を先に保存し、画像はそのあと登録する。BR60.5）
+   */
+  onSubmit: (
+    values: DishFormValues,
+    opts: { confirmDuplicate: boolean },
+  ) => Promise<void | { dishId: string }>;
+  /** 新規：保存と画像の登録がすべてうまくいったあとに呼ぶ（画面の移動はここで行う） */
+  onSaved?: (dishId?: string) => void;
+  /** 新規：料理は保存できたが画像が登録できなかったとき、編集の画面へ進むために呼ぶ */
+  onOpenEdit?: (dishId: string) => void;
   onCancel?: () => void;
 }) {
   const [name, setName] = useState(initial?.name ?? '');
@@ -63,6 +78,10 @@ export function DishForm({
   const [duplicate, setDuplicate] = useState<{ name: string } | null>(null);
   const [formError, setFormError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imageError, setImageError] = useState<string | null>(null);
+  // 料理は保存できたが画像が登録できなかった場合の、保存済みの料理の ID（二重に保存しないため）
+  const [savedId, setSavedId] = useState<string | null>(null);
 
   const values = (): DishFormValues => ({
     name: name.trim(),
@@ -86,8 +105,32 @@ export function DishForm({
     setFormError(null);
     if (Object.keys(local).length > 0) return;
     setSaving(true);
+    setImageError(null);
     try {
-      await onSubmit(v, { confirmDuplicate });
+      // 編集：料理はすでにあるので、先に画像を登録する。拒否されたら理由を示して止める（何も変えない）
+      if (initial && imageFile) {
+        try {
+          await uploadImage(initial.id, imageFile);
+          setImageFile(null);
+        } catch (err) {
+          setImageError(imageErrorText(err));
+          return;
+        }
+      }
+      const saved = await onSubmit(v, { confirmDuplicate });
+      // 新規：料理を先に保存し、そのあとで画像を登録する。画像が拒否されても料理は保存済み（BR60.5）
+      if (!initial && imageFile && saved && saved.dishId) {
+        try {
+          await uploadImage(saved.dishId, imageFile);
+        } catch (err) {
+          setSavedId(saved.dishId);
+          setImageError(
+            `料理は保存しました。画像は登録できませんでした：${imageErrorText(err)}（編集の画面でもう一度登録できます）`,
+          );
+          return;
+        }
+      }
+      if (!initial) onSaved?.(saved ? saved.dishId : undefined);
     } catch (err) {
       if (err instanceof ApiError && err.code === 'duplicate_url') {
         setDuplicate({ name: (err.data.existing as { name: string } | undefined)?.name ?? '' });
@@ -146,6 +189,13 @@ export function DishForm({
         {...aria('name')}
       />
       {fieldError('name')}
+
+      <ImagePicker
+        dishId={initial?.id}
+        name={name || initial?.name || ''}
+        onFile={setImageFile}
+        error={imageError}
+      />
 
       <details className="more">
         <summary>くわしい情報（あとからでも入れられます）</summary>
@@ -252,6 +302,19 @@ export function DishForm({
         </p>
       )}
 
+      {savedId && onOpenEdit && (
+        <div className="row">
+          <button
+            type="button"
+            className="btn primary"
+            data-testid="open-edit-button"
+            onClick={() => onOpenEdit(savedId)}
+          >
+            編集の画面で画像を登録する
+          </button>
+        </div>
+      )}
+
       <div className="row">
         {onCancel && (
           <button type="button" className="btn" data-testid="cancel-button" onClick={onCancel}>
@@ -262,7 +325,7 @@ export function DishForm({
           type="submit"
           className="btn primary grow"
           data-testid="submit-button"
-          disabled={saving}
+          disabled={saving || savedId !== null}
         >
           {saving ? '保存中…' : submitLabel}
         </button>

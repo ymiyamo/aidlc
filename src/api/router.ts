@@ -18,11 +18,13 @@ import {
   type HouseholdContext,
 } from '@/domain/dish';
 import { DomainError, notFound } from '@/domain/errors';
+import { deleteImagesForDish } from '@/domain/images';
 import { createHousehold, listHouseholdMembers, prepareHome } from '@/domain/household';
 import { nextCandidate, pick, pickedList, unpick } from '@/domain/suggestion';
 import { newCsrfToken, csrfOk, SAFE_METHODS } from './csrf';
 import { adminRoutes } from './routes/admin';
 import { cooklogRoutes } from './routes/cooklog';
+import { imagesRoutes } from './routes/images';
 import {
   CSRF_COOKIE,
   SESSION_COOKIE,
@@ -223,7 +225,14 @@ const routes: Route[] = [
     auth: 'household',
     name: 'dishes.delete',
     async handler(c) {
-      await removeDish(c.deps, hh(c), requireId(c.params[0]));
+      const dishId = requireId(c.params[0]);
+      await removeDish(c.deps, hh(c), dishId);
+      // 画像の実体と記録も消す（BR60.12）。失敗しても料理の削除は成功のまま
+      try {
+        await deleteImagesForDish(c.deps, hh(c).householdId, dishId);
+      } catch (err) {
+        c.deps.logger.error('image_delete_for_dish_failed', { error: err });
+      }
       return json({ ok: true });
     },
   },
@@ -299,6 +308,8 @@ const routes: Route[] = [
   ...adminRoutes,
   // U5（作った記録）
   ...cooklogRoutes,
+  // U6（画像）
+  ...imagesRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {

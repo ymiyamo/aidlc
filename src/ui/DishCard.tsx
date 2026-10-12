@@ -1,6 +1,7 @@
+import { DishImageView } from './images/DishImageView';
 import { COOK_TIME_LABEL, EFFORT_LABEL, isSafeUrl, type DishDto } from './types';
 
-/** 候補の大きなカード。画像は使わず、色の枠で代わりにする（画像は U6） */
+/** 候補の大きなカード。画像は U6 の部品が出す（なければ「AI が作ったイメージ」の印つきの画像か、色の枠） */
 export function DishCard({
   dish,
   onToggleFavorite,
@@ -15,9 +16,7 @@ export function DishCard({
 
   return (
     <article className="card dish-card" data-testid="dish-card" aria-label={dish.name}>
-      <div className="dish-frame" aria-hidden="true">
-        {dish.name.slice(0, 1)}
-      </div>
+      <DishImageView dishId={dish.id} name={dish.name} />
       <h2 data-testid="dish-name">{dish.name}</h2>
       <p className="meta" data-testid="dish-meta">
         {meta.length ? meta.join('・') : '調理時間・手間は未入力'}

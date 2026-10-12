@@ -26,19 +26,19 @@
 
 ## 計画のステップ
 
-- [ ] **Step 1 — 骨組み**：ディレクトリ（`src/lib/storage/`、`src/repo/images/`、`src/domain/images/`、`src/ui/images/`）と、ファイル保管のポート（ディスクの既定の実装）。
-- [ ] **Step 2 — テスト実行の準備**：U1 の Vitest の設定をそのまま使い、このユニットのテストだけを指すコマンドを `unit-test-instructions.md` に記録（実行して確かめる）。
-- [ ] **Step 3 — データモデル（実装）**：`006_images.sql`（RegisteredImage、GeneratedImage：状態 pending／ready／failed、requestedAt）。料理ごとに登録画像は 1 件までの一意制約。
-- [ ] **Step 4 — データモデルのテスト（書いて実行）**：一意制約、状態の制約。
-- [ ] **Step 5 — リポジトリ（実装）**：`src/repo/images/`。すべての問い合わせは householdId で絞る。ファイルの保管の抽象。
-- [ ] **Step 6 — リポジトリのテスト（書いて実行）**：他のグループの画像が見えない、保管の読み書き。
-- [ ] **Step 7 — 業務ロジック（実装）**：`src/domain/images/`。BR60.x（サイズ 5MB、画像の種類の確認（中身の先頭バイトで判定）、登録で AI の画像を置き換える、pending の期限、ダミー画像の作成、初期データの画像の差し替え）。
-- [ ] **Step 8 — 業務ロジックのテスト（書いて実行）**：5MB 超と画像でないファイルの拒否、登録後に AI の画像が出ない、pending が 10 分で再要求できる。
-- [ ] **Step 9 — API（実装）**：`src/api/routes/images.ts`（登録、取得、削除、AI 画像の要求）。取得は認証とグループの確認を必ず通す（画像の URL を知っていても他グループは見られない）。
-- [ ] **Step 10 — APIのテスト（書いて実行）**：未ログイン、他のグループ、CSRF、不正なファイル。
-- [ ] **Step 11 — 画面（実装）**：候補のカードと詳細に画像（なければ印つきのダミー）、保存・編集画面に画像を選ぶ入力（保存後に登録）。`data-testid` とラベル。
-- [ ] **Step 12 — 画面のテスト（書いて実行）**：画像の表示、印の表示、エラーの理由の表示。
-- [ ] **Step 13 — 環境とドキュメント**：初期データの画像の差し替え手順を README に追記。
+- [x] **Step 1 — 骨組み**：ディレクトリ（`src/lib/storage/`、`src/repo/images/`、`src/domain/images/`、`src/ui/images/`）と、ファイル保管のポート（ディスクの既定の実装）。
+- [x] **Step 2 — テスト実行の準備**：U1 の Vitest の設定をそのまま使い、このユニットのテストだけを指すコマンドを `unit-test-instructions.md` に記録（実行して確かめる）。
+- [x] **Step 3 — データモデル（実装）**：`006_images.sql`（RegisteredImage、GeneratedImage：状態 pending／ready／failed、requestedAt）。料理ごとに登録画像は 1 件までの一意制約。
+- [x] **Step 4 — データモデルのテスト（書いて実行）**：一意制約、状態の制約。
+- [x] **Step 5 — リポジトリ（実装）**：`src/repo/images/`。すべての問い合わせは householdId で絞る。ファイルの保管の抽象。
+- [x] **Step 6 — リポジトリのテスト（書いて実行）**：他のグループの画像が見えない、保管の読み書き。
+- [x] **Step 7 — 業務ロジック（実装）**：`src/domain/images/`。BR60.x（サイズ 5MB、画像の種類の確認（中身の先頭バイトで判定）、登録で AI の画像を置き換える、pending の期限、ダミー画像の作成、初期データの画像の差し替え）。
+- [x] **Step 8 — 業務ロジックのテスト（書いて実行）**：5MB 超と画像でないファイルの拒否、登録後に AI の画像が出ない、pending が 10 分で再要求できる。
+- [x] **Step 9 — API（実装）**：`src/api/routes/images.ts`（登録、取得、削除、AI 画像の要求）。取得は認証とグループの確認を必ず通す（画像の URL を知っていても他グループは見られない）。
+- [x] **Step 10 — APIのテスト（書いて実行）**：未ログイン、他のグループ、CSRF、不正なファイル。
+- [x] **Step 11 — 画面（実装）**：候補のカードと詳細に画像（なければ印つきのダミー）、保存・編集画面に画像を選ぶ入力（保存後に登録）。`data-testid` とラベル。
+- [x] **Step 12 — 画面のテスト（書いて実行）**：画像の表示、印の表示、エラーの理由の表示。
+- [x] **Step 13 — 環境とドキュメント**：初期データの画像の差し替え手順を README に追記。
 - [ ] **Step 14 — 追跡**：`code-summary.md`、`traceability.json`、`source-manifest.json`。
 
 ## Testing Contract
