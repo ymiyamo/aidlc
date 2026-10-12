@@ -262,17 +262,109 @@ export async function listSeedKeys(q: Queryable, householdId: string): Promise<s
   return res.rows.map((r) => r.seed_key);
 }
 
-/** 候補の対象：削除済みと「選んだもの」を除いた料理の ID（BR4.1） */
-export async function listCandidateIds(q: Queryable, householdId: string): Promise<string[]> {
-  const res = await q.query<{ dish_id: string }>(
-    `select d.dish_id from dishes d
-     where d.household_id = $1 and d.deleted_at is null
-       and not exists (select 1 from picked_items p
-                       where p.household_id = d.household_id and p.dish_id = d.dish_id)
+/** 絞り込みの条件（U2。BR10.10、BR10.11）。指定していない項目は null／空で、条件にしない */
+export interface DishFilter {
+  cookTime?: CookTime | null;
+  effort?: Effort | null;
+  moodTags?: string[];
+}
+
+/** 候補・おまかせ・件数の判定に使う条件。除外する食材（BR10.8）と絞り込み（BR10.11） */
+export interface MatchOptions {
+  /** 除外する食材名。材料名がこの文字列を含む料理を外す（部分一致。正規化しない。BR10.7） */
+  excluded?: string[];
+  filter?: DishFilter;
+}
+
+/** 「30 分以内」は 15 分以内も含める（BR10.11） */
+const cookTimeValues = (t: CookTime): CookTime[] =>
+  t === 'within30' ? ['within15', 'within30'] : [t];
+
+/**
+ * 判定の順序（rules.md 補足）：(1) 削除済みでない → (2) 除外 → (3) 絞り込み。
+ * $1 グループ、$2 除外する食材、$3 調理時間（null で条件なし）、$4 手間、$5 気分のタグ
+ * - 除外：材料名のどれかが、除外する食材の文字列を含めば外す。材料が 0 行の料理は外さない（BR10.9）。
+ *   position() は大文字小文字・全角半角を区別する（読み替えない）。LIKE のように記号の意味を持たない
+ * - 絞り込み：指定した項目が空の料理は合わない（BR10.11）。タグは 1 つでも共通すれば合う
+ */
+const MATCH_WHERE = `
+  d.household_id = $1 and d.deleted_at is null
+  and not exists (
+    select 1 from dish_ingredients i
+    where i.dish_id = d.dish_id
+      and exists (select 1 from unnest($2::text[]) as x(n) where position(x.n in i.ingredient_name) > 0))
+  and ($3::text[] is null or d.cook_time = any($3::text[]))
+  and ($4::text is null or d.effort = $4::text)
+  and ($5::text[] is null or exists (
+    select 1 from jsonb_array_elements_text(d.mood_tags) as t(tag) where t.tag = any($5::text[])))`;
+
+function matchParams(householdId: string, opts: MatchOptions): unknown[] {
+  const f = opts.filter ?? {};
+  const tags = f.moodTags ?? [];
+  return [
+    householdId,
+    (opts.excluded ?? []).filter((n) => n !== ''),
+    f.cookTime ? cookTimeValues(f.cookTime) : null,
+    f.effort ?? null,
+    tags.length > 0 ? tags : null,
+  ];
+}
+
+/**
+ * 除外と絞り込みを通った料理（削除済みを除く）。「選んだもの」かどうかも一緒に返す。
+ * 候補は選んだものを引き（BR4.1）、おまかせは引かない（BR10.16）ため
+ */
+export async function listMatchingDishes(
+  q: Queryable,
+  householdId: string,
+  opts: MatchOptions = {},
+): Promise<{ dishId: string; picked: boolean }[]> {
+  const res = await q.query<{ dish_id: string; picked: boolean }>(
+    `select d.dish_id,
+            exists (select 1 from picked_items p
+                    where p.household_id = d.household_id and p.dish_id = d.dish_id) as picked
+     from dishes d
+     where ${MATCH_WHERE}
      order by d.dish_id`,
+    matchParams(householdId, opts),
+  );
+  return res.rows.map((r) => ({ dishId: r.dish_id, picked: r.picked }));
+}
+
+/** 該当件数（BR10.13）：除外と絞り込みの後の数。「選んだもの」と見た料理は引かない */
+export async function countMatchingDishes(
+  q: Queryable,
+  householdId: string,
+  opts: MatchOptions = {},
+): Promise<number> {
+  const res = await q.query<{ n: string | number }>(
+    `select count(*) as n from dishes d where ${MATCH_WHERE}`,
+    matchParams(householdId, opts),
+  );
+  return Number(res.rows[0].n);
+}
+
+/** 候補の対象：削除済みと「選んだもの」を除いた料理の ID（BR4.1）。条件があれば除外と絞り込みも通す */
+export async function listCandidateIds(
+  q: Queryable,
+  householdId: string,
+  opts: MatchOptions = {},
+): Promise<string[]> {
+  return (await listMatchingDishes(q, householdId, opts))
+    .filter((m) => !m.picked)
+    .map((m) => m.dishId);
+}
+
+/** 気分のタグの選択肢：グループの削除済みでない料理が持つタグを、重複なしで集める（BR10.10） */
+export async function listMoodTagOptions(q: Queryable, householdId: string): Promise<string[]> {
+  const res = await q.query<{ tag: string }>(
+    `select distinct t.tag
+     from dishes d, jsonb_array_elements_text(d.mood_tags) as t(tag)
+     where d.household_id = $1 and d.deleted_at is null
+     order by t.tag`,
     [householdId],
   );
-  return res.rows.map((r) => r.dish_id);
+  return res.rows.map((r) => r.tag);
 }
 
 /** 削除済みでない料理の件数（候補が 0 件か、見終えたかの区別に使う。BR4.4） */

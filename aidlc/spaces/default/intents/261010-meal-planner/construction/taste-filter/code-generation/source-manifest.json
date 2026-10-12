@@ -1,0 +1,52 @@
+{
+  "stage": "code-generation",
+  "unit": "taste-filter",
+  "version": 1,
+  "writes": [
+    {
+      "path": "db/migrations/002_taste.sql"
+    },
+    {
+      "path": "src/repo/taste/"
+    },
+    {
+      "path": "src/domain/taste/"
+    },
+    {
+      "path": "src/api/routes/taste.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/taste-harness.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/taste.test.ts"
+    },
+    {
+      "path": "src/api/router.ts"
+    },
+    {
+      "path": "src/app/taste/"
+    },
+    {
+      "path": "src/app/suggest/"
+    },
+    {
+      "path": "src/ui/taste/"
+    },
+    {
+      "path": "src/ui/SuggestionDeck.tsx"
+    },
+    {
+      "path": "src/domain/suggestion.ts"
+    },
+    {
+      "path": "src/repo/dishes.ts"
+    },
+    {
+      "path": "src/db/__tests__/taste-schema.test.ts"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}

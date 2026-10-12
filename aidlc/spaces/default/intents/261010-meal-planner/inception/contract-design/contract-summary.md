@@ -80,7 +80,7 @@ components:
         dishId: { type: string, readOnly: true }
         name: { type: string }
         url: { type: string, description: http または https のみ }
-        cookTimeBand: { type: string, enum: [within15, within30, longer] }
+        cookTime: { type: string, enum: [within15, within30, over30] }
         effort: { type: string, enum: [easy, normal, hard] }
         moodTags: { type: array, items: { type: string } }
         ingredientKind: { type: string, enum: [meat, fish, vegetable, egg_soy, other] }
@@ -207,7 +207,7 @@ paths:
       summary: 買い物前の候補を 1 件取る（U1）。絞り込み・除外は U2 が拡張する
       description: パスした項目の状態は**画面（ブラウザ）が持つ**（サーバーは保存しない）。画面は、パスした項目の ID を exclude で渡す。
       parameters:
-        - { name: time, in: query, schema: { type: string, enum: [within15, within30, longer] } }
+        - { name: time, in: query, schema: { type: string, enum: [within15, within30, over30] } }
         - { name: effort, in: query, schema: { type: string, enum: [easy, normal, hard] } }
         - { name: moodTag, in: query, schema: { type: array, items: { type: string } } }
         - { name: exclude, in: query, schema: { type: array, items: { type: string } }, description: パスした項目の dishId }
@@ -216,9 +216,24 @@ paths:
         '204': { description: 見終えた、または候補なし }
   /suggestions/random:
     get:
-      summary: おまかせで 1 件（U2）
+      summary: おまかせで 1 件（U2）。絞り込み・見た料理・選んだものは使わず、嫌いな食材の除外だけ適用する
       responses:
-        '200': { description: 項目 }
+        '200': { description: "項目。status は card / empty（保存が 0 件）/ all_excluded（除外で全部外れた）" }
+  /suggestions/count:
+    get:
+      summary: いまの条件に合う料理の件数（U2。除外と絞り込みの後の数。選んだもの・見た料理は引かない）
+      parameters:
+        - { name: time, in: query, schema: { type: string, enum: [within15, within30, over30] } }
+        - { name: effort, in: query, schema: { type: string, enum: [easy, normal, hard] } }
+        - { name: moodTag, in: query, schema: { type: array, items: { type: string } } }
+      responses:
+        '200': { description: "{ count: number }" }
+        '400': { description: 選択肢以外の値 }
+  /suggestions/mood-tags:
+    get:
+      summary: 気分のタグの選択肢（U2。グループの削除済みでない料理が持つタグを、重複なしで集めたもの）
+      responses:
+        '200': { description: "{ tags: string[] }" }
   /picked-items:
     get:
       summary: 選んだものの一覧（U1）

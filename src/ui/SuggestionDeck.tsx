@@ -5,7 +5,12 @@ import { DishCard } from './DishCard';
 import type { DishDto } from './types';
 
 export type NextResult =
-  { status: 'card'; dish: DishDto; remaining: number } | { status: 'empty' } | { status: 'done' };
+  | { status: 'card'; dish: DishDto; remaining: number }
+  | { status: 'empty' }
+  | { status: 'done' }
+  // U2：絞り込みの結果が 0 件（BR10.19）／嫌いな食材のせいで候補がすべて外れた（BR10.20）
+  | { status: 'no_match' }
+  | { status: 'all_excluded' };
 
 export interface DeckApi {
   next(seen: string[]): Promise<NextResult>;
@@ -18,6 +23,8 @@ type State =
   | { kind: 'card'; dish: DishDto }
   | { kind: 'done' }
   | { kind: 'empty' }
+  | { kind: 'no_match' }
+  | { kind: 'all_excluded' }
   | { kind: 'error'; message: string };
 
 /** 右にこれだけ動かすと「これにする」、左なら「パス」（ボタンと同じ結果。BR4.9） */
@@ -27,7 +34,19 @@ export const SWIPE_THRESHOLD = 80;
  * 買い物前の候補。1 件ずつ大きなカードで見せる。
  * 「見た料理の ID の一覧」はこの画面が持ち、サーバーは覚えない（BR4.3）。
  */
-export function SuggestionDeck({ api, emptyHelp }: { api: DeckApi; emptyHelp?: ReactNode }) {
+export function SuggestionDeck({
+  api,
+  emptyHelp,
+  noMatchHelp,
+  excludedHelp,
+}: {
+  api: DeckApi;
+  emptyHelp?: ReactNode;
+  /** 絞り込みで 0 件のときの「条件を変える」「おまかせ」「外で探す」の入口（U2。BR10.19） */
+  noMatchHelp?: ReactNode;
+  /** 除外で全部外れたときの、好き嫌いの画面への入口（U2。BR10.20） */
+  excludedHelp?: ReactNode;
+}) {
   const [state, setState] = useState<State>({ kind: 'loading' });
   const [dx, setDx] = useState(0);
   const seen = useRef<string[]>([]);
@@ -115,6 +134,24 @@ export function SuggestionDeck({ api, emptyHelp }: { api: DeckApi; emptyHelp?: R
         <h2>まだ保存がありません</h2>
         <p>気になった料理の URL を「＋」から保存すると、ここに出てきます。</p>
         {emptyHelp}
+      </div>
+    );
+  }
+  if (state.kind === 'no_match') {
+    return (
+      <div className="card" role="status" data-testid="no-match-message">
+        <h2>条件に合う料理がありません</h2>
+        <p>絞り込みを緩めてみてください。</p>
+        {noMatchHelp}
+      </div>
+    );
+  }
+  if (state.kind === 'all_excluded') {
+    return (
+      <div className="card" role="status" data-testid="all-excluded-message">
+        <h2>候補がすべて外れています</h2>
+        <p>登録された嫌いな食材で、候補がすべて外れています。好き嫌いの登録を見直せます。</p>
+        {excludedHelp}
       </div>
     );
   }

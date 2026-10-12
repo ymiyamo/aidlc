@@ -21,10 +21,12 @@ import { DomainError, notFound } from '@/domain/errors';
 import { deleteImagesForDish } from '@/domain/images';
 import { createHousehold, listHouseholdMembers, prepareHome } from '@/domain/household';
 import { nextCandidate, pick, pickedList, unpick } from '@/domain/suggestion';
+import { parseCandidateFilter } from '@/domain/taste';
 import { newCsrfToken, csrfOk, SAFE_METHODS } from './csrf';
 import { adminRoutes } from './routes/admin';
 import { cooklogRoutes } from './routes/cooklog';
 import { imagesRoutes } from './routes/images';
+import { tasteRoutes } from './routes/taste';
 import {
   CSRF_COOKIE,
   SESSION_COOKIE,
@@ -261,7 +263,13 @@ const routes: Route[] = [
     async handler(c) {
       // 「見た料理の ID の一覧」は画面が持ち、毎回送ってくる（BR4.3）。形の正しい ID だけ使う
       const seen = (c.query.get('seen') ?? '').split(',').filter((id) => UUID_RE.test(id));
-      const next = await nextCandidate(c.deps, hh(c).householdId, seen);
+      // U2：「今日の気分」の条件（time、effort、moodTag）は、要求のたびに画面が渡す（BR10.14）。除外は提案が適用する
+      const next = await nextCandidate(
+        c.deps,
+        hh(c).householdId,
+        seen,
+        parseCandidateFilter(c.query),
+      );
       if (next.status === 'card') {
         return json({ status: 'card', dish: dishJson(next.dish), remaining: next.remaining });
       }
@@ -310,6 +318,8 @@ const routes: Route[] = [
   ...cooklogRoutes,
   // U6（画像）
   ...imagesRoutes,
+  // U2（好き嫌いと絞り込み）
+  ...tasteRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {

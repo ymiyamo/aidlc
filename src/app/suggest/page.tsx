@@ -1,9 +1,8 @@
 'use client';
 
-import { deckApi } from '@/ui/api-client';
 import { PasteSaveButton } from '@/ui/PasteSaveButton';
 import { Shell, useSession } from '@/ui/Shell';
-import { SuggestionDeck } from '@/ui/SuggestionDeck';
+import { TasteSuggest } from '@/ui/taste/TasteSuggest';
 import Link from 'next/link';
 
 export default function SuggestPage() {
@@ -11,8 +10,8 @@ export default function SuggestPage() {
   if (!me) return <p role="status">読み込み中…</p>;
   return (
     <Shell title="買い物前">
-      <SuggestionDeck
-        api={deckApi}
+      {/* 候補のカードに、「今日の気分」の絞り込み・おまかせ・嫌いな食材の入口を足したもの（U2） */}
+      <TasteSuggest
         emptyHelp={
           <Link className="btn primary" href="/dishes/new">
             料理を保存する

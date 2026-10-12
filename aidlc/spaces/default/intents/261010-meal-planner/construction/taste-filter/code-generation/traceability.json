@@ -1,0 +1,104 @@
+{
+  "stage": "code-generation",
+  "unit": "taste-filter",
+  "upstream_ids": [
+    "AC4.1.1",
+    "AC4.1.2",
+    "AC4.3.1",
+    "AC4.3.2",
+    "AC2.3.1",
+    "AC2.3.2",
+    "AC2.2.1",
+    "AC2.2.2",
+    "AC2.2.3",
+    "AC2.2.4",
+    "AC2.2.5",
+    "AC2.5.1",
+    "AC2.5.2",
+    "AC2.5.3",
+    "AC2.4.1",
+    "AC2.4.2"
+  ],
+  "coverage": [
+    {
+      "id": "AC4.1.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC4.1.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC4.3.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC4.3.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.3.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.3.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.2.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.2.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.2.3",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.2.4",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.2.5",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.5.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.5.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.5.3",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.4.1",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    },
+    {
+      "id": "AC2.4.2",
+      "status": "OK",
+      "target": "src/api/routes/taste.ts"
+    }
+  ]
+}
