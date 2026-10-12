@@ -3,6 +3,7 @@
 import { useParams, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { api, ApiError } from '@/ui/api-client';
+import { DishRecordsSection } from '@/ui/cooklog/DishRecordsSection';
 import { DishCard } from '@/ui/DishCard';
 import { DishForm, type DishFormValues } from '@/ui/DishForm';
 import { Shell, useSession } from '@/ui/Shell';
@@ -90,6 +91,7 @@ export default function DishDetailPage() {
               <p style={{ whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>{dish.memo}</p>
             </section>
           )}
+          <DishRecordsSection dishId={dish.id} dishName={dish.name} />
           {error && (
             <p className="error" role="alert">
               {error}

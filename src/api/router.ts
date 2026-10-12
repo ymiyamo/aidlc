@@ -22,6 +22,7 @@ import { createHousehold, listHouseholdMembers, prepareHome } from '@/domain/hou
 import { nextCandidate, pick, pickedList, unpick } from '@/domain/suggestion';
 import { newCsrfToken, csrfOk, SAFE_METHODS } from './csrf';
 import { adminRoutes } from './routes/admin';
+import { cooklogRoutes } from './routes/cooklog';
 import {
   CSRF_COOKIE,
   SESSION_COOKIE,
@@ -296,6 +297,8 @@ const routes: Route[] = [
   },
   // U7（グループとアカウントの管理）
   ...adminRoutes,
+  // U5（作った記録）
+  ...cooklogRoutes,
 ];
 
 async function readBody(req: Request): Promise<unknown> {

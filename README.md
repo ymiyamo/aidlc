@@ -150,3 +150,17 @@ npx cdk synth --quiet     # 構成を組み立てて検証するだけ。AWS に
 ```bash
 npx vitest run src/db/__tests__/admin-schema.test.ts src/repo/admin/__tests__ src/domain/admin/__tests__ src/api/routes/__tests__/admin.test.ts src/ui/admin/__tests__
 ```
+
+## 作った記録（U5）と、デモの手順
+
+料理ごとに「作った日」を何回でも残し、感想（また作りたい／もう作りたくない）と注意点のメモを添えます。日付は日本時間で、今日までしか選べません。
+
+1. 「保存」タブで料理を開く。「作った日」の欄で「作った日を追加」を押し、日付（初期値は今日）・感想・メモを入れて保存する。同じ料理を別の日に何回でも追加できる。同じ料理の同じ日は 1 件まで（すでにあると知らせ、その記録の編集に進める）。
+2. 画面の URL に `/records` を開く（ホーム等からの導線は、統合のときに足す）。月のカレンダーに、作った日ごとに料理名と感想の印が出る。1 日に複数あると「ほか N 件」と出る。「一覧」で切り替え、「前の月」「次の月」で月を移れる。
+3. カレンダーの日を押すと、その日の記録と「作ったものを追加」が出る（未来の日は押せない）。項目を選ぶ画面で、料理名の絞り込みと「最近選んだもの／お気に入り／すべて」を使い、見つからなければ「新しく保存する」へ進める。
+4. 記録は「編集する」「削除する」（確認のあと、その 1 件だけ）で直せる。
+5. 最新の記録が「もう作りたくない」の料理は、買い物前の候補で後ろに回る（最新が「また作りたい」なら回らない）。
+
+```bash
+npx vitest run src/db/__tests__/cooklog-schema.test.ts src/repo/cooklog/__tests__ src/domain/cooklog/__tests__ src/api/routes/__tests__/cooklog.test.ts src/ui/cooklog/__tests__
+```

@@ -1,0 +1,146 @@
+{
+  "stage": "code-generation",
+  "unit": "cook-log",
+  "upstream_ids": [
+    "AC6.2.1",
+    "AC6.2.2",
+    "AC6.2.3",
+    "AC6.2.4",
+    "AC6.2.5",
+    "AC6.2.6",
+    "AC6.2.7",
+    "AC6.2.8",
+    "AC6.3.1",
+    "AC6.3.2",
+    "AC6.4.1",
+    "AC6.4.2",
+    "AC6.4.3",
+    "AC6.4.4",
+    "AC6.4.5",
+    "AC6.5.1",
+    "AC6.5.2",
+    "AC6.5.3",
+    "AC6.5.4",
+    "AC6.5.5",
+    "AC6.5.6",
+    "AC6.6.1",
+    "AC6.6.2"
+  ],
+  "coverage": [
+    {
+      "id": "AC6.2.1",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.2",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.3",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.4",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.5",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.6",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.7",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.2.8",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.3.1",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.3.2",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.4.1",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.4.2",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.4.3",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.4.4",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.4.5",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.1",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.2",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.3",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.4",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.5",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.5.6",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.6.1",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    },
+    {
+      "id": "AC6.6.2",
+      "status": "OK",
+      "target": "src/api/routes/cooklog.ts"
+    }
+  ]
+}

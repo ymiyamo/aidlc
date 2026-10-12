@@ -1,0 +1,46 @@
+{
+  "stage": "code-generation",
+  "unit": "cook-log",
+  "version": 1,
+  "writes": [
+    {
+      "path": "db/migrations/005_cook_log.sql"
+    },
+    {
+      "path": "src/repo/cooklog/"
+    },
+    {
+      "path": "src/domain/cooklog/"
+    },
+    {
+      "path": "src/api/routes/cooklog.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/cooklog-harness.ts"
+    },
+    {
+      "path": "src/api/routes/__tests__/cooklog.test.ts"
+    },
+    {
+      "path": "src/api/router.ts"
+    },
+    {
+      "path": "src/app/records/"
+    },
+    {
+      "path": "src/ui/cooklog/"
+    },
+    {
+      "path": "src/domain/suggestion.ts"
+    },
+    {
+      "path": "src/app/dishes/"
+    },
+    {
+      "path": "src/db/__tests__/cooklog-schema.test.ts"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}
