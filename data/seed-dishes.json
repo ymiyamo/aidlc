@@ -14,6 +14,7 @@
         { "name": "玉ねぎ", "amount": "1", "unit": "個" },
         { "name": "にんじん", "amount": "1", "unit": "本" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/nikujaga"
     },
     {
@@ -27,6 +28,7 @@
         { "name": "玉ねぎ", "amount": "1", "unit": "個" },
         { "name": "しょうが", "amount": "1", "unit": "かけ" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/buta-shogayaki"
     },
     {
@@ -40,6 +42,7 @@
         { "name": "味噌", "amount": "大さじ3", "unit": null },
         { "name": "しょうが", "amount": "1", "unit": "かけ" }
       ],
+      "ingredientKind": "fish",
       "url": "https://example.com/seed/saba-misoni"
     },
     {
@@ -53,6 +56,7 @@
         { "name": "しょうゆ", "amount": "大さじ2", "unit": null },
         { "name": "みりん", "amount": "大さじ2", "unit": null }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/chicken-teriyaki"
     },
     {
@@ -66,6 +70,7 @@
         { "name": "卵", "amount": "4", "unit": "個" },
         { "name": "玉ねぎ", "amount": "1", "unit": "個" }
       ],
+      "ingredientKind": "egg_soy",
       "url": "https://example.com/seed/oyakodon"
     },
     {
@@ -80,6 +85,7 @@
         { "name": "にんじん", "amount": "1", "unit": "本" },
         { "name": "味噌", "amount": "大さじ3", "unit": null }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/tonjiru"
     },
     {
@@ -92,6 +98,7 @@
         { "name": "卵", "amount": "4", "unit": "個" },
         { "name": "だし汁", "amount": "80", "unit": "ml" }
       ],
+      "ingredientKind": "egg_soy",
       "url": "https://example.com/seed/tamagoyaki"
     },
     {
@@ -104,6 +111,7 @@
         { "name": "生鮭", "amount": "4", "unit": "切れ" },
         { "name": "塩", "amount": "少々", "unit": null }
       ],
+      "ingredientKind": "fish",
       "url": "https://example.com/seed/yakizakana"
     },
     {
@@ -117,6 +125,7 @@
         { "name": "にんじん", "amount": "1", "unit": "本" },
         { "name": "ごま油", "amount": "大さじ1", "unit": null }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/kinpira"
     },
     {
@@ -130,6 +139,7 @@
         { "name": "めんつゆ", "amount": "100", "unit": "ml" },
         { "name": "ねぎ", "amount": "1", "unit": "本" }
       ],
+      "ingredientKind": "other",
       "url": "https://example.com/seed/hiyayakko-udon"
     },
     {
@@ -143,6 +153,7 @@
         { "name": "片栗粉", "amount": "大さじ4", "unit": null },
         { "name": "しょうゆ", "amount": "大さじ2", "unit": null }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/karaage"
     },
     {
@@ -156,6 +167,7 @@
         { "name": "玉ねぎ", "amount": "2", "unit": "個" },
         { "name": "しょうゆ", "amount": "大さじ3", "unit": null }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/sukiyaki-don"
     },
     {
@@ -170,6 +182,7 @@
         { "name": "玉ねぎ", "amount": "2", "unit": "個" },
         { "name": "カレールウ", "amount": "1", "unit": "箱" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/curry-rice"
     },
     {
@@ -184,6 +197,7 @@
         { "name": "パン粉", "amount": "1/2", "unit": "カップ" },
         { "name": "卵", "amount": "1", "unit": "個" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/hamburg"
     },
     {
@@ -198,6 +212,7 @@
         { "name": "シチュールウ", "amount": "1", "unit": "箱" },
         { "name": "牛乳", "amount": "400", "unit": "ml" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/cream-stew"
     },
     {
@@ -211,6 +226,7 @@
         { "name": "卵", "amount": "4", "unit": "個" },
         { "name": "ケチャップ", "amount": "大さじ4", "unit": null }
       ],
+      "ingredientKind": "egg_soy",
       "url": "https://example.com/seed/omurice"
     },
     {
@@ -225,6 +241,7 @@
         { "name": "ピーマン", "amount": "2", "unit": "個" },
         { "name": "ケチャップ", "amount": "大さじ5", "unit": null }
       ],
+      "ingredientKind": "other",
       "url": "https://example.com/seed/napolitan"
     },
     {
@@ -239,6 +256,7 @@
         { "name": "牛乳", "amount": "500", "unit": "ml" },
         { "name": "ピザ用チーズ", "amount": "100", "unit": "g" }
       ],
+      "ingredientKind": "other",
       "url": "https://example.com/seed/gratin"
     },
     {
@@ -252,6 +270,7 @@
         { "name": "ベーコン", "amount": "4", "unit": "枚" },
         { "name": "粉チーズ", "amount": "大さじ2", "unit": null }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/caesar-salad"
     },
     {
@@ -266,6 +285,7 @@
         { "name": "ねぎ", "amount": "1", "unit": "本" },
         { "name": "豆板醤", "amount": "小さじ1", "unit": null }
       ],
+      "ingredientKind": "egg_soy",
       "url": "https://example.com/seed/mabo-tofu"
     },
     {
@@ -279,6 +299,7 @@
         { "name": "ピーマン", "amount": "5", "unit": "個" },
         { "name": "たけのこ水煮", "amount": "100", "unit": "g" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/chinjao-rosu"
     },
     {
@@ -293,6 +314,7 @@
         { "name": "餃子の皮", "amount": "30", "unit": "枚" },
         { "name": "にら", "amount": "1", "unit": "束" }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/gyoza"
     },
     {
@@ -307,6 +329,7 @@
         { "name": "ねぎ", "amount": "1/2", "unit": "本" },
         { "name": "ハム", "amount": "4", "unit": "枚" }
       ],
+      "ingredientKind": "egg_soy",
       "url": "https://example.com/seed/chahan"
     },
     {
@@ -321,6 +344,7 @@
         { "name": "ケチャップ", "amount": "大さじ3", "unit": null },
         { "name": "豆板醤", "amount": "小さじ1", "unit": null }
       ],
+      "ingredientKind": "fish",
       "url": "https://example.com/seed/ebichili"
     },
     {
@@ -335,6 +359,7 @@
         { "name": "ハム", "amount": "4", "unit": "枚" },
         { "name": "酢", "amount": "大さじ3", "unit": null }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/harusame-salad"
     },
     {
@@ -349,6 +374,7 @@
         { "name": "豆腐", "amount": "1", "unit": "丁" },
         { "name": "ポン酢", "amount": "適量", "unit": null }
       ],
+      "ingredientKind": "meat",
       "url": "https://example.com/seed/tori-mizutaki"
     },
     {
@@ -362,6 +388,7 @@
         { "name": "豚こま切れ肉", "amount": "150", "unit": "g" },
         { "name": "もやし", "amount": "1", "unit": "袋" }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/yasai-itame"
     },
     {
@@ -375,6 +402,7 @@
         { "name": "豚ひき肉", "amount": "100", "unit": "g" },
         { "name": "味噌", "amount": "大さじ2", "unit": null }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/nasu-dengaku"
     },
     {
@@ -389,6 +417,7 @@
         { "name": "ハム", "amount": "4", "unit": "枚" },
         { "name": "マヨネーズ", "amount": "大さじ4", "unit": null }
       ],
+      "ingredientKind": "vegetable",
       "url": "https://example.com/seed/potato-salad"
     },
     {
@@ -403,6 +432,7 @@
         { "name": "卵", "amount": "2", "unit": "個" },
         { "name": "豚バラ肉", "amount": "150", "unit": "g" }
       ],
+      "ingredientKind": "other",
       "url": "https://example.com/seed/okonomiyaki"
     }
   ]
